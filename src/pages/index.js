@@ -14,6 +14,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <SEO title="All posts" />
         <Bio />
         {posts.map(({ node }) => {
