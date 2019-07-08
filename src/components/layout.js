@@ -60,6 +60,7 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <header>{header}</header>
         <main>{children}</main>
         <footer>
