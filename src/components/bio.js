@@ -32,7 +32,7 @@ const Bio = () => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div
       style={{
@@ -54,7 +54,7 @@ const Bio = () => {
         }}
       />
       <p>
-        <strong>{author}</strong> </br>
+        <strong>{author}</strong>
         {` `}
         <a href={`https://twitter.com/AyaosEats`}>
           Twitter
