@@ -3,7 +3,7 @@ module.exports = {
     title: `Ayaos Playground`,
     author: `Ayaos`,
     description: `Ayaos Playground`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://ayaos.work/`,
     social: {
       twitter: `AyaosEats`,
     },
@@ -50,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-143510928-1`,
       },
     },
     `gatsby-plugin-feed`,
