@@ -69,8 +69,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     />
-    <Helmet>
-      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript">
     </Helmet>
   )
 }
