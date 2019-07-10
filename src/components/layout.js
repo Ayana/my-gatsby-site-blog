@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import img from '../../content/assets/logo.svg'
+import Logo from "../components/logo"
+
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
@@ -18,6 +21,13 @@ class Layout extends React.Component {
             marginTop: 0,
           }}
         >
+          <div style={{ width: '5em', margin: "auto" }}>
+            <img
+              src={img}
+              alt="Ayaos"
+            />
+           {/* <Logo /> */}
+         </div>
           <Link
             style={{
               boxShadow: `none`,
@@ -26,7 +36,6 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            {title}
           </Link>
         </h1>
       )
@@ -62,7 +71,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
+        <footer style={{textAlign:'center',marginTop:'5em'}}>
           © {new Date().getFullYear()}
         </footer>
       </div>
