@@ -38,6 +38,8 @@ const Bio = () => {
       style={{
         display: `flex`,
         marginBottom: rhythm(2.5),
+        justifyContent: 'center',
+        alignItems: 'center',
       }}
     >
       <Image
@@ -53,7 +55,7 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <p style={{marginBottom:0,}}>
         <strong>{author}</strong>
         {` `}
         <a target="_blank" href={`https://twitter.com/${data.site.siteMetadata.social.twitter}`}>
