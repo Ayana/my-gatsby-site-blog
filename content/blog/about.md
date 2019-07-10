@@ -9,3 +9,9 @@ Hello world! This is my playground.
 I added some info here.
 
 OK one more time
+
+はじめまして。
+
+Hello world! This is my playground.  Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. 
+
+Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground.
