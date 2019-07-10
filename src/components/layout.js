@@ -71,7 +71,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
+        <footer style={{textAlign:'center',marginTop:'5em'}}>
           © {new Date().getFullYear()}
         </footer>
       </div>
