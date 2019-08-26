@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import img from '../../content/assets/logo.svg'
 import Logo from "../components/logo"
 
 import { rhythm, scale } from "../utils/typography"
@@ -17,17 +16,11 @@ class Layout extends React.Component {
         <h1
           style={{
             ...scale(1.5),
-            marginBottom: rhythm(1.5),
+            marginBottom: rhythm(1),
             marginTop: 0,
           }}
         >
-          <div style={{ width: '5em', margin: "auto" }}>
-            <img
-              src={img}
-              alt="Ayaos"
-            />
-           {/* <Logo /> */}
-         </div>
+          <Logo />
           <Link
             style={{
               boxShadow: `none`,

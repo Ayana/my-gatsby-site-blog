@@ -6,6 +6,9 @@ module.exports = {
     siteUrl: `https://ayaos.work/`,
     social: {
       twitter: `AyaosEats`,
+      instagram: `ayaos_eats`,
+      linkedin: `ayana-osawa-22b623b`,
+      github: `Ayana`,
     },
   },
   plugins: [
