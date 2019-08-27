@@ -11,4 +11,4 @@ This is still under construction content.
 
 I developed this website because I'm still new to React and Gatsby and need to understand how it works.
 
-I'm going to updated this website when I have time sometimes.
+I'm going to update this website when I have time sometimes.
