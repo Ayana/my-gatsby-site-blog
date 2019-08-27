@@ -1,18 +1,14 @@
 ---
 layout: blog
 date: 2019-07-08T19:53:17.322Z
-title: About me
-description: Description Text
+title: About this website
+description: This is my playground
 thumbnail: /uploads/img_1189.jpg
 ---
-Hello world! This is my playground.
+Hello world! I'm Ayaos from Japan.
 
-I added some info here.
+This is still under construction content.
 
-OK one more time
+I developed this website because I'm still new to React and Gatsby and need to understand how it works.
 
-はじめまして。
-
-Hello world! This is my playground.  Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. 
-
-Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground. Hello world! This is my playground.
+I'm going to updated this website when I have time sometimes.
