@@ -1,17 +1,33 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+// import noriegaTheme from 'typography-theme-noriega'
+import parnassusTheme from 'typography-theme-parnassus'
+// import stAnnesTheme from 'typography-theme-st-annes'
 
-Wordpress2016.overrideThemeStyles = () => {
+parnassusTheme.overrideThemeStyles = () => {
   return {
     "a": {
-      boxShadow: `none`,
+      boxShadow: 'none',
+      color: `#333`,
+      textDecoration: 'none',
+      transition: '.3s',
+    },
+    "a:hover": {
+      color: '#82a8b3',
+    },
+    "a img": {
+      transition: '.3s',
+    },
+    "a img:hover": {
+      opacity: `0.8`,
     },
   }
 }
 
-delete Wordpress2016.googleFonts
 
-const typography = new Typography(Wordpress2016)
+// const typography = new Typography(noriegaTheme)
+const typography = new Typography(parnassusTheme)
+// const typography = new Typography(stAnnesTheme)
+// const typography = new Typography
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

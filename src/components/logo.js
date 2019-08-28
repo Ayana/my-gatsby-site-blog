@@ -23,7 +23,7 @@ import logo from '../../content/assets/logo.svg'
 class Logo extends React.Component {
   render() {
     return (
-      <div style={{ width: '4em', margin: "auto" }}>
+      <div style={{ width: '5em', margin: "auto" }}>
         <img
           src={logo}
           alt="Ayaos"
