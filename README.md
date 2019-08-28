@@ -4,4 +4,4 @@
 </h1>
 
 Hello! I'm Ayana.
-I'm just playing and testing out gastby platform, netlify, netlify cms and practicing.
+I'm playing and testing out gastby platform, netlify, netlify cms and practicing.
