@@ -7,8 +7,8 @@ thumbnail: /uploads/img_newyork.jpg
 ---
 Hello world! I'm Ayaos from Japan.
 
-This is still under construction content.
+This content is still under construction.
 
-I developed this website because I'm still new to React and Gatsby and need to understand how it works.
+I developed this website because I'm still new to React and Gatsby, and need to understand how it works.
 
 I'm going to update this website when I have time sometimes.
