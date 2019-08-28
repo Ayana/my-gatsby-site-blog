@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Ayaos`,
-    author: `Ayaos`,
+    author: `Ayana`,
     description: `Ayaos Playground`,
     siteUrl: `https://ayaos.work/`,
     social: {

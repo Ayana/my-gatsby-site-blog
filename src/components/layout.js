@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Media from 'react-media';
 
 import Logo from "../components/logo"
 
@@ -13,42 +14,51 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: 0,
-            marginTop: 0,
-          }}
-        >
-          <Logo />
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-          </Link>
-        </h1>
+        <Media query="(max-width: 599px)">
+          {matches =>
+            matches ? (
+              <h1
+                style={{
+                  ...scale(1.5),
+                  marginTop: 0,
+                  marginBottom: rhythm(1/2),
+                  margin: "auto",
+                  width: '4em',
+                }}
+              >
+                <Link to={`/`}>
+                  <Logo />
+                </Link>
+              </h1>
+              ) : (
+              <h1
+                style={{
+                  ...scale(1.5),
+                  margin: "auto",
+                  marginBottom: rhythm(0.8),
+                  marginTop: 0,
+                  width: '5em',
+                }}
+              >
+                <Link to={`/`}>
+                  <Logo />
+                </Link>
+              </h1>                
+            )
+          }
+        </Media>
       )
     } else {
       header = (
         <h3
           style={{
-            // fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
+            marginBottom: '2em',
+            width: '7em',
           }}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
+          <Link to={`/`}>
+            <Logo />
           </Link>
         </h3>
       )

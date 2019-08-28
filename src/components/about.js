@@ -51,7 +51,7 @@ const About = () => {
         alt={author}
         style={{
           // marginRight: rhythm(1 / 2),
-          marginBottom: 0,
+          marginBottom: rhythm(1 / 3),
           minWidth: 100,
           borderRadius: `100%`,
         }}
@@ -59,9 +59,9 @@ const About = () => {
           borderRadius: `50%`,
         }}
       />
-      <p style={{marginBottom:0,fontSize:'1.8rem',fontFamily:'Merriweather Sans',}}><strong>{author}</strong></p>
+      <p style={{marginBottom:'0',fontSize:'1.8rem',fontFamily:'Merriweather Sans',}}><strong>I'm {author}</strong></p>
       <p style={{marginBottom:0,}}>Web Developer / Organizer of Misawaya</p>
-      <div style={{marginTop:'1em'}}>
+      <div style={{marginTop:'1.8em'}}>
         <Social />
       </div>
     </div>
