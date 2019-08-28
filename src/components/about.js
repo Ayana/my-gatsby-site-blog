@@ -39,18 +39,14 @@ const About = () => {
   return (
     <div
       style={{
-        // display: `flex`,
         marginBottom: rhythm(2.5),
         textAlign: 'center',
-        // justifyContent: 'center',
-        // alignItems: 'center',
       }}
     >
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         style={{
-          // marginRight: rhythm(1 / 2),
           marginBottom: rhythm(1 / 3),
           minWidth: 100,
           borderRadius: `100%`,
