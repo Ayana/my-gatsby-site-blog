@@ -20,9 +20,9 @@ class Layout extends React.Component {
               <h1
                 style={{
                   ...scale(1.5),
-                  marginTop: 0,
-                  marginBottom: rhythm(1/2),
                   margin: "auto",
+                  marginTop: 0,
+                  paddingBottom: rhythm(1/3),
                   width: '4em',
                 }}
               >
@@ -35,8 +35,8 @@ class Layout extends React.Component {
                 style={{
                   ...scale(1.5),
                   margin: "auto",
-                  marginBottom: rhythm(0.8),
                   marginTop: 0,
+                  paddingBottom: rhythm(0.2),
                   width: '5em',
                 }}
               >
