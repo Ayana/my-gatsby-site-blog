@@ -3,7 +3,19 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "styled-components"
 import { rhythm, scale } from "../utils/typography"
+
+const TitleWrapper = styled.div`
+  color: #ff0000;
+  h1 {
+    margin-top: rhythm(1);
+    margin-bottom: 0;
+    @media (max-width: 750px) {
+      font-size: 2rem;
+    },
+  }
+`;
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,14 +29,11 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1
-          style={{
-            marginTop: rhythm(1),
-            marginBottom: 0,
-          }}
-        >
-          {post.frontmatter.title}
-        </h1>
+        <TitleWrapper>
+          <h1>
+            {post.frontmatter.title}
+          </h1>
+        </TitleWrapper>
         <p
           style={{
             ...scale(-1 / 5),
@@ -48,6 +57,7 @@ class BlogPostTemplate extends React.Component {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
+            margin: 0,
           }}
         >
           <li>

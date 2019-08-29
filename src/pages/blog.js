@@ -1,12 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import About from "../components/about"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-class Index extends React.Component {
+class Projects extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -14,13 +13,12 @@ class Index extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Home" />
-        <About />
-        {posts.slice(0,2).map(({ node }) => {
+        <SEO title="Blog" />
+        <h1>Blog</h1>
+        {posts.slice(0,20).map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug} style={{
-              maxWidth: rhythm(16),
               margin: 'auto',
             }}>
               <h3
@@ -46,7 +44,7 @@ class Index extends React.Component {
   }
 }
 
-export default Index
+export default Projects
 
 export const pageQuery = graphql`
   query {

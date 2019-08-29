@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Media from 'react-media';
 
 import Logo from "../components/logo"
+import Nav from "../components/nav"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -17,50 +18,59 @@ class Layout extends React.Component {
         <Media query="(max-width: 599px)">
           {matches =>
             matches ? (
-              <h1
-                style={{
-                  ...scale(1.5),
-                  margin: "auto",
-                  marginTop: 0,
-                  paddingBottom: rhythm(1/3),
-                  width: '4em',
-                }}
-              >
-                <Link to={`/`}>
-                  <Logo />
-                </Link>
-              </h1>
+              <div>
+                <Nav />
+                <h1
+                  style={{
+                    ...scale(1.5),
+                    margin: "auto",
+                    marginTop: rhythm(1.5),
+                    paddingBottom: rhythm(1/2),
+                    width: '4em',
+                  }}
+                >
+                  <Link to={`/`}>
+                    <Logo />
+                  </Link>
+                </h1>
+              </div>
               ) : (
-              <h1
-                style={{
-                  ...scale(1.5),
-                  margin: "auto",
-                  marginTop: 0,
-                  paddingBottom: rhythm(0.2),
-                  width: '5em',
-                }}
-              >
-                <Link to={`/`}>
-                  <Logo />
-                </Link>
-              </h1>                
+              <div>
+                <Nav />
+                <h1
+                  style={{
+                    ...scale(1.5),
+                    margin: "auto",
+                    marginTop: rhythm(1),
+                    paddingBottom: rhythm(0.5),
+                    width: '5em',
+                  }}
+                >
+                  <Link to={`/`}>
+                    <Logo />
+                  </Link>
+                </h1>                
+              </div>
             )
           }
         </Media>
       )
     } else {
       header = (
-        <h3
-          style={{
-            marginTop: 0,
-            marginBottom: '1.5em',
-            width: '5em',
-          }}
-        >
-          <Link to={`/`}>
-            <Logo />
-          </Link>
-        </h3>
+        <div>
+          <Nav />
+          <h3
+            style={{
+              marginTop: '-1.6em',
+              marginBottom: '1.5em',
+              width: '5em',
+            }}
+          >
+            <Link to={`/`}>
+              <Logo />
+            </Link>
+          </h3>
+        </div>
       )
     }
     return (
