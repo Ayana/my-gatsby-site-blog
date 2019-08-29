@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import twitter from '../../content/assets/social/ico_twitter.svg'
 import instagram from '../../content/assets/social/ico_instagram.svg'
 import linkedin from '../../content/assets/social/ico_linkedin.svg'
