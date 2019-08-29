@@ -1,8 +1,8 @@
 ---
 layout: blog
 date: 2019-07-08T19:53:17.322Z
-title: About this website
-description: Hello world! This is my playground and still under construction..
+title: Website development
+description: Hello world! This is my playground developed with Gatsby JS.
 thumbnail: /uploads/img_newyork.jpg
 ---
 ![New York](/uploads/img_newyork.jpg)
