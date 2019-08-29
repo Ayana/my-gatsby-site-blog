@@ -53,8 +53,8 @@ class Layout extends React.Component {
         <h3
           style={{
             marginTop: 0,
-            marginBottom: '2em',
-            width: '7em',
+            marginBottom: '1.5em',
+            width: '5em',
           }}
         >
           <Link to={`/`}>
@@ -69,7 +69,7 @@ class Layout extends React.Component {
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
         }}
       >
         <header>{header}</header>

@@ -20,6 +20,13 @@ parnassusTheme.overrideThemeStyles = () => {
     "a img:hover": {
       opacity: `0.8`,
     },
+    // media query
+    '@media (max-width: 750px)': {
+      "html": {
+        lineHeight: `1.5`,
+      },
+    },
+
   }
 }
 
