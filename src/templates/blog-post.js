@@ -34,12 +34,6 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-        <div>
-          <img
-            src={post.frontmatter.thumbnail}
-            alt={post.frontmatter.title}
-          />
-        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
