@@ -16,7 +16,7 @@ class Index extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
         <About />
-        {posts.slice(0,3).map(({ node }) => {
+        {posts.slice(0,2).map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug} style={{
