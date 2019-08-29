@@ -5,6 +5,8 @@ title: About this website
 description: Hello world! This is my playground and still under construction..
 thumbnail: /uploads/img_newyork.jpg
 ---
+![New York](/uploads/img_newyork.jpg)
+
 Hello world! I'm Ayana from Japan.
 
 This content is still under construction.
