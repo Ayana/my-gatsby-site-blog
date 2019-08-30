@@ -16,7 +16,8 @@ class Projects extends React.Component {
         <SEO title="Blog" />
         <div style={{
           margin: 'auto',
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(26),
+          padding: `0 ${rhythm(1)}`,
         }}>
           <h1>Blog</h1>
           {posts.slice(0,20).map(({ node }) => {
