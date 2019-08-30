@@ -48,7 +48,7 @@ const About = () => {
           borderRadius: `50%`,
         }}
       />
-      <p style={{marginBottom:'0',fontSize:'1.8rem',fontFamily:'Merriweather Sans',}}><strong>I'm {author}</strong></p>
+      <h2 style={{marginBottom:'0',fontSize:'1.8rem',fontFamily:'Merriweather Sans',}}><strong>I'm {author}</strong></h2>
       <p style={{marginBottom:0,}}>Web Developer / Organizer of Misawaya</p>
       <div style={{marginTop:'1.8em'}}>
         <Social />

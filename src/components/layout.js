@@ -59,32 +59,34 @@ class Layout extends React.Component {
       header = (
         <div>
           <Nav />
-          <h3
+          <div
             style={{
               marginTop: '-1.6em',
               marginBottom: '1.5em',
-              width: '5em',
+              width: '8em',
             }}
           >
             <Link to={`/`}>
               <Logo />
             </Link>
-          </h3>
+          </div>
         </div>
       )
     }
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
+      <div>
+        <header style={{
+          margin: `auto`,
           maxWidth: rhythm(24),
-          padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
+          padding: `${rhythm(1)} 0`,
         }}
-      >
-        <header>{header}</header>
+        >{header}</header>
         <main>{children}</main>
-        <footer style={{textAlign:'center',marginTop:'5em'}}>
+        <footer style={{
+          textAlign:'center',
+          maxWidth: rhythm(24),
+          margin: `5em auto 1em`,
+          }}>
           © {new Date().getFullYear()}
         </footer>
       </div>
