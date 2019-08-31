@@ -57,12 +57,7 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <div style={{
-          margin: `auto`,
-          maxWidth: rhythm(26),
-          padding: `${rhythm(1)} ${rhythm(1)} 0`,
-        }}
-        >
+        <div>
           <Nav />
           <div
             style={{
@@ -79,7 +74,12 @@ class Layout extends React.Component {
     }
     return (
       <div>
-        <header>{header}</header>
+        <header style={{
+          margin: `auto`,
+          maxWidth: rhythm(26),
+          padding: `${rhythm(1)} ${rhythm(1)} 0`,
+        }}
+        >{header}</header>
         <main>{children}</main>
         <footer style={{
           textAlign:'center',

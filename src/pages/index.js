@@ -22,7 +22,8 @@ class Index extends React.Component {
             <div key={node.fields.slug} style={{
               maxWidth: rhythm(16),
               margin: 'auto',
-            }}>
+              padding: `0 ${rhythm(1)}`,
+           }}>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
