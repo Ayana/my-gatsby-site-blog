@@ -1,11 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
-import Media from 'react-media';
+// import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Logo from "../components/logo"
 import Nav from "../components/nav"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
+
 
 class Layout extends React.Component {
   render() {
@@ -15,45 +16,9 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <Media query="(max-width: 599px)">
-          {matches =>
-            matches ? (
-              <div>
-                <Nav />
-                <h1
-                  style={{
-                    ...scale(1.5),
-                    margin: "auto",
-                    marginTop: rhythm(1.5),
-                    paddingBottom: rhythm(1/2),
-                    width: '4em',
-                  }}
-                >
-                  <Link to={`/`}>
-                    <Logo />
-                  </Link>
-                </h1>
-              </div>
-              ) : (
-              <div>
-                <Nav />
-                <h1
-                  style={{
-                    ...scale(1.5),
-                    margin: "auto",
-                    marginTop: rhythm(1),
-                    paddingBottom: rhythm(0.5),
-                    width: '5em',
-                  }}
-                >
-                  <Link to={`/`}>
-                    <Logo />
-                  </Link>
-                </h1>                
-              </div>
-            )
-          }
-        </Media>
+        <div>
+          <Nav />
+        </div>
       )
     } else {
       header = (
@@ -65,9 +30,9 @@ class Layout extends React.Component {
               width: '8em',
             }}
           >
-            <Link to={`/`}>
+            <AniLink fade to={`/`}>
               <Logo />
-            </Link>
+            </AniLink>
           </div>
         </div>
       )

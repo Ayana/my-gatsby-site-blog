@@ -1,10 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Media from 'react-media';
 
+import Logo from "../components/logo"
 import About from "../components/about"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography"
 
 class Index extends React.Component {
   render() {
@@ -13,8 +15,41 @@ class Index extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+     <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
+        <Media query="(max-width: 599px)">
+          {matches =>
+            matches ? (
+              <div>
+                <h1
+                  style={{
+                    ...scale(1.5),
+                    margin: "auto",
+                    marginTop: rhythm(1.5),
+                    paddingBottom: rhythm(1/2),
+                    width: '4em',
+                  }}
+                >
+                  <Logo />
+                </h1>
+              </div>
+              ) : (
+              <div>
+                <h1
+                  style={{
+                    ...scale(1.5),
+                    margin: "auto",
+                    marginTop: rhythm(1),
+                    paddingBottom: rhythm(0.5),
+                    width: '5em',
+                  }}
+                >
+                  <Logo />
+                </h1>                
+              </div>
+            )
+          }
+        </Media>
         <About />
         {posts.slice(0,2).map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
