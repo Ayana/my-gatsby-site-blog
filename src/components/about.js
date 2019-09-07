@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import Social from "../components/social"
-
 import { rhythm } from "../utils/typography"
 
 const About = () => {
