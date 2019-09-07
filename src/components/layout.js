@@ -30,7 +30,7 @@ class Layout extends React.Component {
               width: '8em',
             }}
           >
-            <AniLink fade to={`/`}>
+            <AniLink fade to={`/`} duration={0.3}>
               <Logo />
             </AniLink>
           </div>
