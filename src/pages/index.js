@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Media from 'react-media';
 
 import Logo from "../components/logo"
@@ -64,9 +65,9 @@ class Index extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link to={node.fields.slug}>
+                <AniLink fade to={node.fields.slug} duration={0.2}>
                   {title}
-                </Link>
+                </AniLink>
               </h3>
               <small>{node.frontmatter.date}</small>
               <p
