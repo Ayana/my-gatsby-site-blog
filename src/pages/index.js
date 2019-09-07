@@ -55,7 +55,7 @@ class Index extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug} style={{
-              maxWidth: rhythm(16),
+              maxWidth: rhythm(18),
               margin: 'auto',
               padding: `0 ${rhythm(1)}`,
            }}>

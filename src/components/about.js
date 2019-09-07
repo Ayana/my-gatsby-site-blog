@@ -40,7 +40,7 @@ const About = () => {
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
         style={{
-          marginBottom: rhythm(1 / 3),
+          marginBottom: 0,
           minWidth: 100,
           borderRadius: `100%`,
         }}
@@ -48,7 +48,12 @@ const About = () => {
           borderRadius: `50%`,
         }}
       />
-      <h2 style={{marginBottom:'0',fontSize:'1.8rem',fontFamily:'Merriweather Sans',}}><strong>I'm {author}</strong></h2>
+      <h2 style={{
+        marginBottom:'0',
+        fontSize:'1.8rem',
+        fontFamily:'Merriweather Sans',
+        marginTop: '0.6em',
+        }}><strong>I'm {author}</strong></h2>
       <p style={{marginBottom:0,}}>Web Developer / Organizer of Misawaya</p>
       <div style={{marginTop:'1.8em'}}>
         <Social />
