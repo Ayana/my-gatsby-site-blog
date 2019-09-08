@@ -24,7 +24,7 @@ class Projects extends React.Component {
         }}>
           <h1>Projects</h1>
           <h2>Misawaya</h2>
-          <p>- Act of preservation for traditional Japanese house in Nagano, Japan</p>
+          <p>- Act of preservation for a traditional Japanese house in Nagano, Japan</p>
           <a target="_blank" rel="noopener" href="http://misawayanohanashi.com/">
             <img
               src={misawaya}
