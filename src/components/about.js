@@ -31,7 +31,7 @@ const About = () => {
   return (
     <div
       style={{
-        marginBottom: rhythm(2.5),
+        margin: `${rhythm(1)} 0 ${rhythm(2.5)} `,
         textAlign: 'center',
       }}
     >
@@ -53,7 +53,8 @@ const About = () => {
         fontFamily:'Merriweather Sans',
         marginTop: '0.6em',
         }}><strong>I'm {author}</strong></h2>
-      <p style={{marginBottom:0,}}>Web Developer / Organizer of Misawaya</p>
+      <p style={{marginBottom:'2em',}}>Web Developer / Organizer of Misawaya</p>
+      {/* <p>Over 13 years experience in web design & development. Working </p> */}
       <div style={{marginTop:'1.8em'}}>
         <Social />
       </div>

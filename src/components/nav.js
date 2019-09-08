@@ -1,11 +1,19 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Logo from "../components/logo"
 
 class Nav extends React.Component {
   render() {
     return (
-      <div>
-				<nav style={{ margin: "auto", display: 'flex', justifyContent: 'flex-end',}}>
+      <div style={{display: 'flex', justifyContent: 'space-between',}}>
+        <AniLink fade to={`/`} duration={0.3}
+            style={{
+              marginTop: '-0.5em',
+              width: '8em',
+            }}>
+          <Logo />
+        </AniLink>
+				<nav style={{ display: 'flex', justifyContent: 'flex-end',}}>
 					<AniLink 
             fade 
             style={{ marginLeft: '1.5em', textAlign: 'center' }} 

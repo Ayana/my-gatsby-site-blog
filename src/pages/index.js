@@ -18,7 +18,7 @@ class Index extends React.Component {
     return (
      <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
-        <Media query="(max-width: 599px)">
+        {/* <Media query="(max-width: 599px)">
           {matches =>
             matches ? (
               <div>
@@ -50,7 +50,7 @@ class Index extends React.Component {
               </div>
             )
           }
-        </Media>
+        </Media> */}
         <About />
         {posts.slice(0,2).map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug

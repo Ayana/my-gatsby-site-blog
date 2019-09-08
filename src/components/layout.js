@@ -18,13 +18,7 @@ class Layout extends React.Component {
       header = (
         <div>
           <Nav />
-        </div>
-      )
-    } else {
-      header = (
-        <div>
-          <Nav />
-          <div
+          {/* <div
             style={{
               marginTop: '-1.6em',
               width: '8em',
@@ -33,7 +27,23 @@ class Layout extends React.Component {
             <AniLink fade to={`/`} duration={0.3}>
               <Logo />
             </AniLink>
-          </div>
+          </div> */}
+        </div>
+      )
+    } else {
+      header = (
+        <div>
+          <Nav />
+          {/* <div
+            style={{
+              marginTop: '-1.6em',
+              width: '8em',
+            }}
+          >
+            <AniLink fade to={`/`} duration={0.3}>
+              <Logo />
+            </AniLink>
+          </div> */}
         </div>
       )
     }
@@ -42,7 +52,7 @@ class Layout extends React.Component {
         <header style={{
           margin: `auto`,
           maxWidth: rhythm(26),
-          padding: `${rhythm(1)} ${rhythm(1)} 0`,
+          padding: `${rhythm(1)}`,
         }}
         >{header}</header>
         <main>{children}</main>
