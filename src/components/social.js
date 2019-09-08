@@ -25,28 +25,28 @@ const Social = () => {
 
   return (
     <div style={{ margin: "auto", display: 'flex', justifyContent: 'center',}}>
-      <a target="_blank" rel="noopener" href={`https://twitter.com/${data.site.siteMetadata.social.twitter}`}>
+      <a target="_blank" rel="noopener noreferrer" href={`https://twitter.com/${data.site.siteMetadata.social.twitter}`}>
         <img
           src={twitter}
           alt="Twitter"
           style={{ width: '2em', height: '2em', margin: '0 8px', }}
         />
       </a>
-      <a target="_blank" rel="noopener" href={`https://instagram.com/${data.site.siteMetadata.social.instagram}`}>
+      <a target="_blank" rel="noopener noreferrer" href={`https://instagram.com/${data.site.siteMetadata.social.instagram}`}>
         <img
           src={instagram}
           alt="Instagram"
           style={{ width: '2em', height: '2em', margin: '0 8px', }}
         />
       </a>
-      <a target="_blank" rel="noopener" href={`https://www.linkedin.com/in/${data.site.siteMetadata.social.linkedin}`}>
+      <a target="_blank" rel="noopener noreferrer" href={`https://www.linkedin.com/in/${data.site.siteMetadata.social.linkedin}`}>
         <img
           src={linkedin}
           alt="LinkedIn"
           style={{ width: '2em', height: '2em', margin: '0 8px', }}
         />
       </a>
-      <a target="_blank" rel="noopener" href={`https://github.com/${data.site.siteMetadata.social.github}`}>
+      <a target="_blank" rel="noopener noreferrer" href={`https://github.com/${data.site.siteMetadata.social.github}`}>
         <img
           src={github}
           alt="Github"

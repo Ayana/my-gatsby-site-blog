@@ -1,8 +1,4 @@
 import React from "react"
-// import { Link } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-
-import Logo from "../components/logo"
 import Nav from "../components/nav"
 
 import { rhythm } from "../utils/typography"
@@ -10,7 +6,7 @@ import { rhythm } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -18,32 +14,12 @@ class Layout extends React.Component {
       header = (
         <div>
           <Nav />
-          {/* <div
-            style={{
-              marginTop: '-1.6em',
-              width: '8em',
-            }}
-          >
-            <AniLink fade to={`/`} duration={0.3}>
-              <Logo />
-            </AniLink>
-          </div> */}
         </div>
       )
     } else {
       header = (
         <div>
           <Nav />
-          {/* <div
-            style={{
-              marginTop: '-1.6em',
-              width: '8em',
-            }}
-          >
-            <AniLink fade to={`/`} duration={0.3}>
-              <Logo />
-            </AniLink>
-          </div> */}
         </div>
       )
     }

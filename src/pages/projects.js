@@ -1,10 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import misawaya from '../../content/assets/projects/img_project_misawaya.jpg'
+import fruit from '../../content/assets/projects/img_project_fruit.jpg'
 
 
 class Projects extends React.Component {
@@ -31,7 +33,12 @@ class Projects extends React.Component {
             />
           </a>
           <p><a target="_blank" rel="noopener" href="http://misawayanohanashi.com/">>> Website</a></p>
-          <h2>Summer Cafe</h2>
+          <h2>Fruits</h2>
+            <img
+              src={fruit}
+              alt="fruit"
+              style={{ width: '100%', margin: '0', }}
+            />
           <p>- Kakigori(shaved ice) cafe with fruits from my father’s farm</p>
           <h2>Museum of Reclaimed Urban Space</h2>
           <p>- Helping to update websites at the museum in Lower East Side</p>
