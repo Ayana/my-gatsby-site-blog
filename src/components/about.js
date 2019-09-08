@@ -31,32 +31,37 @@ const About = () => {
   return (
     <div
       style={{
-        margin: `${rhythm(1)} 0 ${rhythm(2.5)} `,
+        paddingBottom: rhythm(1),
+        height: '60vh',
+        justifyContent: 'center',
+        alignItems: 'center',
         textAlign: 'center',
+        display: 'flex',
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginBottom: 0,
-          minWidth: 100,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
-      <h2 style={{
-        marginBottom:'0',
-        fontSize:'1.8rem',
-        fontFamily:'Merriweather Sans',
-        marginTop: '0.6em',
-        }}><strong>I'm {author}</strong></h2>
-      <p style={{marginBottom:'2em',}}>Web Developer / Organizer of Misawaya</p>
-      {/* <p>Over 13 years experience in web design & development. Working </p> */}
-      <div style={{marginTop:'1.8em'}}>
-        <Social />
+      <div>
+        <Image
+          fixed={data.avatar.childImageSharp.fixed}
+          alt={author}
+          style={{
+            marginBottom: 0,
+            minWidth: 100,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `50%`,
+          }}
+        />
+        <h2 style={{
+          marginBottom:'0.2em',
+          fontSize:'1.8rem',
+          fontFamily:'Merriweather Sans',
+          marginTop: '0.6em',
+          }}><strong>I'm {author}</strong></h2>
+        <p style={{marginBottom:'2em',}}>Web Developer / Organizer of Misawaya</p>
+        <div style={{marginTop:'1.8em'}}>
+          <Social />
+        </div>
       </div>
     </div>
   )

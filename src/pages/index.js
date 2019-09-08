@@ -52,7 +52,7 @@ class Index extends React.Component {
           }
         </Media> */}
         <About />
-        {posts.slice(0,2).map(({ node }) => {
+        {/* {posts.slice(0,2).map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug} style={{
@@ -77,7 +77,7 @@ class Index extends React.Component {
               />
             </div>
           )
-        })}
+        })} */}
       </Layout>
     )
   }

@@ -6,11 +6,13 @@ class Nav extends React.Component {
   render() {
     return (
       <div style={{display: 'flex', justifyContent: 'space-between',}}>
-        <AniLink fade to={`/`} duration={0.3}
-            style={{
-              marginTop: '-0.5em',
-              width: '8em',
-            }}>
+        <AniLink
+          fade to={`/`} 
+          duration={0.3}
+          style={{
+            marginTop: '-0.5em',
+            width: '8em',
+          }}>
           <Logo />
         </AniLink>
 				<nav style={{ display: 'flex', justifyContent: 'flex-end',}}>
