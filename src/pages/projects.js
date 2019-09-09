@@ -19,7 +19,7 @@ class Projects extends React.Component {
         <SEO title="Projects" />
         <div style={{
           margin: 'auto',
-          maxWidth: rhythm(26),
+          maxWidth: rhythm(28),
           padding: `0 ${rhythm(1)}`,
         }}>
           <h1>Projects</h1>

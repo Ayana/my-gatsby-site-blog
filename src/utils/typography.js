@@ -5,24 +5,35 @@ import parnassusTheme from 'typography-theme-parnassus'
 
 parnassusTheme.overrideThemeStyles = () => {
   return {
+    "body": {
+      backgroundColor: `#f7f6f2`,
+      color: `#444`,
+   },
+    "::selection": {
+      background: `#ebec60`,
+    },
     "a": {
       boxShadow: 'none',
-      color: `#333`,
+      color: `#444`,
       textDecoration: 'none',
       transition: '.3s',
     },
-    "a:hover": {
-      color: '#82a8b3',
-    },
+    // "a:hover": {
+    //   color: '#82a8b3',
+    // },
     "a img": {
       transition: '.3s',
     },
     "a img:hover": {
-      opacity: `0.8`,
+      opacity: `0.6`,
     },
     "main h1": {
+      color: `#444`,
       marginTop: `0.5em`,
       fontSize: '3rem',
+    },
+    "main h2": {
+      color: `#444`,
     },
     // media query
     '@media (max-width: 750px)': {

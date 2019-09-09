@@ -54,7 +54,7 @@ const About = () => {
         />
         <h2 style={{
           marginBottom:'0.2em',
-          fontSize:'1.8rem',
+          fontSize:'2rem',
           fontFamily:'Merriweather Sans',
           marginTop: '0.6em',
           }}><strong>I'm {author}</strong></h2>
