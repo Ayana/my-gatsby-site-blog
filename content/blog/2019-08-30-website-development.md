@@ -7,9 +7,6 @@ thumbnail: /uploads/img_newyork.jpg
 categories:
   - Technology
 ---
-![New York](/uploads/img_newyork.jpg)
-
-Hello world! I'm Ayana from Japan.
 
 This content is still under construction.
 
