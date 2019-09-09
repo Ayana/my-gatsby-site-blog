@@ -29,14 +29,14 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <TitleWrapper style={{maxWidth: rhythm(26),padding: `0 ${rhythm(1)}`,}}>
+        <TitleWrapper style={{maxWidth: rhythm(28),padding: `0 ${rhythm(1)}`,}}>
           <h1>
             {post.frontmatter.title}
           </h1>
         </TitleWrapper>
         <div style={{
           margin: 'auto',
-          maxWidth: rhythm(26),
+          maxWidth: rhythm(28),
           padding: `0 ${rhythm(1)}`,
         }}>
           <p
