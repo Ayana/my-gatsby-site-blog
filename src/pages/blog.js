@@ -21,7 +21,7 @@ const BlogWrapper = styled.div`
           content: '';
           width: 100%;
           height: 1px;
-          background: #333;
+          background: #444;
           transform: scale(0, 1);
           transform-origin: left top;
           transition: transform .3s;

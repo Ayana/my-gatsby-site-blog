@@ -35,6 +35,9 @@ parnassusTheme.overrideThemeStyles = () => {
     "main h2": {
       color: `#444`,
     },
+    "main h3": {
+      color: `#444`,
+    },
     // media query
     '@media (max-width: 750px)': {
       "html": {
