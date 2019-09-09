@@ -44,7 +44,7 @@ parnassusTheme.overrideThemeStyles = () => {
         lineHeight: `1.5`,
       },
       ".container": {
-        padding: `1.5em`,
+        padding: `0 1.5em`,
       },
     },
     '@media (min-width: 750px)': {

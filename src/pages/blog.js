@@ -8,29 +8,28 @@ import { rhythm } from "../utils/typography"
 import styled from "styled-components"
 
 const BlogWrapper = styled.div`
-    @media (min-width: 750px) {
-      .blogHover {
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        height: 26px;
-        &:after {
-          position: absolute;
-          bottom: -4px;
-          left: 0;
-          content: '';
-          width: 100%;
-          height: 1px;
-          background: #444;
-          transform: scale(0, 1);
-          transform-origin: left top;
-          transition: transform .3s;
-        }
-        &:hover:after {
-          transform: scale(1, 1);
-        }
+  @media (min-width: 750px) {
+    .blogHover {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      height: 26px;
+      &:after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #444;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
       }
-    },
+      &:hover:after {
+        transform: scale(1, 1);
+      }
+    }
   }
 `;
 
@@ -66,7 +65,14 @@ class Projects extends React.Component {
                       {title}
                     </AniLink>
                   </h2>
-                  <small>{node.frontmatter.date}</small>
+                  <small 
+                    style={{
+                      marginBottom:'5px',
+                      display: 'block',
+                      color: '#666',
+                    }}>
+                    {node.frontmatter.date}
+                  </small>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || node.excerpt,

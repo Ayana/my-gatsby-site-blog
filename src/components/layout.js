@@ -2,11 +2,15 @@ import React from "react"
 import Nav from "../components/nav"
 import styled from "styled-components"
 const LayoutWrapper = styled.div`
-    @media (min-width: 750px) {
-      header {
-        padding: 1.5em 0;
-      }
-    },
+  @media (min-width: 750px) {
+    header {
+      padding: 1.5em;
+    }
+  }
+  @media (max-width: 749px) {
+    header {
+      padding: 1.5em 0 1em;
+    }
   }
 `;
 
@@ -41,7 +45,7 @@ class Layout extends React.Component {
           <main>{children}</main>
           <footer className="container" style={{
             textAlign:'center',
-            margin: `5em auto 1em`,
+            margin: `4em auto 1em`,
             }}>
             © {new Date().getFullYear()}
           </footer>
