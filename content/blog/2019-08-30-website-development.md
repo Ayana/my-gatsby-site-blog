@@ -1,8 +1,8 @@
 ---
 layout: blog
 date: 2019-08-23T13:13:38.105Z
-title: Website development
-description: This is my playground developed with Gatsby JS
+title: This is my playground
+description: My passion is developing websites with coding which is CSS, JavaScript mostly. This website is my playground to test new technology out...
 thumbnail: /uploads/img_newyork.jpg
 categories:
   - Technology
