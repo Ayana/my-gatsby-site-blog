@@ -53,7 +53,7 @@ class Projects extends React.Component {
                 <div key={node.fields.slug} style={{
                   margin: 'auto',
                 }}>
-                  <h3
+                  <h2
                     style={{
                       marginBottom: rhythm(1 / 4),
                     }}
@@ -65,7 +65,7 @@ class Projects extends React.Component {
                       duration={0.3}>
                       {title}
                     </AniLink>
-                  </h3>
+                  </h2>
                   <small>{node.frontmatter.date}</small>
                   <p
                     dangerouslySetInnerHTML={{
