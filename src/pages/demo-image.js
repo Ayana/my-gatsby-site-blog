@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 
 export default props => {
-	console.log(props)
+	console.log(props.data)
 	return(
 		<div>
 			<h1>Hello gatsby-image</h1>
