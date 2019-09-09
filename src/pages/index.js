@@ -1,19 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Media from 'react-media';
+// import AniLink from "gatsby-plugin-transition-link/AniLink"
+// import Media from 'react-media';
 
-import Logo from "../components/logo"
+// import Logo from "../components/logo"
 import About from "../components/about"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+// import { rhythm, scale } from "../utils/typography"
 
 class Index extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    // const posts = data.allMarkdownRemark.edges
 
     return (
      <Layout location={this.props.location} title={siteTitle}>
