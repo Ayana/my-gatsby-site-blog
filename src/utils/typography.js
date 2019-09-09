@@ -39,9 +39,18 @@ parnassusTheme.overrideThemeStyles = () => {
       color: `#444`,
     },
     // media query
-    '@media (max-width: 750px)': {
+    '@media (max-width: 749px)': {
       "html": {
         lineHeight: `1.5`,
+      },
+      ".container": {
+        padding: `1.5em`,
+      },
+    },
+    '@media (min-width: 750px)': {
+      ".container": {
+        maxWidth: `840px`,
+        margin: `auto`,
       },
     },
 

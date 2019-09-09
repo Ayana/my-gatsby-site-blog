@@ -44,11 +44,7 @@ class Projects extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Blog" />
-        <div style={{
-          margin: 'auto',
-          maxWidth: rhythm(28),
-          padding: `0 ${rhythm(1)}`,
-        }}>
+        <div className="container">
           <h1>Blog</h1>
           {posts.slice(0,20).map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug

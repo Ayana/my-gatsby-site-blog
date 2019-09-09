@@ -74,11 +74,7 @@ class Projects extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Projects" />
-        <div style={{
-          margin: 'auto',
-          maxWidth: rhythm(28),
-          padding: `0 ${rhythm(1)}`,
-        }}>
+        <div className="container">
         <h1>Projects</h1>
           <ProjectsWrapper>
           <div className="item">

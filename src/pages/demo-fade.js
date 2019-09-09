@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 
 const DemoFade = props => {
-	console.log(props)
+	// console.log(props)
   const location = props.location
   const siteTitle = props.data.site.siteMetadata.title
 	return(
