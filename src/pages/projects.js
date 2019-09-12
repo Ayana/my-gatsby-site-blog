@@ -85,13 +85,19 @@ class Projects extends React.Component {
               className="linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
-              href="http://misawayanohanashi.com/">Misawaya Website
+              href="https://vigilant-williams-343274.netlify.com/">Farm's Website
             </a>
           </div>
           <div className="item">
             <Image fluid={data.fruit.childImageSharp.fluid} />
             <h2>Use seasonal fruits to reduce food loss and make sustainable life cycles - Fruits Project</h2>
             <p>- Kakigori(shaved ice) cafe with fruits from my father’s farm</p>
+            <a 
+              className="linkHover"
+              target="_blank" 
+              rel="noopener noreferrer" 
+              href="http://misawayanohanashi.com/">Misawaya Website
+            </a>
           </div>
           <div className="item">
             <h2>Create a community for sharing ideas and technology in an urban space - NYC Project</h2>
