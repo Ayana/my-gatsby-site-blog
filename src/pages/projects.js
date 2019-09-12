@@ -85,7 +85,7 @@ class Projects extends React.Component {
               className="linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
-              href="https://vigilant-williams-343274.netlify.com/">Farm's Website
+              href="https://greenroadfarm.org/">Farm's Website
             </a>
           </div>
           <div className="item">
