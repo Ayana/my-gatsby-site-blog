@@ -102,6 +102,12 @@ class Projects extends React.Component {
           <div className="item">
             <h2>Create a community for sharing ideas and technology in an urban space - NYC Project</h2>
             <p>- Act of living in a grassroots community, the Museum of Reclaimed Urban Space in Lower East Side</p>
+            <a 
+              className="linkHover"
+              target="_blank" 
+              rel="noopener noreferrer" 
+              href="http://www.morusnyc.org/">Museum Website
+            </a>
           </div>
           </ProjectsWrapper>
         </div>
