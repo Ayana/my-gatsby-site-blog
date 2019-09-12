@@ -10,8 +10,12 @@ export default props => {
 		<Layout location={props.location}>
       <div className="container">
         <h1>Demo of gatsby-image</h1>
-        <Img fluid={props.data.misawaya.childImageSharp.fluid} />
-        <Img fluid={props.data.fruit.childImageSharp.fluid} />
+        <div style={{marginBottom: '2em'}}>
+          <Img fluid={props.data.image1.childImageSharp.fluid} />
+        </div>
+        <div>
+          <Img fluid={props.data.image2.childImageSharp.fluid} />
+        </div>
       </div>
     </Layout>
 	)
@@ -19,14 +23,14 @@ export default props => {
 
 export const query = graphql`
   query {
-    misawaya: file(relativePath: { eq: "projects/img_project_misawaya.jpg" }) {
+    image1: file(relativePath: { eq: "demo/img_demo1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    fruit: file(relativePath: { eq: "projects/img_project_fruit.jpg" }) {
+    image2: file(relativePath: { eq: "demo/img_demo2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
