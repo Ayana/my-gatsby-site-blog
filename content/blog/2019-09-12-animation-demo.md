@@ -9,7 +9,7 @@ categories:
   - Business
 ---
 
-<a href="/demo/demo-fade/" target="_blank" rel="noopener noreferrer">Text animation</a>
+<a href="/demo/demo-fade/">Text animation</a>
 
 
-<a href="/demo/demo-image/" target="_blank" rel="noopener noreferrer">Gatsby Image</a>
+<a href="/demo/demo-image/">Gatsby Image</a>
