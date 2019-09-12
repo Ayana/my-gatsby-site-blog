@@ -1,0 +1,16 @@
+/* Font Style */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Courgette|Caveat|Roboto+Slab|Caveat+Brush|Dancing+Script&display=swap');
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', Arial, Roboto, "Droid Sans", "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+.font-min {
+  font-family: 'Noto Serif JP', "ヒラギノ明朝", "Hiragino Mincho", serif;
+}
+.font-script {
+  /* font-family: 'Courgette', cursive; */
+	/* font-family: 'Caveat', cursive; */
+	font-family: 'Dancing Script', cursive;
+	/* font-family: 'Caveat Brush', cursive; */
+}

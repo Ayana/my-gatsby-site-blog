@@ -1,16 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import Layout from "../../components/layout"
 
 
 export default props => {
 	console.log(props.data)
 	return(
-		<div>
-			<h1>Hello gatsby-image</h1>
-			<Img fluid={props.data.misawaya.childImageSharp.fluid} />
-			<Img fluid={props.data.fruit.childImageSharp.fluid} />
-		</div>
+		<Layout location={props.location}>
+      <div className="container">
+        <h1>Demo of gatsby-image</h1>
+        <Img fluid={props.data.misawaya.childImageSharp.fluid} />
+        <Img fluid={props.data.fruit.childImageSharp.fluid} />
+      </div>
+    </Layout>
 	)
 }
 
