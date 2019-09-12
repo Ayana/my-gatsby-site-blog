@@ -13,6 +13,12 @@ const BlogPostWrapper = styled.div`
       font-size: 2rem;
     }
   }
+  a {
+    color: #7fb7ad;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 `;
 
 class BlogPostTemplate extends React.Component {
@@ -47,7 +53,7 @@ class BlogPostTemplate extends React.Component {
             </div>  
             <hr
               style={{
-                marginBottom: rhythm(1),
+                margin: '8em 0 1em',
               }}
             />
 

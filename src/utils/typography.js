@@ -8,6 +8,7 @@ parnassusTheme.overrideThemeStyles = () => {
     "body": {
       backgroundColor: `#f7f6f2`,
       color: `#444`,
+      letterSpacing: '0.03em',
    },
     "::selection": {
       background: `#ebec60`,
@@ -31,6 +32,9 @@ parnassusTheme.overrideThemeStyles = () => {
       color: `#444`,
       marginTop: `0.5em`,
       fontSize: '3rem',
+    },
+    "main": {
+      minHeight: `500px`,
     },
     "main h2": {
       color: `#444`,

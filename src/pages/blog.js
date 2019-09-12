@@ -10,25 +10,28 @@ import styled from "styled-components"
 const BlogWrapper = styled.div`
   @media (min-width: 750px) {
     .blogHover {
-      position: relative;
-      display: inline-block;
-      text-decoration: none;
-      height: 26px;
-      &:after {
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 1px;
-        background: #444;
-        transform: scale(0, 1);
-        transform-origin: left top;
-        transition: transform .3s;
+      &:hover {
+        color: #6bb1a5;
       }
-      &:hover:after {
-        transform: scale(1, 1);
-      }
+      // position: relative;
+      // display: inline-block;
+      // text-decoration: none;
+      // height: 26px;
+      // &:after {
+      //   position: absolute;
+      //   bottom: -4px;
+      //   left: 0;
+      //   content: '';
+      //   width: 100%;
+      //   height: 1px;
+      //   background: #444;
+      //   transform: scale(0, 1);
+      //   transform-origin: left top;
+      //   transition: transform .3s;
+      // }
+      // &:hover:after {
+      //   transform: scale(1, 1);
+      // }
     }
   }
 `;
