@@ -9,9 +9,9 @@ thumbnail: /uploads/img_newyork.jpg
 categories:
   - Technology
 ---
-Hello friends, I started to develop this website because first of all, I wanted to learn React, Gatsby and Netlify. And also I would like to have the platform that I could show what I do now.
+I started to develop this website because first of all, I wanted to learn React, Gatsby and Netlify. And also I would like to have the platform that I could show what I do now.
 
-I've been developing and designing websites for more than 13 years after graduation from collage. I actually didn't like digital technology and I was thinking this is not my type of work in the beginning.
+I've been developing and designing websites for more than 13 years after graduation from collage. I actually didn't like digital technology and I didn't think this is my type of work in the beginning.
 
 But as I learn a lot of new technologies, I realized this is really fun things to do and I thought I would like to learn more and develop by myself what I imagine.
 
