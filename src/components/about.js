@@ -32,7 +32,7 @@ const About = () => {
     <div
       style={{
         paddingBottom: rhythm(1),
-        height: '60vh',
+        minHeight: '60vh',
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',

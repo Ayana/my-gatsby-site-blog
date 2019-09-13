@@ -33,9 +33,6 @@ parnassusTheme.overrideThemeStyles = () => {
       marginTop: `0.5em`,
       fontSize: '3rem',
     },
-    "main": {
-      minHeight: `500px`,
-    },
     "main h2": {
       color: `#444`,
     },
