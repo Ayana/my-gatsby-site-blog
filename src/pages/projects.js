@@ -12,7 +12,7 @@ const ProjectsWrapper = styled.div`
   .item {
     margin-bottom: 5em;
   }
-  @media (min-width: 750px) {
+  @media (min-width: 751px) {
     .linkHover {
       border: 1px solid #444;
       padding: 0.1em 0.8em 0 1.5em;
@@ -61,8 +61,34 @@ const ProjectsWrapper = styled.div`
       &:hover:after {
         transform: scale(1, 1);
       }
+    }
   }
-}
+  @media (max-width: 750px) {
+    .linkHover {
+      border: 1px solid #444;
+      padding: 0.3em 0.8em 0.3em 1.5em;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 1px;
+        bottom: 0;
+        display: block;
+        margin-top: auto;
+        margin-right: 0;
+        margin-bottom: auto;
+        margin-left: 0;
+        width: 7px;
+        height: 7px;
+        border-top: 1px solid #222;
+        border-right: 1px solid #222;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
 `;
 
 
