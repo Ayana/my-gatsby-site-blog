@@ -47,6 +47,7 @@ const Social = () => {
           <img
             src={twitter}
             alt="Twitter"
+            title="Twitter"
             style={{ width: '2em', height: '2em', margin: '0 10px', }}
           />
         </a>
@@ -58,6 +59,7 @@ const Social = () => {
           <img
             src={instagram}
             alt="Instagram"
+            title="Instagram"
             style={{ width: '2em', height: '2em', margin: '0 10px', }}
           />
         </a>
@@ -69,6 +71,7 @@ const Social = () => {
           <img
             src={linkedin}
             alt="LinkedIn"
+            title="LinkedIn"
             style={{ width: '2em', height: '2em', margin: '0 10px', }}
           />
         </a>
@@ -80,6 +83,7 @@ const Social = () => {
           <img
             src={github}
             alt="Github"
+            title="Github"
             style={{ width: '2em', height: '2em', margin: '0 10px', }}
           />
         </a>

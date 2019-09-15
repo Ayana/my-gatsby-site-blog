@@ -17,7 +17,7 @@ class Index extends React.Component {
 
     return (
      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Home" />
+        <SEO title="Ayaos" />
         {/* <Media query="(max-width: 599px)">
           {matches =>
             matches ? (

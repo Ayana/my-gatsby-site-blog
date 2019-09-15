@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import logo from '../../content/assets/logo.svg'
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -33,7 +34,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      // titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -52,7 +53,7 @@ function SEO({ description, lang, meta, title }) {
           content: `website`,
         },
         {
-          name: `twitter:card`,
+          name: `twitter:card`, 
           content: `summary`,
         },
         {
@@ -69,6 +70,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
+      <meta property="og:image" content={logo}></meta>
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />
     </Helmet>
   )
