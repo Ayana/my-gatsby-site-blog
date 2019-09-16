@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import ogp from '../../content/assets/img_ogp.jpg'
+import ogp from 'https://ayaos.work/static/img_ogp-9f2f88c70df1a13d6bf2af4403927bbb.jpg'
 
 function SEO({ description, lang, title }) {
   const { site } = useStaticQuery(
