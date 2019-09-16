@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            siteUrl
             author
           }
         }
@@ -26,7 +27,10 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const siteTitle = site.siteMetadata.title
+  const siteDescription = description || site.siteMetadata.description
+  const siteUrl = site.siteMetadata.siteUrl
+  const siteAuthor = site.siteMetadata.author
 
   return (
     <Helmet
@@ -34,43 +38,28 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      // titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`, 
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    >
-      <meta property="og:image" content={logo}></meta>
+      titleTemplate={`%s - ${siteTitle}`}
+      defaultTitle={siteTitle}
+      >
+        {/* General tags */}
+        <meta name="image" content={logo} />
+        <meta name="description" content={siteDescription} />
+
+        {/* OpenGraph tags */}
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="website" />
+
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:image" content={logo} />
+        <meta property="og:description" content={siteDescription} />
+
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content={siteAuthor} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:image" content={logo} />
+        <meta name="twitter:description" content={siteDescription} />
+         
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />
     </Helmet>
   )
