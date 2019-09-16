@@ -11,7 +11,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import logo from '../../content/assets/logo.svg'
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,6 +28,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const siteTitle = site.siteMetadata.title
+  const metaTitle = title || siteTitle
   const siteDescription = description || site.siteMetadata.description
   const siteUrl = site.siteMetadata.siteUrl
   const siteAuthor = site.siteMetadata.author
@@ -37,7 +38,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={metaTitle}
       titleTemplate={`%s - ${siteTitle}`}
       defaultTitle={siteTitle}
       >
@@ -46,7 +47,7 @@ function SEO({ description, lang, meta, title }) {
         <meta name="description" content={siteDescription} />
 
         {/* OpenGraph tags */}
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={metaTitle} />
         <meta property="og:type" content="website" />
 
         <meta property="og:url" content={siteUrl} />
@@ -56,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content={siteAuthor} />
-        <meta name="twitter:title" content={title} />
+        <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:image" content={logo} />
         <meta name="twitter:description" content={siteDescription} />
          
