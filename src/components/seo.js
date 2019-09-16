@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import logo from '../../content/assets/logo.svg'
+import ogp from '../../content/assets/img_ogp.jpg'
 
 function SEO({ description, lang, title }) {
   const { site } = useStaticQuery(
@@ -43,7 +43,7 @@ function SEO({ description, lang, title }) {
       defaultTitle={siteTitle}
       >
         {/* General tags */}
-        <meta name="image" content={logo} />
+        <meta name="image" content={ogp} />
         <meta name="description" content={siteDescription} />
 
         {/* OpenGraph tags */}
@@ -51,14 +51,14 @@ function SEO({ description, lang, title }) {
         <meta property="og:type" content="website" />
 
         <meta property="og:url" content={siteUrl} />
-        <meta property="og:image" content={logo} />
+        <meta property="og:image" content={ogp} />
         <meta property="og:description" content={siteDescription} />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content={siteAuthor} />
         <meta name="twitter:title" content={metaTitle} />
-        <meta name="twitter:image" content={logo} />
+        <meta name="twitter:image" content={ogp} />
         <meta name="twitter:description" content={siteDescription} />
          
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />

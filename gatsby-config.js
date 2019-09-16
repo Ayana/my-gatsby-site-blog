@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ayaos`,
     author: `Ayana`,
-    description: `Ayaos Playground`,
+    description: `Ayaos Playground Website`,
     siteUrl: `https://ayaos.work/`,
     social: {
       twitter: `AyaosEats`,
