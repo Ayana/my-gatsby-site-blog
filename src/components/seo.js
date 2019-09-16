@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import ogp from 'https://ayaos.work/static/img_ogp-9f2f88c70df1a13d6bf2af4403927bbb.jpg'
 
 function SEO({ description, lang, title }) {
   const { site } = useStaticQuery(
@@ -20,6 +19,7 @@ function SEO({ description, lang, title }) {
             title
             description
             siteUrl
+            image
             author
           }
         }
@@ -31,6 +31,7 @@ function SEO({ description, lang, title }) {
   const metaTitle = title || siteTitle
   const siteDescription = description || site.siteMetadata.description
   const siteUrl = site.siteMetadata.siteUrl
+  const ogpImage = site.siteMetadata.image
   const siteAuthor = site.siteMetadata.author
 
   return (
@@ -43,7 +44,7 @@ function SEO({ description, lang, title }) {
       defaultTitle={siteTitle}
       >
         {/* General tags */}
-        <meta name="image" content={ogp} />
+        <meta name="image" content={ogpImage} />
         <meta name="description" content={siteDescription} />
 
         {/* OpenGraph tags */}
@@ -51,14 +52,14 @@ function SEO({ description, lang, title }) {
         <meta property="og:type" content="website" />
 
         <meta property="og:url" content={siteUrl} />
-        <meta property="og:image" content={ogp} />
+        <meta property="og:image" content={ogpImage} />
         <meta property="og:description" content={siteDescription} />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content={siteAuthor} />
         <meta name="twitter:title" content={metaTitle} />
-        <meta name="twitter:image" content={ogp} />
+        <meta name="twitter:image" content={ogpImage} />
         <meta name="twitter:description" content={siteDescription} />
          
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />

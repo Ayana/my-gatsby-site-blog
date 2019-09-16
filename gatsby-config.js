@@ -4,6 +4,7 @@ module.exports = {
     author: `Ayana`,
     description: `Ayaos playground - about web development and fun projects`,
     siteUrl: `https://ayaos.work/`,
+    image: `/images/img_ogp.jpg`, // have to build after putting images
     social: {
       twitter: `AyaosEats`,
       instagram: `ayaos_eats`,
