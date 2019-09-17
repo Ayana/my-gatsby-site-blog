@@ -44,7 +44,7 @@ function SEO({ description, lang, title }) {
       defaultTitle={siteTitle}
       >
         {/* General tags */}
-        <meta name="image" content={ogpImage} />
+        <meta name="image" content={siteUrl + ogpImage} />
         <meta name="description" content={siteDescription} />
 
         {/* OpenGraph tags */}
@@ -52,14 +52,14 @@ function SEO({ description, lang, title }) {
         <meta property="og:type" content="website" />
 
         <meta property="og:url" content={siteUrl} />
-        <meta property="og:image" content={ogpImage} />
+        <meta property="og:image" content={siteUrl + ogpImage} />
         <meta property="og:description" content={siteDescription} />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content={siteAuthor} />
         <meta name="twitter:title" content={metaTitle} />
-        <meta name="twitter:image" content={ogpImage} />
+        <meta name="twitter:image" content={siteUrl + ogpImage} />
         <meta name="twitter:description" content={siteDescription} />
          
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />
