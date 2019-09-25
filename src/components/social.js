@@ -8,13 +8,13 @@ import styled from "styled-components"
 
 
 const SocialWrapper = styled.div`
-    @media (min-width: 750px) {
-      .socialHover {
-        &:hover {
-          transform: translateY(-5px);
-        }
+  @media (min-width: 750px) {
+    .socialHover {
+      &:hover {
+        transform: translateY(-5px);
+        color: #ff0000;
       }
-    },
+    }
   }
 `;
 

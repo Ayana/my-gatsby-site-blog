@@ -4,7 +4,6 @@ import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import styled from "styled-components"
 
 const ProjectsWrapper = styled.div`
