@@ -9,7 +9,6 @@ categories:
   - Business
 ---
 
-<a href="/demo/demo-fade/">Text animation</a>
-
-
+<a href="/demo/demo-reveal/">React Reveal animation</a><br />
+<a href="/demo/demo-fade/">Text animation</a><br />
 <a href="/demo/demo-image/">Gatsby Image</a>
