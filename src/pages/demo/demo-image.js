@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import Layout from "../../components/layout"
+import Img from "gatsby-image"
 
 
 export default props => {
-	console.log(props.data)
+	// console.log(props)
 	return(
 		<Layout location={props.location}>
       <div className="container">
@@ -39,3 +39,4 @@ export const query = graphql`
     }
   }
 `
+

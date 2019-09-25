@@ -28,6 +28,14 @@ parnassusTheme.overrideThemeStyles = () => {
     "a img:hover": {
       opacity: `0.6`,
     },
+    ".hover": {
+      color: '#6bb1a5',
+      cursor: 'pointer',
+      transition: '.3s',
+    },
+    ".hover:hover": {
+      opacity: `0.6`,
+    },
     "main h1": {
       color: `#444`,
       marginTop: `0.5em`,
