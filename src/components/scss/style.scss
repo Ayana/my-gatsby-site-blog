@@ -1,0 +1,103 @@
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Courgette|Caveat|Roboto+Slab|Caveat+Brush|Dancing+Script&display=swap');
+
+/* Font Style */
+.font-script {
+  /* font-family: 'Courgette', cursive; */
+	/* font-family: 'Caveat', cursive; */
+	font-family: 'Dancing Script', cursive;
+}
+
+// Break point
+$tablet-width: 768px;
+
+
+/* Basic Style */
+html {
+  line-height: 1.5em;
+}
+body {
+  background-color: #f7f6f2;
+  color: #444;
+  letter-spacing: 0.03em;
+  ::selection {
+    background: #ebec60;
+  }
+  a {
+    box-shadow: none;
+    color: #444;
+    text-decoration: none;
+    transition: .3s;
+  }
+  a img {
+    transition: .3s;
+  }
+  a img:hover {
+    opacity: 0.6;
+  }
+  .hover {
+    color: #6bb1a5;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  @media only screen and (max-width: #{$tablet-width}) {
+    header {
+      padding: 1.5em 0;
+    }
+  }
+  @media only screen and (min-width: #{$tablet-width}) {
+    header {
+      padding: 1.5em 0 1em;
+    }
+  }
+  main {
+    h1 {
+      color: #444;
+      margin-top: 0.5em;
+      font-size: 3rem;
+    }
+    h2 {
+      color: #444;
+    }
+    h3 {
+      color: #444;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 350px;;
+    }
+  }
+}
+
+
+
+/* Modules */
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (max-width: #{$tablet-width}) {
+  .container {
+    padding: 0 1.5em;
+  }
+}
+@media only screen and (min-width: #{$tablet-width}) {
+  .container {
+    max-width: 840px;
+    margin: auto;
+    padding: 0 3em;
+  }
+  .container.full {
+    max-width: 1280px;
+  }
+}
+
+
+
+
+

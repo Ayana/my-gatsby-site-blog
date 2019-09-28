@@ -92,5 +92,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-transition-link`,
     },
+    `gatsby-plugin-sass`
   ],
 }

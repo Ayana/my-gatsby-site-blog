@@ -5,7 +5,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
-import { rhythm, scale } from "../utils/typography"
+import { scale } from "../utils/typography"
 
 const BlogPostWrapper = styled.div`
   h1 {

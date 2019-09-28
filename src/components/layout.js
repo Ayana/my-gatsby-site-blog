@@ -1,18 +1,6 @@
 import React from "react"
 import Nav from "../components/nav"
-import styled from "styled-components"
-const LayoutWrapper = styled.div`
-  @media (min-width: 750px) {
-    header {
-      padding: 1.5em;
-    }
-  }
-  @media (max-width: 749px) {
-    header {
-      padding: 1.5em 0 1em;
-    }
-  }
-`;
+import "./scss/style.scss"
 
 
 class Layout extends React.Component {
@@ -36,7 +24,7 @@ class Layout extends React.Component {
     }
     return (
       <div>
-        <LayoutWrapper>
+        <div>
           <header>
             <div className="container">
               {header}
@@ -49,7 +37,7 @@ class Layout extends React.Component {
             }}>
             © {new Date().getFullYear()}
           </footer>
-        </LayoutWrapper>
+        </div>
       </div>
     )
   }
