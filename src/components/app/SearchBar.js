@@ -2,6 +2,10 @@ import React from 'react';
 import styled from "styled-components"
 
 const SearchStyle = styled.div`
+  background: #f1efe9;
+  padding: 0.5em 2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   input {
     width: 100%;
     border: solid 1px #ddd;

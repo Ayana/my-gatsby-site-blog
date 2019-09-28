@@ -15,7 +15,7 @@ const ItemStyle = styled.div`
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin-bottom: 1em;
+		margin-bottom: 1.5em;
 		cursor: pointer;
 		transition: .3s;
 		&:hover {
@@ -24,6 +24,7 @@ const ItemStyle = styled.div`
 		.image {
 			width: 35%;
 			height: auto;
+			margin-bottom: 0;
 		}
 		.content {
 			width: 63%;

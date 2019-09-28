@@ -49,9 +49,11 @@ class App extends React.Component {
   render() { 
     return (
       <AppStyle>
-        <SearchBar onFormSubmit={this.onTermSubmit} />
+				<div className="container full">
+          <SearchBar onFormSubmit={this.onTermSubmit} />
+        </div>
 
-        <div className="row">
+        <div className="container full row">
           <div className="detail">
             <VideoDetail video={this.state.selectedVideo}/>
           </div>
@@ -62,7 +64,6 @@ class App extends React.Component {
             />
           </div>
         </div>
-
       </AppStyle>
     );
   }
