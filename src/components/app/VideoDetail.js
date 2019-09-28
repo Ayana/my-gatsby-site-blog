@@ -17,14 +17,17 @@ const VideoDetail = ({ video }) => {
 			<div className="ui embed">
 				<iframe src={videoSrc} />
 			</div>
-			<div class="ui hidden divider"></div>
 			<div>
 				<a href={videoSrc}>
-					<h4 className="ui header">{video.snippet.title}</h4>
+					<h3 
+						className="ui header"
+						style={{margin: '0 0 1em'}}
+					>
+						{video.snippet.title}
+					</h3>
 				</a>
 				<p>{video.snippet.description}</p>
 			</div>
-			<div class="ui hidden divider"></div>
 		</div>
 	)
 }

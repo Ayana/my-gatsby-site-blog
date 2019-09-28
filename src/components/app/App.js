@@ -11,29 +11,11 @@ const AppStyle = styled.div`
       display: flex;
       justify-content: space-between;
       margin-bottom: 1em;
-      .eleven {
-        width: 68%;
+      .detail {
+        width: 66%;
       }
       .five {
         width: 30%;
-        .item {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          margin-bottom: 1em;
-          cursor: pointer;
-          transition: .3s;
-          &:hover {
-            opacity: 0.7;
-          }
-          .image {
-            width: 35%;
-            height: auto;
-          }
-          .content {
-            width: 63%;
-          }
-        }
       }
     }
   }
@@ -67,23 +49,20 @@ class App extends React.Component {
   render() { 
     return (
       <AppStyle>
-        <div className="ui container">
-          <SearchBar onFormSubmit={this.onTermSubmit} />
-          I have {this.state.videos.length} videos.
+        <SearchBar onFormSubmit={this.onTermSubmit} />
 
-          <div className="row">
-            <div className="eleven wide column">
-              <VideoDetail video={this.state.selectedVideo}/>
-            </div>
-            <div className="five wide column">
-              <VideoList
-                onVideoSelect={this.onVideoSelect}
-                videos={this.state.videos} 
-              />
-            </div>
+        <div className="row">
+          <div className="detail">
+            <VideoDetail video={this.state.selectedVideo}/>
           </div>
-
+          <div className="five">
+            <VideoList
+              onVideoSelect={this.onVideoSelect}
+              videos={this.state.videos} 
+            />
+          </div>
         </div>
+
       </AppStyle>
     );
   }
