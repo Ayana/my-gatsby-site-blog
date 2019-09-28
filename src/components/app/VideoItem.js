@@ -1,30 +1,9 @@
 import React from "react"
-import styled from "styled-components"
-
-const ItemStyle = styled.div`
-	.item {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 1em;
-		cursor: pointer;
-		transition: .3s;
-		&:hover {
-			opacity: 0.7;
-		}
-		.image {
-			width: 35%;
-			height: auto;
-		}
-		.content {
-			width: 63%;
-		}
-	}
-`
 
 const VideoItem = ({ video, onVideoSelect }) => {
 
 	return (
-		<ItemStyle>
+		<div>
 			<div onClick={() => onVideoSelect(video)} className="item">
 				<img 
 					alt={video.snippet.title}
@@ -35,7 +14,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
 					{video.snippet.title}
 				</div>
 			</div>
-		</ItemStyle>
+		</div>
 	)
 }
 

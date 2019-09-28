@@ -47,6 +47,10 @@ parnassusTheme.overrideThemeStyles = () => {
     "main h3": {
       color: `#444`,
     },
+    "iframe": {
+      width: `100%`,
+    },
+
     // media query
     '@media (max-width: 749px)': {
       "html": {

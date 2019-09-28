@@ -1,10 +1,28 @@
-/* Font Style */
+
+/* Font Import */
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Courgette|Caveat|Roboto+Slab|Caveat+Brush|Dancing+Script&display=swap');
+
+/* Basic Style */
+html {
+}
+body {
+}
 
 .font-script {
   /* font-family: 'Courgette', cursive; */
 	/* font-family: 'Caveat', cursive; */
 	font-family: 'Dancing Script', cursive;
 	/* font-family: 'Caveat Brush', cursive; */
+}
+
+
+/* Modules */
+.text-center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 751px) {
+}
+@media only screen and (max-width: 750px) {
 }
 

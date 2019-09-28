@@ -16,6 +16,24 @@ const AppStyle = styled.div`
       }
       .five {
         width: 30%;
+        .item {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-bottom: 1em;
+          cursor: pointer;
+          transition: .3s;
+          &:hover {
+            opacity: 0.7;
+          }
+          .image {
+            width: 35%;
+            height: auto;
+          }
+          .content {
+            width: 63%;
+          }
+        }
       }
     }
   }

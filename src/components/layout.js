@@ -1,5 +1,6 @@
 import React from "react"
 import Nav from "../components/nav"
+import "./css/style.css"
 import styled from "styled-components"
 const LayoutWrapper = styled.div`
   @media (min-width: 750px) {
