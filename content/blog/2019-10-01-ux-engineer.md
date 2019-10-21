@@ -2,12 +2,11 @@
 layout: blog
 date: 2019-10-01T10:10:10.816Z
 title: UX Engineer
-description: Idea about the term UX Engineer 
+description: Idea about the term UX Engineer
 categories:
   - Technology
 ---
-
-Write about a very curious job title "UX Engineer"
+Note about a very curious job title "UX Engineer"
 
 https://dev.to/emmawedekind/ux-engineering-3hem
 https://uxengineer.com/skills-needed-become-a-ux-engineer/
