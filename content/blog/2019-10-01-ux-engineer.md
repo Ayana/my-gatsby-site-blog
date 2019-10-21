@@ -2,7 +2,7 @@
 layout: blog
 date: 2019-10-02T10:10:10.816Z
 title: UX Engineer
-description: Idea of job title "UX Engineer"
+description: Idea about a job title "UX Engineer"
 categories:
   - Technology
 ---
