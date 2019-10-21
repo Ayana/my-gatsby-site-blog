@@ -1,12 +1,15 @@
 
 /* Font Import */
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Courgette|Caveat|Roboto+Slab|Caveat+Brush|Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Courgette|Caveat|PT+Sans|Caveat+Brush|Dancing+Script&display=swap');
 
 /* Font Style */
 .font-script {
   /* font-family: 'Courgette', cursive; */
 	/* font-family: 'Caveat', cursive; */
 	font-family: 'Dancing Script', cursive;
+}
+.font-sans {
+  font-family: 'PT Sans', sans-serif;
 }
 
 // Break point

@@ -33,9 +33,10 @@ class Layout extends React.Component {
           <main>{children}</main>
           <footer className="container" style={{
             textAlign:'center',
-            margin: `4em auto 1em`,
+            margin: `4em auto 0.5em`,
+            fontSize: '0.9rem'
             }}>
-            © {new Date().getFullYear()}
+            <span style={{ verticalAlign: '-0.18em'}}>&copy; </span>{new Date().getFullYear()} Ayaos Studio
           </footer>
         </div>
       </div>
