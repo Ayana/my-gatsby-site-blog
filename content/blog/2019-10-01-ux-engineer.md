@@ -1,6 +1,6 @@
 ---
 layout: blog
-date: 2019-10-01T10:10:10.816Z
+date: 2019-10-02T10:10:10.816Z
 title: UX Engineer
 description: Idea about the term UX Engineer
 categories:
