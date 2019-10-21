@@ -9,8 +9,8 @@ categories:
 Note about a very curious job title "UX Engineer"
 
 Articles about UX Engineer\
-<https://dev.to/emmawedekind/ux-engineering-3hem>
-<https://uxengineer.com/skills-needed-become-a-ux-engineer/>
+<a href="https://dev.to/emmawedekind/ux-engineering-3hem" target="_blank" rel="noopener noreferrer" />
+<a href="https://uxengineer.com/skills-needed-become-a-ux-engineer/" target="_blank" rel="noopener noreferrer" />
 
 <!--Web制作を始めてから早13年。
 まさかここまで続ける仕事になるとは考えてもおらず
