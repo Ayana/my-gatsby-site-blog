@@ -36,7 +36,7 @@ class Layout extends React.Component {
             margin: `4em auto 0.5em`,
             fontSize: '0.9rem'
             }}>
-            <span style={{ verticalAlign: '-0.18em'}}>&copy; </span>{new Date().getFullYear()} Ayaos Studio
+            <span style={{ verticalAlign: '-0.18em'}}>&copy; </span>{new Date().getFullYear()}
           </footer>
         </div>
       </div>
