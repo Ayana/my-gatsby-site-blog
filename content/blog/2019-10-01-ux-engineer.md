@@ -12,6 +12,7 @@ Articles about UX Engineer\
 <a href="https://dev.to/emmawedekind/ux-engineering-3hem" target="_blank" rel="noopener noreferrer">https://dev.to/emmawedekind/ux-engineering-3hem</a>
 <a href="https://uxengineer.com/skills-needed-become-a-ux-engineer/" target="_blank" rel="noopener noreferrer">https://uxengineer.com/skills-needed-become-a-ux-engineer/</a>
 
+Will write later
 
 <!--Web制作を始めてから早13年。
 まさかここまで続ける仕事になるとは考えてもおらず
