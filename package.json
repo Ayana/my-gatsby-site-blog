@@ -29,6 +29,7 @@
     "gatsby-remark-responsive-iframe": "^2.2.14",
     "gatsby-remark-smartypants": "^2.1.7",
     "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-source-instagram": "^0.5.1",
     "gatsby-transformer-remark": "^2.6.21",
     "gatsby-transformer-sharp": "^2.2.13",
     "gsap": "^2.1.3",

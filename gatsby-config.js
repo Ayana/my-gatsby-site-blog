@@ -92,6 +92,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-transition-link`,
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `misawayanohanashi`,
+      },
+    }, 
   ],
 }
