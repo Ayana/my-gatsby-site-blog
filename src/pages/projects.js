@@ -119,7 +119,7 @@ class Projects extends React.Component {
             <h2>Leave the attractive Japanese house to the next generation - Misawaya Project</h2>
             <p>Act of preservation for a traditional Japanese house in Nagano, Japan.</p>
             <div className="sub-box">
-              <p>Skills: Managiment, Planning, Marketing, Sales, Print Design, Web Development, Social Media</p>
+              <p>Skills: Management, Planning, Marketing, Sales, Print Design, Web Development, Social Media</p>
               <p>Web Environment: WordPress *Now working on migration to React with WordPress(as Headless CMS)</p>
             </div>
             <a 
@@ -165,7 +165,7 @@ class Projects extends React.Component {
             <p>Website for introducing the company toward Japan market.  (2018)</p>
             <div className="sub-box">
               <p>Skills: Web Development</p>
-              <p>Web Environment: WordPress, JavaScript</p>
+              <p>Web Environment: WordPress, JavaScript(jQuery)</p>
             </div>
             <a 
               className="linkHover"
