@@ -57,22 +57,30 @@ body {
       padding: 1.5em 0 1em;
     }
   }
-  main {
-    h1 {
-      color: #444;
-      margin-top: 0.5em;
-      font-size: 3rem;
-    }
-    h2 {
-      color: #444;
-    }
-    h3 {
-      color: #444;
-    }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 350px;;
+  .wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    main {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      h1 {
+        color: #444;
+        margin-top: 0.5em;
+        font-size: 3rem;
+      }
+      h2 {
+        color: #444;
+      }
+      h3 {
+        color: #444;
+      }
+      iframe {
+        border: none;
+        width: 100%;
+        height: 350px;;
+      }
     }
   }
 }
