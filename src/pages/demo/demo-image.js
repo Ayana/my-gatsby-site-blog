@@ -23,14 +23,14 @@ export default props => {
 
 export const query = graphql`
   query {
-    image1: file(relativePath: { eq: "demo/img_demo1.jpg" }) {
+    image1: file(relativePath: { eq: "images/demo/img_demo1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    image2: file(relativePath: { eq: "demo/img_demo2.jpg" }) {
+    image2: file(relativePath: { eq: "images/demo/img_demo2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

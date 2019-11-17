@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import twitter from '../../content/assets/social/ico_twitter.svg'
-import instagram from '../../content/assets/social/ico_instagram.svg'
-import linkedin from '../../content/assets/social/ico_linkedin.svg'
-import github from '../../content/assets/social/ico_github.svg'
+import twitter from '../assets/images/social/ico_twitter.svg'
+import instagram from '../assets/images/social/ico_instagram.svg'
+import linkedin from '../assets/images/social/ico_linkedin.svg'
+import github from '../assets/images/social/ico_github.svg'
 import styled from "styled-components"
 
 

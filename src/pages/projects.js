@@ -185,28 +185,28 @@ export default Projects
 
 export const pageQuery = graphql`
   query {
-    misawaya: file(relativePath: { eq: "projects/img_project_misawaya.jpg" }) {
+    misawaya: file(relativePath: { eq: "images/projects/img_project_misawaya.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    fruit: file(relativePath: { eq: "projects/img_project_fruit.jpg" }) {
+    fruit: file(relativePath: { eq: "images/projects/img_project_fruit.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    morus: file(relativePath: { eq: "projects/img_project_morus.jpg" }) {
+    morus: file(relativePath: { eq: "images/projects/img_project_morus.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    cineric: file(relativePath: { eq: "projects/img_project_cineric.jpg" }) {
+    cineric: file(relativePath: { eq: "images/projects/img_project_cineric.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

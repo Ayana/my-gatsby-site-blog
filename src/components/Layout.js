@@ -1,6 +1,6 @@
 import React from "react"
-import Nav from "../components/Nav"
-import "./scss/style.scss"
+import Nav from "./Nav"
+import "../assets/scss/style.scss"
 
 
 class Layout extends React.Component {

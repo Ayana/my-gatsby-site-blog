@@ -107,7 +107,7 @@ const DemoFade = props => {
 
 export const query = graphql`
   query {
-    misawaya: file(relativePath: { eq: "projects/img_project_misawaya.jpg" }) {
+    misawaya: file(relativePath: { eq: "images/projects/img_project_misawaya.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

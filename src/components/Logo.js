@@ -1,5 +1,5 @@
 import React from "react"
-import logo from '../../content/assets/logo.svg'
+import logo from '../assets/images/logo.svg'
 
 class Logo extends React.Component {
   render() {
