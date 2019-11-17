@@ -2,8 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import styled from "styled-components"
 import { scale } from "../utils/typography"
 
