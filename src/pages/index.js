@@ -3,11 +3,9 @@ import { graphql } from "gatsby"
 // import AniLink from "gatsby-plugin-transition-link/AniLink"
 // import Media from 'react-media';
 
-// import Logo from "../components/logo"
 import About from "../components/about"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-// import { rhythm, scale } from "../utils/typography"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 class Index extends React.Component {
   render() {

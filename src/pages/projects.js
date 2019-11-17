@@ -2,8 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Image from "gatsby-image"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import styled from "styled-components"
 
 const ProjectsWrapper = styled.div`
