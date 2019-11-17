@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 // import AniLink from "gatsby-plugin-transition-link/AniLink"
 // import Media from 'react-media';
 
-import About from "../components/about"
+import About from "../components/About"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 

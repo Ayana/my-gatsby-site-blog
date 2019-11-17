@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
-import Social from "../components/social"
+import Social from "../components/Social"
 import { rhythm } from "../utils/typography"
 
 const About = () => {
