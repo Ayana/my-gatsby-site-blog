@@ -8,10 +8,12 @@ const DemoVideoPlayer = props => {
 	return(
 		<Layout location={location}>
       <SEO title="Demo Video Player" />
-				<div className="container">
-					<h1>Demo Video Player</h1>
+				<div>
+					<div className="container">
+						<h1>Demo Video Player</h1>
+					</div>
+					<App />
 				</div>
-				<App />
     </Layout>
 	)
 }
