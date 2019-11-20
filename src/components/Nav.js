@@ -12,7 +12,7 @@ const NavWrapper = styled.div`
       height: 26px;
       &:after {
         position: absolute;
-        bottom: -4px;
+        bottom: -1px;
         left: 0;
         content: '';
         width: 100%;
