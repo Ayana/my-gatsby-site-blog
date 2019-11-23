@@ -6,7 +6,7 @@ description: Try out animation samples and useful functions
 categories:
   - Technology
 ---
-
+\=> <a href="/demo/demo-parallax/">React Spring Parallax</a>\
 => <a href="/demo/demo-video-player/">Video Player using youtube API</a><br />
 => <a href="/demo/demo-reveal/">React Reveal animation</a><br />
 => <a href="/demo/demo-fade/">Text animation</a><br />
