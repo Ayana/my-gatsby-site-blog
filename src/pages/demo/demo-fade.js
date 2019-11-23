@@ -53,8 +53,8 @@ const DemoWrapper = styled.div`
       opacity: 1;
     }
   }
-`;
-
+}
+`
 
 const DemoFade = props => {
 	// console.log(props)
