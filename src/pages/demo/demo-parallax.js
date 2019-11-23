@@ -131,7 +131,7 @@ const DemoReveal = (props) => {
 						</span>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={3} speed={0.8} style={{  }}>
+					<ParallaxLayer offset={3} speed={1.6} style={{  }}>
 						<span 
 							style={{ 
 								display: 'block', 
@@ -146,7 +146,7 @@ const DemoReveal = (props) => {
 					</ParallaxLayer>
 
 					<ParallaxLayer
-						offset={3.4}
+						offset={3.3}
 						speed={0.1}
 						onClick={() => parallax.scrollTo(0)}
 						style={{ 
@@ -162,6 +162,26 @@ const DemoReveal = (props) => {
 							
 						}}>
 						Click to top
+					</ParallaxLayer>
+
+					<ParallaxLayer
+						offset={3.6}
+						speed={0.1}
+						onClick={() => parallax.scrollTo(0)}
+						style={{ 
+							marginLeft: '10%',
+						}}>
+					<div>
+						Refference<br /> 
+						<a 
+							className="hover"
+							target="_blank" 
+							rel="noopener noreferrer" 
+							href="https://www.react-spring.io/docs/props/parallax"
+						>
+							react-spring
+						</a>
+					</div>
 					</ParallaxLayer>
 
 				</main>
