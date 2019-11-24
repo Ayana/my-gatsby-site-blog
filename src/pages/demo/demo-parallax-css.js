@@ -84,8 +84,7 @@ I love the way you sit there and barely notice me at all.
 					</span>
 				</div>
 
-				<div className="parallax-wrapper">
-				</div>
+				<div className="parallax-wrapper"></div>
 
 
 				<div className="container" style={{zIndex: 2,position: 'relative',minHeight:'90vh'}}>
