@@ -117,9 +117,9 @@ I love the way you sit there and barely notice me at all.
 							className="hover"
 							target="_blank" 
 							rel="noopener noreferrer" 
-							href="https://codepen.io/keithclark/pen/JycFw"
+							href="https://www.youtube.com/watch?v=ln5BWnYMSQA"
 						>
-							Pure CSS Parallax
+							Stunning Pure CSS Parallax Scrolling
 						</a><br/>
 						<a 
 							className="hover"
