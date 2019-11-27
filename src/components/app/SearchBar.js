@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const SearchStyle = styled.div`
   background: #f1efe9;
-  padding: 0.5em 2em;
+  padding: 0.5em 2em 3em;
   margin-top: 3em;
   margin-bottom: 3em;
   input {

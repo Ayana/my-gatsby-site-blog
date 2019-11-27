@@ -13,31 +13,12 @@ const BlogWrapper = styled.div`
       &:hover {
         color: #6bb1a5;
       }
-      /* // position: relative;
-      // display: inline-block;
-      // text-decoration: none;
-      // height: 26px;
-      // &:after {
-      //   position: absolute;
-      //   bottom: -4px;
-      //   left: 0;
-      //   content: '';
-      //   width: 100%;
-      //   height: 1px;
-      //   background: #444;
-      //   transform: scale(0, 1);
-      //   transform-origin: left top;
-      //   transition: transform .3s;
-      // }
-      // &:hover:after {
-      //   transform: scale(1, 1);
-      // } */
     }
   }
 `;
 
 
-class Projects extends React.Component {
+class Blog extends React.Component {
   render() {
     const { data } = this.props
     const pageTitle = "Blog"
@@ -49,13 +30,11 @@ class Projects extends React.Component {
         <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
         <div className="container">
           <h1>{pageTitle}</h1>
-          {posts.slice(0,20).map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <BlogWrapper>
-                <div key={node.fields.slug} style={{
-                  margin: 'auto',
-                }}>
+          <BlogWrapper>
+            {posts.slice(0,20).map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                <div key={node.fields.slug}>
                   <h2
                     style={{
                       marginBottom: rhythm(1 / 4),
@@ -83,16 +62,16 @@ class Projects extends React.Component {
                     }}
                   />
                 </div>
-              </BlogWrapper>
-            )
-          })}
+              )
+            })}
+          </BlogWrapper>
         </div>
       </Layout>
     )
   }
 }
 
-export default Projects
+export default Blog
 
 export const pageQuery = graphql`
   query {

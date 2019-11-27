@@ -64,15 +64,15 @@ class Nav extends React.Component {
             >
               Blog
             </AniLink>
-            <AniLink 
+            {/* <AniLink 
               className="navHover"
               fade 
-              style={{ marginLeft: '1.5em', textAlign: 'center' }} 
+              style={{ marginLeft: '1em', textAlign: 'center' }} 
               to='/demo/' 
               duration={0.3}
             >
               Demo
-            </AniLink>
+            </AniLink> */}
           </nav>
         </div>
       </NavWrapper>

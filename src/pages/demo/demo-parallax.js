@@ -162,7 +162,7 @@ const DemoReveal = () => {
 							width: '200px',
 							height: '70px',
 							borderRadius: '4px',
-							
+							position: 'relative',
 						}}>
 						Click to top
 					</ParallaxLayer>

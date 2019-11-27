@@ -7,7 +7,7 @@ import imageDemo from '../../assets/images/demo/img_demo2.jpg'
 import styled from "styled-components"
 
 const StyledParallax = styled.div`
-	.wrapper {
+	.parallax-wrapper {
 		height: 100vh;  /* Required*/
 		overflow-x: hidden;  /* Required*/
 		overflow-y: auto;  /* Required*/
@@ -16,7 +16,7 @@ const StyledParallax = styled.div`
 		.header {
 			padding-bottom: 4em;
 		}
-		.parallax-wrapper {
+		.parallax {
 			width: 100%;  /* Required*/
 			height: 70vh;
 			transform-style: preserve-3d;  /* Required*/
@@ -46,7 +46,7 @@ const DemoParallaxCSS = () => {
 	return (
 		<StyledParallax>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
-			<div className="wrapper">
+			<div className="parallax-wrapper">
 
 				<header>
 					<div className="container">
@@ -86,7 +86,7 @@ I love the way you sit there and barely notice me at all.
 					</span>
 				</div>
 
-				<div className="parallax-wrapper"></div>
+				<div className="parallax"></div>
 
 
 				<div className="container" style={{zIndex: 2,position: 'relative',minHeight:'90vh'}}>

@@ -56,14 +56,14 @@ const DemoSwiper = props => {
 			el: '.swiper-pagination',
 			clickable: true,
 			renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + (menu[index]) + '</span>';
+				return '<span class="' + className + '">' + (menu[index]) + '</span>'
 			},
 		}
 	}
 
 	return(
 		<Layout location={location} slug={pageSlug}>
-      <SEO title={pageTitle} />
+      <SEO pageTitle={pageTitle} />
 				<div className="container">
 					<h1>{pageTitle}</h1>
 					<StyledSwiper>
@@ -74,7 +74,7 @@ const DemoSwiper = props => {
 							<div>Slide #4</div>
 							<div>Slide #5</div>
 						</Swiper>
-						<div class="swiper-pagination"></div>
+						<div className="swiper-pagination"></div>
 
 					</StyledSwiper>
 
