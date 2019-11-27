@@ -10,6 +10,7 @@ const NavWrapper = styled.div`
       display: inline-block;
       text-decoration: none;
       height: 26px;
+      font-weight: 500;
       &:after {
         position: absolute;
         bottom: -1px;

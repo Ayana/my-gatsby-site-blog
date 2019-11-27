@@ -9,7 +9,6 @@ import SEO from "../components/SEO"
 
 class Index extends React.Component {
   render() {
-    const { data } = this.props
     const pageSlug = "home"
 
     return (

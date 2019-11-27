@@ -1,10 +1,18 @@
+//  -----------------------------
+//
+//  Custom Styles
+//  Table of Contents:
+//
+//	1. Base
+//	2. Home 
+//	3. Modules 
 
 
-//	Base 
+//  -----------------------------
+
+
+//	1. Base 
 // --------------
-
-// Font Import 
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Courgette|Caveat|PT+Sans|Caveat+Brush|Dancing+Script&display=swap');
 
 // Font Style
 .font-script {
@@ -12,16 +20,10 @@
 	/* font-family: 'Caveat', cursive; */
 	font-family: 'Dancing Script', cursive;
 }
-.font-sans {
-  font-family: 'PT Sans', sans-serif;
-}
 
 // Break point
 $tablet-width: 768px;
 
-
-//	Basic Styles
-// --------------
 
 html {
   line-height: 1.5em;
@@ -29,7 +31,7 @@ html {
 body {
   background-color: #f7f6f2;
   color: #444;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   ::selection {
     background: #ebec60;
   }
@@ -69,15 +71,7 @@ body {
     flex-direction: column;
     main {
       h1 {
-        color: #444;
         margin-top: 0.5em;
-        font-size: 3rem;
-      }
-      h2 {
-        color: #444;
-      }
-      h3 {
-        color: #444;
       }
       iframe {
         border: none;
@@ -89,7 +83,7 @@ body {
 }
 
 
-//	Home 
+//	2. Page 
 // --------------
 
 .home {
@@ -100,8 +94,25 @@ body {
   }
 }
 
+.projects {
+  main {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
 
-//	Modules 
+.blog {
+  main {
+    h2 {
+      font-size: 1.8rem;
+      margin: 2em 0 1em;
+    }
+  }
+}
+
+
+//	3. Modules 
 // --------------
 
 .text-center {
