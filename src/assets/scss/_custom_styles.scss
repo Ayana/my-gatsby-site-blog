@@ -55,6 +55,11 @@ body {
       opacity: 0.6;
     }
   }
+  .hover {
+    a {
+      color: #6bb1a5;
+    }
+  }
   @media only screen and (max-width: #{$tablet-width}) {
     header {
       padding: 1.5em 0;

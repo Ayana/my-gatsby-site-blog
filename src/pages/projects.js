@@ -113,7 +113,7 @@ class Projects extends React.Component {
       <Layout location={this.props.location}>
         <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
         <div className="container">
-        <h1>Projects</h1>
+        <h1>{pageTitle}</h1>
           <ProjectsWrapper>
           <div className="item">
             <Image fluid={data.misawaya.childImageSharp.fluid} />

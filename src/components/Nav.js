@@ -6,11 +6,11 @@ import styled from "styled-components"
 const NavWrapper = styled.div`
   @media (min-width: 750px) {
     .navHover {
+      color: #444;
       position: relative;
       display: inline-block;
       text-decoration: none;
       height: 26px;
-      font-weight: 500;
       &:after {
         position: absolute;
         bottom: -1px;
@@ -58,11 +58,20 @@ class Nav extends React.Component {
             <AniLink 
               className="navHover"
               fade 
-              style={{ marginLeft: '2em', textAlign: 'center' }} 
+              style={{ marginLeft: '1.5em', textAlign: 'center' }} 
               to='/blog/' 
               duration={0.3}
             >
               Blog
+            </AniLink>
+            <AniLink 
+              className="navHover"
+              fade 
+              style={{ marginLeft: '1.5em', textAlign: 'center' }} 
+              to='/demo/' 
+              duration={0.3}
+            >
+              Demo
             </AniLink>
           </nav>
         </div>
