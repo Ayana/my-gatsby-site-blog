@@ -46,7 +46,22 @@ const DemoSwiper = props => {
 	const pageTitle = 'Demo Swiper'
 	const pageSlug = 'demo-swiper'
  
-	const menu = ['Slide1', 'Slide2', 'Slide3', 'Slide4', 'Slide5']
+	// let labels = ['Slide1', 'Slide2', 'Slide3', 'Slide4', 'Slide5']
+	// const params = {
+	// 	slidesPerView: 'auto',
+	// 	spaceBetween: 30,
+	// 	centeredSlides: true,
+	// 	loop: true,
+	// 	pagination: {
+	// 		el: '.swiper-pagination',
+	// 		clickable: true,
+	// 		renderBullet: function (index, className) {
+	// 			return '<span class="' + className + '">' + (labels[index]) + '</span>'
+	// 		},
+	// 	}
+	// }
+
+
 	const params = {
 		slidesPerView: 'auto',
 		spaceBetween: 30,
@@ -54,9 +69,11 @@ const DemoSwiper = props => {
 		loop: true,
 		pagination: {
 			el: '.swiper-pagination',
+			type: 'bullets',
+			bulletElement: 'span',
 			clickable: true,
 			renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + (menu[index]) + '</span>'
+				return '<span class="' + className + '">' + (index + 1) + '</span>';
 			},
 		}
 	}
@@ -68,13 +85,15 @@ const DemoSwiper = props => {
 					<h1>{pageTitle}</h1>
 					<StyledSwiper>
 						<Swiper {...params}>
-							<div>Slide #1</div>
-							<div>Slide #2</div>
-							<div>Slide #3</div>
-							<div>Slide #4</div>
-							<div>Slide #5</div>
+							<div data-name="test1">Slide #1</div>
+							<div data-name="test2">Slide #2</div>
+							<div data-name="test3">Slide #3</div>
+							<div data-name="test4">Slide #4</div>
+							<div data-name="test5">Slide #5</div>
 						</Swiper>
 						<div className="swiper-pagination"></div>
+
+						※There's bug
 
 					</StyledSwiper>
 
