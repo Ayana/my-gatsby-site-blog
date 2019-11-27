@@ -21,12 +21,17 @@ class DemoReveal extends React.Component {
 	handleClick() {
 		this.setState({ message: !this.state.message });
 	}
+
 	render() {
+
+		const pageTitle = 'Demo React Reveal'
+		const pageSlug = 'demo-reveal'
+
 		return (
 			<Layout location={this.props.location}>
-				<SEO title="Demo React Reveal" />
+				<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 				<div className="container">
-					<h1>Demo React Reveal</h1>
+					<h1>{pageTitle}</h1>
 					<Fade left when={this.state.message}>
 						<div style={{padding: '80px 0'}}>
 							<p>Hello World!<br />

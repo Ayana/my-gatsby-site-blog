@@ -1,8 +1,12 @@
 
-/* Font Import */
+
+//	Base 
+// --------------
+
+// Font Import 
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP|Courgette|Caveat|PT+Sans|Caveat+Brush|Dancing+Script&display=swap');
 
-/* Font Style */
+// Font Style
 .font-script {
   /* font-family: 'Courgette', cursive; */
 	/* font-family: 'Caveat', cursive; */
@@ -16,7 +20,9 @@
 $tablet-width: 768px;
 
 
-/* Basic Style */
+//	Basic Styles
+// --------------
+
 html {
   line-height: 1.5em;
 }
@@ -62,9 +68,6 @@ body {
     min-height: 100vh;
     flex-direction: column;
     main {
-      display: flex;
-      justify-content: center;
-      flex: 1;
       h1 {
         color: #444;
         margin-top: 0.5em;
@@ -86,8 +89,21 @@ body {
 }
 
 
+//	Home 
+// --------------
 
-/* Modules */
+.home {
+  main {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+}
+
+
+//	Modules 
+// --------------
+
 .text-center {
   text-align: center;
 }

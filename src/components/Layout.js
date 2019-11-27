@@ -21,6 +21,7 @@ class Layout extends React.Component {
         </div>
       )
     }
+
     return (
       <div className="wrapper">
         <header>

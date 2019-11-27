@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, title }) {
+function SEO({ description, lang, pageTitle, pageSlug }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,25 +21,26 @@ function SEO({ description, lang, title }) {
   )
 
   const siteTitle = site.siteMetadata.title
-  // const metaTitle = title || siteTitle
-  const metaTitle = title
+  const metaTitle = pageTitle || siteTitle
   const siteDescription = description || site.siteMetadata.description
   const siteUrl = site.siteMetadata.siteUrl
   const ogpImage = site.siteMetadata.image
   const siteAuthor = site.siteMetadata.author
+
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={metaTitle}
-      titleTemplate={`%s - ${siteTitle}`}
+      title={pageTitle}
+      titleTemplate={pageTitle ? `%s - ${siteTitle}` : {siteTitle}}
       defaultTitle={siteTitle}
       >
         {/* General tags */}
         <meta name="image" content={siteUrl + ogpImage} />
         <meta name="description" content={siteDescription} />
+        <meta name="keywords" content={`${pageTitle},${siteTitle}`} />
 
         {/* OpenGraph tags */}
         <meta property="og:title" content={metaTitle} />
@@ -55,8 +56,10 @@ function SEO({ description, lang, title }) {
         <meta name="twitter:title" content={metaTitle} />
         <meta name="twitter:image" content={siteUrl + ogpImage} />
         <meta name="twitter:description" content={siteDescription} />
+
+        <body className={pageSlug} />
          
-      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript" />
     </Helmet>
   )
 }

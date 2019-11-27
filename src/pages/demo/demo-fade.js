@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import styled from "styled-components"
@@ -57,15 +56,17 @@ const DemoWrapper = styled.div`
 `
 
 const DemoFade = props => {
-	// console.log(props)
 
   const location = props.location
+  const pageTitle = "Demo Fade Animation"
+  const pageSlug = "demo-fade"
+
 	return(
 		<Layout location={location}>
-      <SEO title="Projects" />
+      <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
       <DemoWrapper>
         <div className="container">
-          <h1>Demo</h1>
+          <h1>{pageTitle}</h1>
           <h2>Fade in Text</h2>
           <div className="font-script demo-fade">
             <p>
@@ -104,17 +105,5 @@ const DemoFade = props => {
     </Layout>
 	)
 }
-
-export const query = graphql`
-  query {
-    misawaya: file(relativePath: { eq: "images/projects/img_project_misawaya.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 export default DemoFade

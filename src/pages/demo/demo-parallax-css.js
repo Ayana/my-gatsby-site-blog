@@ -38,12 +38,14 @@ const StyledParallax = styled.div`
 	}
 `
 
+const pageTitle = 'Demo Parallax with Pure CSS'
+const pageSlug = 'demo-parallax-css'
 
 const DemoParallaxCSS = () => {
 	
 	return (
 		<StyledParallax>
-			<SEO title="Demo React Reveal" />
+			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<div className="wrapper">
 
 				<header>
@@ -57,7 +59,7 @@ const DemoParallaxCSS = () => {
 
 				<div className="header">
 					<div className="container">
-						<h1>Demo Parallax with Pure CSS</h1>
+						<h1>{pageTitle}</h1>
 					</div>
 				</div>
 

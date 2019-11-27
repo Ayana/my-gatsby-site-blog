@@ -8,13 +8,16 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 //   require("smooth-scroll")('a[href*="#"]')
 // }
 
-const DemoReveal = (props) => {
+const DemoReveal = () => {
+
+	const pageTitle = 'Demo Parallax with React Spring'
+	const pageSlug = 'demo-parallax'
 
   let parallax
 
 	return (
 		<div className="wrapper">
-			<SEO title="Demo React Reveal" />
+			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<Parallax pages={4} ref={ref => parallax = ref}>
 
 				<ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#e2e2e2',opacity:'0.5' }} />
@@ -30,7 +33,7 @@ const DemoReveal = (props) => {
 
         <main className="container">
 
-					<h1>Demo Parallax with React Spring</h1>
+					<h1>{pageTitle}</h1>
 
 					<ParallaxLayer offset={0.3} speed={-0.1} style={{ justifyContent: 'center' }}>
 						<span 

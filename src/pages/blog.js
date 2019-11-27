@@ -13,7 +13,7 @@ const BlogWrapper = styled.div`
       &:hover {
         color: #6bb1a5;
       }
-      // position: relative;
+      /* // position: relative;
       // display: inline-block;
       // text-decoration: none;
       // height: 26px;
@@ -31,7 +31,7 @@ const BlogWrapper = styled.div`
       // }
       // &:hover:after {
       //   transform: scale(1, 1);
-      // }
+      // } */
     }
   }
 `;
@@ -40,14 +40,15 @@ const BlogWrapper = styled.div`
 class Projects extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const pageTitle = "Blog"
+    const pageSlug = "blog"
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Blog" />
+      <Layout location={this.props.location}>
+        <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
         <div className="container">
-          <h1>Blog</h1>
+          <h1>{pageTitle}</h1>
           {posts.slice(0,20).map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
@@ -95,11 +96,6 @@ export default Projects
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {

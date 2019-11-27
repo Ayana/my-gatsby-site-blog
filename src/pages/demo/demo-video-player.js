@@ -5,12 +5,15 @@ import App from '../../components/app/App'
 
 const DemoVideoPlayer = props => {
   const location = props.location
+	const pageTitle = 'Demo Video Player'
+	const pageSlug = 'demo-video-player'
+
 	return(
 		<Layout location={location}>
-      <SEO title="Demo Video Player" />
+      <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 				<div>
 					<div className="container">
-						<h1>Demo Video Player</h1>
+						<h1>{pageTitle}</h1>
 					</div>
 					<App />
 				</div>

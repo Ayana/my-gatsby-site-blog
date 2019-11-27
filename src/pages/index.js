@@ -10,12 +10,11 @@ import SEO from "../components/SEO"
 class Index extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    // const posts = data.allMarkdownRemark.edges
+    const pageSlug = "home"
 
     return (
-     <Layout location={this.props.location} title={siteTitle}>
-        <SEO />
+     <Layout location={this.props.location}>
+        <SEO pageSlug={pageSlug} />
         {/* <Media query="(max-width: 599px)">
           {matches =>
             matches ? (
@@ -88,21 +87,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
-        }
       }
     }
   }

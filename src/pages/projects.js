@@ -106,11 +106,12 @@ const ProjectsWrapper = styled.div`
 class Projects extends React.Component {
   render() {
     const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
+    const pageTitle = "Projects"
+    const pageSlug = "projects"
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Projects" />
+      <Layout location={this.props.location}>
+        <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
         <div className="container">
         <h1>Projects</h1>
           <ProjectsWrapper>

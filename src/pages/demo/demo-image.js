@@ -1,15 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/Layout"
+import SEO from "../../components/SEO"
 import Img from "gatsby-image"
 
 
 export default props => {
-	// console.log(props)
+	
+  const pageTitle = 'Demo Gatsby Image'
+  const pageSlug = 'demo-image'
+  
 	return(
 		<Layout location={props.location}>
+      <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
       <div className="container">
-        <h1>Demo of gatsby-image</h1>
+        <h1>{pageTitle}</h1>
         <div style={{marginBottom: '2em'}}>
           <Img fluid={props.data.image1.childImageSharp.fluid} />
         </div>
