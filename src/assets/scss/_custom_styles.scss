@@ -47,18 +47,21 @@ body {
   }
   a img:hover {
     opacity: 0.6;
+    color: #333;
   }
-  .hover {
-    color: #6bb1a5;
-    cursor: pointer;
-    transition: .3s;
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-  .hover {
-    a {
+  @include breakpoint(medium) {
+    .hover {
       color: #6bb1a5;
+      cursor: pointer;
+      transition: .3s;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    .hover {
+      a {
+        color: #6bb1a5;
+      }
     }
   }
   @media only screen and (max-width: #{$tablet-width}) {
