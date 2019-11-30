@@ -33,7 +33,7 @@ const Demo = (props) => {
 						=> <AniLink to="/demo/demo-slick/">React Slick</AniLink><br />
 						=> <AniLink to="/demo/demo-swiper/">Swiper</AniLink><br />
 						=> <AniLink to="/demo/demo-parallax-css/">Parallax with Pure CSS</AniLink><br />
-						=> <AniLink to="/demo/demo-parallax/">React Spring Parallax</AniLink><br />
+						{/* => <AniLink to="/demo/demo-parallax/">React Spring Parallax</AniLink><br /> */}
 						=> <AniLink to="/demo/demo-instagram/">Instagram Feed</AniLink><br />
 						=> <AniLink to="/demo/demo-video-player/">Video Player using youtube API</AniLink><br />
 						=> <AniLink to="/demo/demo-reveal/">React Reveal animation</AniLink><br />
