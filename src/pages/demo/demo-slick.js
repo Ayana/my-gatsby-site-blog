@@ -61,91 +61,175 @@ const StyledSlick = styled.div`
 `
 
 
-class DemoSlick extends React.Component {
-	render() {
+const DemoSlick = (props) => {
 
-		const location = this.props.location
-		const pageTitle = 'Demo React Slick'
-		const pageSlug = 'demo-slick'
+	const location = props.location
+	const pageTitle = 'Demo React Slick'
+	const pageSlug = 'demo-slick'
 
-		let labels = ['Slide1', 'Slide2', 'Slide3', 'Slide4', 'Slide5']
-    const settings = {
-			customPaging: function(index) {
-        return (
-          <a>
-            {labels[index]}
-          </a>
-        );
-      },
-      dots: true,
-      dotsClass: "slick-dots slick-thumb variable-width",
-			className: "center",
-      centerMode: true,
-      infinite: true,
-			centerPadding: "220px",
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-			responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            centerPadding: "120px"
-          }
-        },
-        {
-          breakpoint: 414,
-          settings: {
-            slidesToShow: 1,
-            centerPadding: "70px"
-          }
-        },
-      ]
-    }
-
-		return(
-			<Layout location={location} slug={pageSlug}>
-				<SEO pageTitle={pageTitle} />
-					<div className="container">
-						<h1>{pageTitle}</h1>
-						<StyledSlick>
-							<Slider {...settings}>
-								<div>
-									<h3><img src={image1} /></h3>
-								</div>
-								<div>
-									<h3><img src={image1} /></h3>
-								</div>
-								<div>
-									<h3><img src={image1} /></h3>
-								</div>
-								<div>
-									<h3><img src={image1} /></h3>
-								</div>
-								<div>
-									<h3><img src={image1} /></h3>
-								</div>
-							</Slider>
-						</StyledSlick>
-
-						<div style={{marginTop: '5em'}}>
-							Refference<br /> 
-							<a 
-								className="hover"
-								target="_blank" 
-								rel="noopener noreferrer" 
-								href="https://react-slick.neostack.com/"
-							>
-								react-slick
-							</a>
-
-						</div>
-					</div>
-			</Layout>
-		)
+	let labels = ['Slide1', 'Slide2', 'Slide3', 'Slide4', 'Slide5']
+	const settings = {
+		customPaging: function(index) {
+			return (
+				<a>
+					{labels[index]}
+				</a>
+			);
+		},
+		dots: true,
+		dotsClass: "slick-dots slick-thumb variable-width",
+		className: "center",
+		centerMode: true,
+		infinite: true,
+		centerPadding: "220px",
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: "120px"
+				}
+			},
+			{
+				breakpoint: 414,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: "70px"
+				}
+			},
+		]
 	}
+
+	return(
+		<Layout location={location} slug={pageSlug}>
+			<SEO pageTitle={pageTitle} />
+				<div className="container">
+					<h1>{pageTitle}</h1>
+					<StyledSlick>
+						<Slider {...settings}>
+							<div>
+								<h3><img src={image1} /></h3>
+							</div>
+							<div>
+								<h3><img src={image1} /></h3>
+							</div>
+							<div>
+								<h3><img src={image1} /></h3>
+							</div>
+							<div>
+								<h3><img src={image1} /></h3>
+							</div>
+							<div>
+								<h3><img src={image1} /></h3>
+							</div>
+						</Slider>
+					</StyledSlick>
+
+					<div style={{marginTop: '5em'}}>
+						Refference<br /> 
+						<a 
+							className="hover"
+							target="_blank" 
+							rel="noopener noreferrer" 
+							href="https://react-slick.neostack.com/"
+						>
+							react-slick
+						</a>
+
+					</div>
+				</div>
+		</Layout>
+	)
 }
+
+// class DemoSlick extends React.Component {
+// 	render() {
+
+// 		const location = this.props.location
+// 		const pageTitle = 'Demo React Slick'
+// 		const pageSlug = 'demo-slick'
+
+// 		let labels = ['Slide1', 'Slide2', 'Slide3', 'Slide4', 'Slide5']
+//     const settings = {
+// 			customPaging: function(index) {
+//         return (
+//           <a>
+//             {labels[index]}
+//           </a>
+//         );
+//       },
+//       dots: true,
+//       dotsClass: "slick-dots slick-thumb variable-width",
+// 			className: "center",
+//       centerMode: true,
+//       infinite: true,
+// 			centerPadding: "220px",
+//       speed: 500,
+//       slidesToShow: 1,
+//       slidesToScroll: 1,
+// 			responsive: [
+//         {
+//           breakpoint: 768,
+//           settings: {
+//             slidesToShow: 1,
+//             centerPadding: "120px"
+//           }
+//         },
+//         {
+//           breakpoint: 414,
+//           settings: {
+//             slidesToShow: 1,
+//             centerPadding: "70px"
+//           }
+//         },
+//       ]
+//     }
+
+// 		return(
+// 			<Layout location={location} slug={pageSlug}>
+// 				<SEO pageTitle={pageTitle} />
+// 					<div className="container">
+// 						<h1>{pageTitle}</h1>
+// 						<StyledSlick>
+// 							<Slider {...settings}>
+// 								<div>
+// 									<h3><img src={image1} /></h3>
+// 								</div>
+// 								<div>
+// 									<h3><img src={image1} /></h3>
+// 								</div>
+// 								<div>
+// 									<h3><img src={image1} /></h3>
+// 								</div>
+// 								<div>
+// 									<h3><img src={image1} /></h3>
+// 								</div>
+// 								<div>
+// 									<h3><img src={image1} /></h3>
+// 								</div>
+// 							</Slider>
+// 						</StyledSlick>
+
+// 						<div style={{marginTop: '5em'}}>
+// 							Refference<br /> 
+// 							<a 
+// 								className="hover"
+// 								target="_blank" 
+// 								rel="noopener noreferrer" 
+// 								href="https://react-slick.neostack.com/"
+// 							>
+// 								react-slick
+// 							</a>
+
+// 						</div>
+// 					</div>
+// 			</Layout>
+// 		)
+// 	}
+// }
 
 
 export default DemoSlick
