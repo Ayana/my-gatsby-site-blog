@@ -4,14 +4,34 @@ import Image from "gatsby-image"
 
 import Social from "./Social"
 import { rhythm } from "../utils/typography"
+import styled from "styled-components"
+
+const StyledAbout = styled.div`
+  padding-bottom: ${rhythm(1)};
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  .about {
+    .gatsby-image-wrapper {
+      width: 120px;
+      height: 120px;
+      margin: auto;
+      img {
+        margin-bottom: 0;
+        border-radius: 50%;
+      }
+    }
+  }
+`
 
 const About = () => {
   const data = useStaticQuery(graphql`
     query AboutQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 120, height: 120) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 120) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -29,41 +49,26 @@ const About = () => {
 
   const { author } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        paddingBottom: rhythm(1),
-        minHeight: '60vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
-        display: 'flex',
-      }}
-    >
-      <div>
-        <Image
-          fixed={data.avatar.childImageSharp.fixed}
-          alt={author}
-          style={{
-            marginBottom: 0,
-            minWidth: 100,
-            borderRadius: `100%`,
-          }}
-          imgStyle={{
-            borderRadius: `50%`,
-          }}
-        />
-        <h2 style={{
-          marginBottom:'0.2em',
-          fontSize:'2rem',
-          fontFamily:'Merriweather Sans',
-          marginTop: '0.6em',
-          }}><strong>I'm {author}</strong></h2>
-        <p style={{marginBottom:'2em',}}>Web Developer / Organizer of Misawaya</p>
-        <div style={{marginTop:'1.8em'}}>
-          <Social />
+    <StyledAbout>
+      <div className="about">
+        <div>
+          <Image
+            fluid={data.avatar.childImageSharp.fluid}
+            alt={author}
+          />
+          <h2 style={{
+            marginBottom:'0.2em',
+            fontSize:'2rem',
+            fontFamily:'Merriweather Sans',
+            marginTop: '0.6em',
+            }}><strong>I'm {author}</strong></h2>
+          <p style={{marginBottom:'2em',}}>Web Developer / Organizer of Misawaya</p>
+          <div style={{marginTop:'1.8em'}}>
+            <Social />
+          </div>
         </div>
       </div>
-    </div>
+    </StyledAbout>
   )
 }
 
