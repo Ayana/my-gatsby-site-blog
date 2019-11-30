@@ -3,51 +3,49 @@
 //  Custom Styles
 //  Table of Contents:
 //
-//	1. Base
-//	2. Home 
-//	3. Modules 
+//	1. Modules
+//	2. Font
+//	3. Container 
+//	4. Header
+//	5. Main
+//	6. Pages 
 
 
 //  -----------------------------
 
 
-//	1. Base 
+//	1. Modules
 // --------------
-
-// Font Style
-.font-script {
-  /* font-family: 'Courgette', cursive; */
-	/* font-family: 'Caveat', cursive; */
-	font-family: 'Dancing Script', cursive;
-}
-
-// Break point
-$tablet-width: 768px;
-
-
 html {
-  line-height: 1.5em;
-  overflow: initial;
+  overflow: initial; //For parallax demo page
 }
+
 body {
-  background-color: #f7f6f2;
-  color: #444;
-  font-weight: 400;
-  ::selection {
-    background: #ebec60;
-  }
-  a {
-    box-shadow: none;
+  @include breakpoint(small) {
+    background-color: #f7f6f2;
     color: #444;
-    text-decoration: none;
-    transition: .3s;
-  }
-  a img {
-    transition: .3s;
-  }
-  a img:hover {
-    opacity: 0.6;
-    color: #333;
+    font-weight: 400;
+    ::selection {
+      background: #ebec60;
+    }
+    a {
+      box-shadow: none;
+      color: #444;
+      text-decoration: none;
+      transition: .3s;
+    }
+    a img {
+      transition: .3s;
+    }
+    a img:hover {
+      opacity: 0.6;
+      color: #333;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 350px;;
+    }
   }
   @include breakpoint(medium) {
     .hover {
@@ -64,30 +62,54 @@ body {
       }
     }
   }
-  @media only screen and (max-width: #{$tablet-width}) {
-    header {
-      padding: 1.5em 0;
-    }
+}
+
+//	2. Font 
+// --------------
+.font-script {
+	font-family: 'Dancing Script', cursive;
+}
+
+//	3. Container 
+// --------------
+@include breakpoint(small) {
+  .container {
+    padding: 0 1.5em;
   }
-  @media only screen and (min-width: #{$tablet-width}) {
-    header {
-      padding: 1.5em 0 1em;
-    }
+}
+@include breakpoint(medium) {
+  .container {
+    max-width: 840px;
+    width: 100%;
+    margin: auto;
+    padding: 0 3em;
   }
-  main {
-    h1 {
-      margin-top: 0.5em;
-    }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 350px;;
-    }
+  .container.full {
+    max-width: 1280px;
   }
 }
 
+//	4. Header 
+// --------------
+@include breakpoint(small) {
+  header {
+    padding: 1.5em 0;
+  }
+}
+@include breakpoint(medium) {
+  header {
+    padding: 1.5em 0 1em;
+  }
+}
 
-//	2. Page 
+//	5. Main 
+// --------------
+@include breakpoint(small) {
+  main {
+  }
+}
+
+//	6. Pages
 // --------------
 
 .home {
@@ -103,10 +125,6 @@ body {
   }
 }
 
-.projects {
-  main {
-  }
-}
 
 .blog {
   main {
@@ -118,29 +136,6 @@ body {
 
 
 
-//	3. Modules 
-// --------------
-
-.text-center {
-  text-align: center;
-}
-
-@media only screen and (max-width: #{$tablet-width}) {
-  .container {
-    padding: 0 1.5em;
-  }
-}
-@media only screen and (min-width: #{$tablet-width}) {
-  .container {
-    max-width: 840px;
-    width: 100%;
-    margin: auto;
-    padding: 0 3em;
-  }
-  .container.full {
-    max-width: 1280px;
-  }
-}
 
 
 

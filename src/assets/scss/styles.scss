@@ -1,14 +1,14 @@
-// Import font
+// font
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif+JP|Courgette|Caveat|PT+Sans|Caveat+Brush|Dancing+Script&display=swap');
 
-// Import foundation
+// foundation setting
 @import './_settings.scss'; 
 @import '~foundation-sites/scss/foundation'; 
+
 // @include foundation-everything; // When using every functions
 @include foundation-global-styles;
 @include foundation-typography;
 
-
-// Import parts scss
+// custom global styles
 @import "./_custom_styles.scss";
 
