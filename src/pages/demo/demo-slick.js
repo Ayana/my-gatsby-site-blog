@@ -19,30 +19,45 @@ const StyledSlick = styled.div`
 				font-size: 36px;
 				line-height: 100px;
 				margin: 10px auto;
-				padding: 2%;
+				padding: 30px;
 				position: relative;
 				text-align: center;
 				transition: .3s;
+				@media (min-width: 768px) {
+					padding: 50px;
+				}
 			}
 		}
 		.slick-center {
 			h3 {
 				transform: scale(1.2);
-				    /* width: 80%; */
 			}
 		}
 	}
-		.slick-dots li {
-			width: 100px;
+	.slick-dots {
+		display: flex;
+		justify-content: space-between;
+		@media (min-width: 768px) {
+			max-width: 500px;
+			margin: 0 auto 8em;
+			position: inherit;
+		}
+		li {
+			width: 16%;
+			a {
+				width: 100%;
+			}
 		}
 		.slick-active {
 			a {
 				color: #ccc;
 			}
 		}
-		.slick-prev:before, .slick-next:before {
-			color: #000;
-		}
+	}
+	
+	.slick-prev:before, .slick-next:before {
+		color: #000;
+	}
 `
 
 
@@ -67,14 +82,28 @@ class DemoSlick extends React.Component {
 			className: "center",
       centerMode: true,
       infinite: true,
-			centerPadding: "180px",
+			centerPadding: "220px",
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+			responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: "120px"
+          }
+        },
+        {
+          breakpoint: 414,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: "70px"
+          }
+        },
+      ]
     }
-	// 		renderBullet: function (index, className) {
-	// 			return '<span class="' + className + '">' + (labels[index]) + '</span>'
-	// 		},
+
 		return(
 			<Layout location={location} slug={pageSlug}>
 				<SEO pageTitle={pageTitle} />

@@ -14,6 +14,7 @@ const StyledDemo = styled.div`
   }
 	.demo-list {
 		line-height: 2;
+		margin-bottom: 10em;
 	}
 `;
 
@@ -29,6 +30,7 @@ const Demo = (props) => {
 				<div className="container">
 					<h1>{pageTitle}</h1>
 					<div className="demo-list">
+						=> <AniLink to="/demo/demo-slick/">React Slick</AniLink><br />
 						=> <AniLink to="/demo/demo-swiper/">Swiper</AniLink><br />
 						=> <AniLink to="/demo/demo-parallax-css/">Parallax with Pure CSS</AniLink><br />
 						=> <AniLink to="/demo/demo-parallax/">React Spring Parallax</AniLink><br />

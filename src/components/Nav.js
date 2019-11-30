@@ -22,7 +22,7 @@ const StyledNav = styled.div`
         text-align: center;
         margin-left: 0.8em;
         max-height: 50px;
-        @media (min-width: 750px) {
+        @media (min-width: 768px) {
           position: relative;
           display: inline-block;
           text-decoration: none;
