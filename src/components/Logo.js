@@ -6,9 +6,6 @@ class Logo extends React.Component {
     return (
       <div>
         <img
-          style={{
-            marginBottom: 0,
-          }}
           src={logo}
           alt="Ayaos"
         />
@@ -16,8 +13,6 @@ class Logo extends React.Component {
     )
   }
 }
-
-
 
 export default Logo
 

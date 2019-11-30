@@ -8,5 +8,6 @@ categories:
   - Technology
   - Business
 ---
+
 Demo\
-https://ayaos.work/demo/demo-instagram/
+https://fishingduh.com/

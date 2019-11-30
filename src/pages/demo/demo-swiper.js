@@ -93,7 +93,7 @@ const DemoSwiper = props => {
 						</Swiper>
 						<div className="swiper-pagination"></div>
 
-						※There's bug
+						※There's a bug on pagination
 
 					</StyledSwiper>
 
