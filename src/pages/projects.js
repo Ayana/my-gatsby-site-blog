@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Image from "gatsby-image"
+import Fade from 'react-reveal/Fade';
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -156,7 +157,10 @@ class Projects extends React.Component {
 					</ul> */}
 
           <div id="organize" className="project">
-            <Image fluid={data.misawaya.childImageSharp.fluid} />
+            <Fade bottom delay={400} duration={1000} distance={'50px'}>
+              <Image fluid={data.misawaya.childImageSharp.fluid} />
+            </Fade>
+            <Fade bottom delay={200} duration={1000} distance={'50px'}>
             <h2 className="project__header">Misawaya</h2>
             <div className="project__cateroy">
               <div className="project__line"></div>
@@ -174,69 +178,82 @@ class Projects extends React.Component {
               rel="noopener noreferrer" 
               href="http://misawayanohanashi.com/">Misawaya
             </a>
+            </Fade>
           </div>
 
           <div id="develop" className="project">
-            <Image fluid={data.tempuratokyo.childImageSharp.fluid} />
-            <h2 className="project__header">Tempura Tokyo</h2>
-            <div className="project__cateroy">
-              <div className="project__line"></div>
-              <div className="project__label">
-                Website
+            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+              <Image fluid={data.tempuratokyo.childImageSharp.fluid} />
+            </Fade>
+            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+              <h2 className="project__header">Tempura Tokyo</h2>
+              <div className="project__cateroy">
+                <div className="project__line"></div>
+                <div className="project__label">
+                  Website
+                </div>
               </div>
-            </div>
-            <h3 className="project__copy">Introduce new unique Japanese snack brand to the world.</h3>
-            <div className="project__description">
-              <p>Tempura Tokyo is a new Japanese snack brand whchi is Japanese traditional snacks with unique flavors. Although main target is Japanese people, I tried to make it design universal that tourists also can undestand them briefly.</p>
-            </div>
-            <a 
-              className="project__link linkHover"
-              target="_blank" 
-              rel="noopener noreferrer" 
-              href="https://tempura-tokyo.jp/">Tempura Tokyo
-            </a>
+              <h3 className="project__copy">Introduce new unique Japanese snack brand to the world.</h3>
+              <div className="project__description">
+                <p>Tempura Tokyo is a new Japanese snack brand whchi is Japanese traditional snacks with unique flavors. Although main target is Japanese people, I tried to make it design universal that tourists also can undestand them briefly.</p>
+              </div>
+              <a 
+                className="project__link linkHover"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                href="https://tempura-tokyo.jp/">Tempura Tokyo
+              </a>
+            </Fade>
           </div>
 
           <div id="support" className="project">
-            <Image fluid={data.morus.childImageSharp.fluid} />
-            <h2 className="project__header">MoRUS</h2>
-            <div className="project__cateroy">
-              <div className="project__line"></div>
-              <div className="project__label">
-                Maintenance / CRM / Volunteer
+            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+              <Image fluid={data.morus.childImageSharp.fluid} />
+            </Fade>
+            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+              <h2 className="project__header">MoRUS</h2>
+              <div className="project__cateroy">
+                <div className="project__line"></div>
+                <div className="project__label">
+                  Maintenance / CRM / Volunteer
+                </div>
               </div>
-            </div>
-            <h3 className="project__copy">Help to preserve a community and historical archives in Lower East Side</h3>
-            <div className="project__description">
-              <p>How much do you know about New York history? the Museum of Reclaimed Urban Space is a small museum in Lower East Side. The Museum has archives about squats and communitry garden which is very interesting. I support this museum as an act of living in a grassroots community.</p>
-            </div>
-            <a 
-              className="project__link linkHover"
-              target="_blank" 
-              rel="noopener noreferrer" 
-              href="http://www.morusnyc.org/">MoRUS
-            </a>
+              <h3 className="project__copy">Help to preserve a community and historical archives in Lower East Side.</h3>
+              <div className="project__description">
+                <p>How much do you know about New York history? the Museum of Reclaimed Urban Space is a small museum in Lower East Side. The Museum has archives about squats and communitry garden which is very interesting. I support this museum as an act of living in a grassroots community.</p>
+              </div>
+              <a 
+                className="project__link linkHover"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                href="http://www.morusnyc.org/">MoRUS
+              </a>
+            </Fade>
           </div>
 
           <div id="create" className="project">
-            <Image fluid={data.fruit.childImageSharp.fluid} />
-            <h2 className="project__header">GreenRoadFarm</h2>
-            <div className="project__cateroy">
-              <div className="project__line"></div>
-              <div className="project__label">
-                Website / Recipe / Product / Cafe
+            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+              <Image fluid={data.fruit.childImageSharp.fluid} />
+            </Fade>
+              <h2 className="project__header">GreenRoadFarm</h2>
+              <Fade bottom delay={200} duration={1000} distance={'50px'}>
+              <div className="project__cateroy">
+                <div className="project__line"></div>
+                <div className="project__label">
+                  Website / Recipe / Product / Cafe
+                </div>
               </div>
-            </div>
-            <h3 className="project__copy">Use seasonal fruits to reduce food loss and make sustainable life cycles</h3>
-            <div className="project__description">
-              <p>As you know, farming is very difficult to control its production because of the weather. Kakigori(shaved ice) cafe is a creative way of utilizing fruits which suppose to dump at my father’s farm.</p>
-            </div>
-            <a 
-              className="project__link linkHover"
-              target="_blank" 
-              rel="noopener noreferrer" 
-              href="https://greenroadfarm.org/">GreenRoadFarm
-            </a>
+              <h3 className="project__copy">Use seasonal fruits to reduce food loss and make sustainable life cycles.</h3>
+              <div className="project__description">
+                <p>As you know, farming is very difficult to control its production because of the weather. Kakigori(shaved ice) cafe is a creative way of utilizing fruits which suppose to dump at my father’s farm.</p>
+              </div>
+              <a 
+                className="project__link linkHover"
+                target="_blank" 
+                rel="noopener noreferrer" 
+                href="https://greenroadfarm.org/">GreenRoadFarm
+              </a>
+            </Fade>
           </div>
 
           </ProjectsWrapper>
