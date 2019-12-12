@@ -61,7 +61,7 @@ const About = () => {
             fontSize:'2rem',
             fontFamily:'Merriweather Sans',
             marginTop: '0.6em',
-            }}><strong>I'm {author}</strong></h2>
+            }}>Hello, I'm {author}</h2>
           <p style={{marginBottom:'2em',}}>Web Developer / Organizer</p>
           <div style={{marginTop:'1.8em'}}>
             <Social />

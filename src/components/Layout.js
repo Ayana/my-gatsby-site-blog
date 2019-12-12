@@ -2,6 +2,11 @@ import React from "react"
 import Nav from "./Nav"
 import "../assets/scss/styles.scss"
 
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
 class Layout extends React.Component {
   render() {
     const { location, children } = this.props

@@ -24,7 +24,7 @@ body {
   @include breakpoint(small) {
     background-color: #f7f6f2;
     color: #444;
-    font-weight: 400;
+    letter-spacing: 0.03em;
     ::selection {
       background: #ebec60;
     }

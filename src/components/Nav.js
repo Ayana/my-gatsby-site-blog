@@ -19,15 +19,17 @@ const StyledNav = styled.div`
       justify-content: flex-end;
       .global-nav__link {
         color: #444;
+        font-family: 'Merriweather', sans-serif;
+        font-size: 0.95rem;
         text-align: center;
-        margin-left: 0.8em;
+        margin-left: 1.5em;
         max-height: 50px;
         @media (min-width: 768px) {
           position: relative;
           display: inline-block;
           text-decoration: none;
-          height: 26px;
-          margin-left: 1.5em;
+          height: 22px;
+          margin-left: 2em;
           &:after {
             position: absolute;
             bottom: -1px;
@@ -35,10 +37,10 @@ const StyledNav = styled.div`
             content: '';
             width: 100%;
             height: 1px;
-            background: #444;
+            background: #888;
             transform: scale(0, 1);
             transform-origin: left top;
-            transition: transform .3s;
+            transition: transform .7s cubic-bezier(.10,.7,0,1);
           }
           &:hover:after {
             transform: scale(1, 1);
@@ -74,19 +76,27 @@ class Nav extends React.Component {
             <AniLink 
               className="global-nav__link"
               fade 
+              to='/about/' 
+              duration={0.3}
+            >
+              About
+            </AniLink>
+            <AniLink 
+              className="global-nav__link"
+              fade 
               to='/blog/' 
               duration={0.3}
             >
               Blog
             </AniLink>
-            <AniLink 
+            {/* <AniLink 
               className="global-nav__link"
               fade 
               to='/demo/' 
               duration={0.3}
             >
               Demo
-            </AniLink>
+            </AniLink> */}
           </nav>
         </div>
       </StyledNav>

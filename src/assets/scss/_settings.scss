@@ -27,7 +27,7 @@ $foundation-palette: (
 );
 $accent-color: #e01e58;
 $accent-color-hover: #f61e5f;
-// $anchor-color: #9aded2;
+$anchor-color: #6bb1a5;
 $light-gray: #F0F0F0;
 $medium-gray: #EDEDED;
 $dark-gray: #333;
@@ -36,7 +36,7 @@ $white: #fff;
 $body-background: #F8F8F8;
 $body-font-color: #333;
 $body-font-weight: 300;
-$body-font-family: 'Merriweather Sans','Yu Gothic','Noto Sans Japanese','Hiragino Kaku Gothic Pro',sans-serif;
+$body-font-family: 'Merriweather','Yu Mincho','Hiragino Kaku Gothic Pro',sans-serif;
 $body-antialiased: true;
 $header-font-family: 'Merriweather Sans', sans-serif;
 $header-font-color: #444;
@@ -90,7 +90,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $header-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: $header-font-color;

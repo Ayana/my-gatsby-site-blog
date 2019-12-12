@@ -8,25 +8,85 @@ import styled from "styled-components"
 
 const ProjectsWrapper = styled.div`
   margin-top: 3em;
-  .item {
-    margin-bottom: 5em;
-    h2 {
-      margin: 1.4em 0 1em;
-      line-height: 1.2;
+  .project-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+    margin-top: 4em;
+    li {
+      font-size: 0.9rem;
+      padding: 0 1em;
     }
-    .sub-box {
-      font-size: 0.7rem;
-      margin: -0.6em 0 3em;
-      line-height: 1.5;
-      p {
-        margin-bottom: 0.3em;
+  }
+  .project {
+    margin-bottom: 6em;
+    padding-top: 1em;
+    .project__cateroy {
+      display: flex;
+      margin-top: -1.3em;
+      margin-top: 1.5em;
+      margin-left: 1em;
+      .project__line {
+        background-color: #888;
+        height: 1px;
+        width: 25%;
+        margin-top: 0.6rem;
+      }
+      .project__label {
+        margin-left: 0.9em;
+        font-size: 0.8rem;
+      }
+    }
+    .project__header {
+      font-size: 2.8rem;
+      margin-top: 2rem;
+      margin-bottom: 0;
+      letter-spacing: 0;
+    }
+    .project__copy {
+      font-size: 1.6rem;
+      margin-top: 2em;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    .project__description {
+      color: #777;
+      font-size: 0.85rem;
+      margin-top: 3em;
+    }
+    .project__link {
+      margin-top: 2.5em;
+    }
+  }
+  @media (max-width: 750px) {
+    .linkHover {
+      border: 1px solid #444;
+      padding: 0.3em 0.8em 0.3em 1.5em;
+      position: relative;
+      display: inline-block;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 1px;
+        bottom: 0;
+        display: block;
+        margin-top: auto;
+        margin-right: 0;
+        margin-bottom: auto;
+        margin-left: 0;
+        width: 7px;
+        height: 7px;
+        border-top: 1px solid #222;
+        border-right: 1px solid #222;
+        transform: rotate(45deg);
       }
     }
   }
   @media (min-width: 751px) {
     .linkHover {
-      border: 1px solid #222;
-      padding: 0.1em 0.8em 0 1.5em;
+      border: 1px solid #333;
+      padding: 0.1em 0.8em 0.1em 1.5em;
       position: relative;
       display: inline-block;
       text-decoration: none;
@@ -50,8 +110,8 @@ const ProjectsWrapper = styled.div`
         margin-left: 0;
         width: 7px;
         height: 7px;
-        border-top: 1px solid #222;
-        border-right: 1px solid #222;
+        border-top: 1px solid #333;
+        border-right: 1px solid #333;
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
@@ -63,40 +123,14 @@ const ProjectsWrapper = styled.div`
         content: '';
         width: 100%;
         height: 100%;
-        background: #222;
+        background: #333;
         transform: scale(0, 1);
         transform-origin: left top;
-        transition: transform .3s;
+        transition: transform .7s cubic-bezier(.10,.7,0,1);
         z-index: -1;
       }
       &:hover:after {
         transform: scale(1, 1);
-      }
-    }
-  }
-  @media (max-width: 750px) {
-    .linkHover {
-      border: 1px solid #444;
-      padding: 0.3em 0.8em 0.3em 1.5em;
-      position: relative;
-      &:before {
-        content: "";
-        position: absolute;
-        left: 7px;
-        top: 1px;
-        bottom: 0;
-        display: block;
-        margin-top: auto;
-        margin-right: 0;
-        margin-bottom: auto;
-        margin-left: 0;
-        width: 7px;
-        height: 7px;
-        border-top: 1px solid #222;
-        border-right: 1px solid #222;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
       }
     }
   }
@@ -113,68 +147,98 @@ class Projects extends React.Component {
       <Layout location={this.props.location}>
         <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
         <div className="container">
-        <h1>{pageTitle}</h1>
+          <h1>{pageTitle}</h1>
           <ProjectsWrapper>
-          <div className="item">
+          {/* <ul className="no-bullet project-nav">
+						<li><a href="#develop">Develop</a></li>
+						<li><a href="#organize">Organize</a></li>
+						<li><a href="#support">Contribute</a></li>
+					</ul> */}
+
+          <div id="organize" className="project">
             <Image fluid={data.misawaya.childImageSharp.fluid} />
-            <h2>Leave the attractive Japanese house to the next generation - Misawaya Project</h2>
-            <p>Act of preservation for a traditional Japanese house in Nagano, Japan.</p>
-            <div className="sub-box">
-              <p>Skills: Management, Planning, Marketing, Sales, Print Design, Web Development, Social Media</p>
-              <p>Web Environment: WordPress *Now working on migration to React with WordPress(as Headless CMS)</p>
+            <h2 className="project__header">Misawaya</h2>
+            <div className="project__cateroy">
+              <div className="project__line"></div>
+              <div className="project__label">
+                Planning / Event / Website / Social
+              </div>
+            </div>
+            <h3 className="project__copy">Leave and utelize the attractive Japanese house to the next generation.</h3>
+            <div className="project__description">
+              <p>How do we preserve this 150 years old house? - This is a big challenge we had faced in 2016. "Misawaya" is a Japanese traditional house built in 1861 which my family owns in Nagano, Japan. I have been challanging to solve social issues to utelize this house since then.</p>
             </div>
             <a 
-              className="linkHover"
+              className="project__link linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
               href="http://misawayanohanashi.com/">Misawaya Website
             </a>
           </div>
-          <div className="item">
-            <Image fluid={data.fruit.childImageSharp.fluid} />
-            <h2>Use seasonal fruits to reduce food loss and make sustainable life cycles - Food Project</h2>
-            <p>Kakigori(shaved ice) cafe with fruits from my father’s farm.</p>
-            <div className="sub-box">
-              <p>Skills: Planning, Cooking, Menu Development, Running Cafe, Fruits Sales, Farming, Web Development</p>
-              <p>Web Environment: JavaScript(React/Gatsby)</p>
+
+          <div id="develop" className="project">
+            <Image fluid={data.tempuratokyo.childImageSharp.fluid} />
+            <h2 className="project__header">Tempura Tokyo</h2>
+            <div className="project__cateroy">
+              <div className="project__line"></div>
+              <div className="project__label">
+                Website
+              </div>
+            </div>
+            <h3 className="project__copy">Introduce new unique Japanese snacks to the world.</h3>
+            <div className="project__description">
+              <p>Tempura Tokyo is a new Japanese snack brand whchi is Japanese traditional snacks with unique flavors. Although main target is Japanese people, I tried to make it design universal that tourists also can undestand them briefly.</p>
             </div>
             <a 
-              className="linkHover"
+              className="project__link linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
-              href="https://greenroadfarm.org/">Farm's Website
+              href="https://tempura-tokyo.jp/">Tempura Tokyo Website
             </a>
           </div>
-          <div className="item">
+
+          <div id="support" className="project">
             <Image fluid={data.morus.childImageSharp.fluid} />
-            <h2>Help to preserve a community and historical archives in Lower East Side - NYC Project</h2>
-            <p>Act of living in a grassroots community - the Museum of Reclaimed Urban Space.</p>
-            <div className="sub-box">
-              <p>Skills: Web Development</p>
-              <p>Web Environment: WordPress</p>
+            <h2 className="project__header">MoRUS</h2>
+            <div className="project__cateroy">
+              <div className="project__line"></div>
+              <div className="project__label">
+                Maintenance / CRM / Volunteer
+              </div>
             </div>
-           <a 
-              className="linkHover"
+            <h3 className="project__copy">Help to preserve a community and historical archives in Lower East Side</h3>
+            <div className="project__description">
+              <p>How much do you know about New York history? the Museum of Reclaimed Urban Space is a small museum in Lower East Side. This Museum has archives about squats and communitry garden which is very interesting. I support this place as an act of living in a grassroots community.</p>
+            </div>
+            <a 
+              className="project__link linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
               href="http://www.morusnyc.org/">Museum Website
             </a>
           </div>
-          <div className="item">
-            <Image fluid={data.cineric.childImageSharp.fluid} />
-            <h2>Cineric website</h2>
-            <p>Website for introducing the company toward Japan market.  (2018)</p>
-            <div className="sub-box">
-              <p>Skills: Web Development</p>
-              <p>Web Environment: WordPress, JavaScript(jQuery)</p>
+
+          <div id="create" className="project">
+            <Image fluid={data.fruit.childImageSharp.fluid} />
+            <h2 className="project__header">GreenRoadFarm</h2>
+            <div className="project__cateroy">
+              <div className="project__line"></div>
+              <div className="project__label">
+                Website / Recipe / Product / Cafe
+              </div>
+            </div>
+            <h3 className="project__copy">Use seasonal fruits to reduce food loss and make sustainable life cycles</h3>
+            <div className="project__description">
+              <p>As you know, farming is very difficult to control its production because of the weather. Kakigori(shaved ice) cafe is a creative way of utilizing fruits which suppose to dump at my father’s farm.</p>
             </div>
             <a 
-              className="linkHover"
+              className="project__link linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
-              href="https://cineric.jp/">Cineric Website
+              href="https://greenroadfarm.org/">Farm's Website
             </a>
           </div>
+
           </ProjectsWrapper>
         </div>
       </Layout>
@@ -207,7 +271,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    cineric: file(relativePath: { eq: "images/projects/img_project_cineric.jpg" }) {
+    tempuratokyo: file(relativePath: { eq: "images/projects/img_project_tempura.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
