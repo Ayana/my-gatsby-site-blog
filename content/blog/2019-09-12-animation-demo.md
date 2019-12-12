@@ -1,6 +1,6 @@
 ---
 layout: blog
-date: 2019-12-01T23:15:49.816Z
+date: 2019-11-09T23:15:49.816Z
 title: JavaScript & CSS Demo
 description: Try out animation samples and useful functions
 categories:

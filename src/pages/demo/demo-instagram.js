@@ -25,6 +25,14 @@ const DemoInstagramFeed = props => {
 						href="https://www.gatsbyjs.org/packages/gatsby-source-instagram/"
 					>
 						gatsby-source-instagram
+					</a><br /> 
+					<a 
+						className="hover"
+						target="_blank" 
+						rel="noopener noreferrer" 
+						href="https://fishingduh.com/"
+					>
+						Other sample
 					</a>
 					</div>
 				</div>

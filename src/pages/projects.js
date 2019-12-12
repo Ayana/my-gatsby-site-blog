@@ -166,13 +166,13 @@ class Projects extends React.Component {
             </div>
             <h3 className="project__copy">Leave and utelize the attractive Japanese house to the next generation.</h3>
             <div className="project__description">
-              <p>How do we preserve this 150 years old house? - This is a big challenge we had faced in 2016. "Misawaya" is a Japanese traditional house built in 1861 which my family owns in Nagano, Japan. I have been challanging to solve social issues to utelize this house since then.</p>
+              <p>How do we preserve this 150 years old house? - This is a big challenge we had faced in 2016. "Misawaya" is a Japanese traditional house built in 1861 which my family owns in Nagano, Japan. I have been challanging to solve social issues using this house.</p>
             </div>
             <a 
               className="project__link linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
-              href="http://misawayanohanashi.com/">Misawaya Website
+              href="http://misawayanohanashi.com/">Misawaya
             </a>
           </div>
 
@@ -185,7 +185,7 @@ class Projects extends React.Component {
                 Website
               </div>
             </div>
-            <h3 className="project__copy">Introduce new unique Japanese snacks to the world.</h3>
+            <h3 className="project__copy">Introduce new unique Japanese snack brand to the world.</h3>
             <div className="project__description">
               <p>Tempura Tokyo is a new Japanese snack brand whchi is Japanese traditional snacks with unique flavors. Although main target is Japanese people, I tried to make it design universal that tourists also can undestand them briefly.</p>
             </div>
@@ -193,7 +193,7 @@ class Projects extends React.Component {
               className="project__link linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
-              href="https://tempura-tokyo.jp/">Tempura Tokyo Website
+              href="https://tempura-tokyo.jp/">Tempura Tokyo
             </a>
           </div>
 
@@ -208,13 +208,13 @@ class Projects extends React.Component {
             </div>
             <h3 className="project__copy">Help to preserve a community and historical archives in Lower East Side</h3>
             <div className="project__description">
-              <p>How much do you know about New York history? the Museum of Reclaimed Urban Space is a small museum in Lower East Side. This Museum has archives about squats and communitry garden which is very interesting. I support this place as an act of living in a grassroots community.</p>
+              <p>How much do you know about New York history? the Museum of Reclaimed Urban Space is a small museum in Lower East Side. The Museum has archives about squats and communitry garden which is very interesting. I support this museum as an act of living in a grassroots community.</p>
             </div>
             <a 
               className="project__link linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
-              href="http://www.morusnyc.org/">Museum Website
+              href="http://www.morusnyc.org/">MoRUS
             </a>
           </div>
 
@@ -235,7 +235,7 @@ class Projects extends React.Component {
               className="project__link linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
-              href="https://greenroadfarm.org/">Farm's Website
+              href="https://greenroadfarm.org/">GreenRoadFarm
             </a>
           </div>
 
