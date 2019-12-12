@@ -26,20 +26,20 @@ const ProjectsWrapper = styled.div`
       display: flex;
       margin-top: -1.3em;
       margin-top: 1.5em;
-      margin-left: 1.5em;
+      margin-left: 0.5em;
       .project__line {
         background-color: #888;
         height: 1px;
-        width: 25%;
-        margin-top: 0.6rem;
+        width: 12%;
+        margin-top: 0.5rem;
       }
       .project__label {
         margin-left: 0.9em;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
       }
     }
     .project__header {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       margin-top: 2rem;
       margin-bottom: 0;
       letter-spacing: 0;
@@ -58,6 +58,30 @@ const ProjectsWrapper = styled.div`
     .project__link {
       margin-top: 2.5em;
     }
+  }
+  @media (min-width: 751px) {
+  .project {
+    .project__cateroy {
+      margin-left: 1.5em;
+      .project__line {
+        width: 25%;
+        margin-top: 0.6rem;
+      }
+      .project__label {
+        font-size: 0.8rem;
+      }
+    }
+    .project__header {
+      font-size: 2.8rem;
+    }
+    .project__copy {
+    }
+    .project__description {
+    }
+    .project__link {
+    }
+  }
+
   }
   @media (max-width: 750px) {
     .linkHover {

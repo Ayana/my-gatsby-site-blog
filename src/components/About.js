@@ -8,7 +8,7 @@ import { rhythm } from "../utils/typography"
 import styled from "styled-components"
 
 const StyledAbout = styled.div`
-  padding-bottom: ${rhythm(1)};
+  padding-bottom: ${rhythm(1.5)};
   justify-content: center;
   align-items: center;
   text-align: center;
