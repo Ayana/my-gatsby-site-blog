@@ -30,7 +30,7 @@ class Layout extends React.Component {
     return (
       <div className="wrapper">
         <header>
-          <div className="container">
+          <div className="container full">
             {header}
           </div>
         </header>
