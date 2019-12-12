@@ -157,10 +157,10 @@ class Projects extends React.Component {
 					</ul> */}
 
           <div id="organize" className="project">
-            <Fade bottom delay={400} duration={1000} distance={'50px'}>
+            <Fade left delay={500} duration={800} distance={'50px'}>
               <Image fluid={data.misawaya.childImageSharp.fluid} />
             </Fade>
-            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+            <Fade bottom delay={1000} duration={500} distance={'20px'}>
             <h2 className="project__header">Misawaya</h2>
             <div className="project__cateroy">
               <div className="project__line"></div>
@@ -182,10 +182,10 @@ class Projects extends React.Component {
           </div>
 
           <div id="develop" className="project">
-            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+            <Fade left delay={800} duration={800} distance={'50px'}>
               <Image fluid={data.tempuratokyo.childImageSharp.fluid} />
             </Fade>
-            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+            <Fade bottom delay={200} duration={500} distance={'20px'}>
               <h2 className="project__header">Tempura Tokyo</h2>
               <div className="project__cateroy">
                 <div className="project__line"></div>
@@ -207,10 +207,10 @@ class Projects extends React.Component {
           </div>
 
           <div id="support" className="project">
-            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+            <Fade left delay={200} duration={800} distance={'50px'}>
               <Image fluid={data.morus.childImageSharp.fluid} />
             </Fade>
-            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+            <Fade bottom delay={200} duration={500} distance={'20px'}>
               <h2 className="project__header">MoRUS</h2>
               <div className="project__cateroy">
                 <div className="project__line"></div>
@@ -232,11 +232,11 @@ class Projects extends React.Component {
           </div>
 
           <div id="create" className="project">
-            <Fade bottom delay={200} duration={1000} distance={'50px'}>
+            <Fade left delay={200} duration={800} distance={'50px'}>
               <Image fluid={data.fruit.childImageSharp.fluid} />
             </Fade>
               <h2 className="project__header">GreenRoadFarm</h2>
-              <Fade bottom delay={200} duration={1000} distance={'50px'}>
+              <Fade bottom delay={200} duration={500} distance={'20px'}>
               <div className="project__cateroy">
                 <div className="project__line"></div>
                 <div className="project__label">

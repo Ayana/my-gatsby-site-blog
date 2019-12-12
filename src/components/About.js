@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import Fade from 'react-reveal/Fade';
 
 import Social from "./Social"
 import { rhythm } from "../utils/typography"
@@ -52,20 +53,26 @@ const About = () => {
     <StyledAbout>
       <div className="about">
         <div>
-          <Image
-            fluid={data.avatar.childImageSharp.fluid}
-            alt={author}
-          />
-          <h2 style={{
-            marginBottom:'0.2em',
-            fontSize:'2rem',
-            fontFamily:'Merriweather Sans',
-            marginTop: '0.6em',
-            }}>Hello, I'm {author}</h2>
-          <p style={{marginBottom:'2em',}}>Web Developer / Organizer</p>
-          <div style={{marginTop:'1.8em'}}>
-            <Social />
-          </div>
+          <Fade bottom delay={500} duration={800} distance={'20px'}>
+            <Image
+              fluid={data.avatar.childImageSharp.fluid}
+              alt={author}
+            />
+          </Fade>
+          <Fade bottom delay={900} duration={800} distance={'20px'}>
+            <h2 style={{
+              marginBottom:'0.2em',
+              fontSize:'2rem',
+              fontFamily:'Merriweather Sans',
+              marginTop: '0.6em',
+              }}>Hello, I'm {author}</h2>
+            <p style={{marginBottom:'2em',}}>Web Developer / Organizer</p>
+          </Fade>
+          <Fade bottom delay={1200} duration={800} distance={'20px'}>
+            <div style={{marginTop:'1.8em'}}>
+              <Social />
+            </div>
+          </Fade>
         </div>
       </div>
     </StyledAbout>
