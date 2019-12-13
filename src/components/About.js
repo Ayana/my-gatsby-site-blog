@@ -23,6 +23,21 @@ const StyledAbout = styled.div`
         border-radius: 50%;
       }
     }
+    .about__text--greeting {
+      margin-bottom: 0.2em;
+      font-size: 1.8rem;
+      margin-top: 0.6em;
+    }
+    .about__text--title {
+      margin-bottom: 2em;
+    }
+    @media (min-width: 751px) {
+      .about__text--greeting {
+        font-size: 2rem;
+      }
+      .about__text--title {
+      }
+    }
   }
 `
 
@@ -60,13 +75,8 @@ const About = () => {
             />
           </Fade>
           <Fade bottom delay={900} duration={800} distance={'20px'}>
-            <h2 style={{
-              marginBottom:'0.2em',
-              fontSize:'2rem',
-              fontFamily:'Merriweather Sans',
-              marginTop: '0.6em',
-              }}>Hello, I'm {author}</h2>
-            <p style={{marginBottom:'2em',}}>Web Developer / Organizer</p>
+            <h2 className="about__text--greeting">Hello, I'm {author}</h2>
+            <p className="about__text--title">Web Developer / Organizer</p>
           </Fade>
           <Fade bottom delay={1200} duration={800} distance={'20px'}>
             <div style={{marginTop:'1.8em'}}>
