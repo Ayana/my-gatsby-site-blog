@@ -42,9 +42,9 @@ const About = (props) => {
 					<h2 className="about__header">What I do</h2>
 					<section>
 						<ul className="no-bullet about__list">
-							<li><strong>Web Development</strong> - Mostly Front-end development using JavaScript, React, GatsbyJS, HTML/CSS.</li>
-							<li><strong>UI/UX Design</strong> - Minimalist user friendly web design. Experienced well in E-commerce and Food industory.</li>
-							<li><strong>Organizing</strong> - Event management, creating community with idea of sustainability.</li>
+							<li><strong>Creative Dev.</strong> - Mostly front-end development with HTML5, CSS3, Sass,JavaScript, React, GatsbyJS, WordPress, MySQL, Git.</li>
+							<li><strong>Interactive Design</strong> - Minimalist user friendly web design with well experienced in E-commerce and Food industory.</li>
+							<li><strong>Organizing</strong> - Event management, creating sustainable community with skills of project management & business strategy.</li>
 						</ul>
 					</section>
 
