@@ -179,7 +179,8 @@ class Projects extends React.Component {
                 className="project__link linkHover"
                 target="_blank" 
                 rel="noopener noreferrer" 
-                href="https://tempura-tokyo.jp/">Tempura Tokyo
+                href="https://tempura-tokyo.jp/">
+                  VISIT SITE
               </a>
             </Fade>
           </div>
@@ -204,7 +205,8 @@ class Projects extends React.Component {
                 className="project__link linkHover"
                 target="_blank" 
                 rel="noopener noreferrer" 
-                href="http://www.morusnyc.org/">MoRUS
+                href="http://www.morusnyc.org/">
+                  VISIT SITE
               </a>
             </Fade>
           </div>
@@ -229,7 +231,8 @@ class Projects extends React.Component {
                 className="project__link linkHover"
                 target="_blank" 
                 rel="noopener noreferrer" 
-                href="https://greenroadfarm.org/">GreenRoadFarm
+                href="https://greenroadfarm.org/">
+                  VISIT SITE
               </a>
             </Fade>
           </div>
