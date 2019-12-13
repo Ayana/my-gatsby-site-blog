@@ -36,7 +36,7 @@ const About = (props) => {
 					<h1 className="page__header">{pageTitle}</h1>
 					
 					<div>
-						<p>I'm a web developer with 13 years of experience in web design & development from Japan. Over the past years, I have worked for various companies and clients with skills of web development, design and project management. And last couple of years, I have been focusing on front-end creative design from the technological aspects.</p>
+						<p>I'm a web developer with over 13 years of experience in web design & development from Japan. Over the past years, I have worked for various companies and clients with skills of web development, design and project management. And last couple of years, I have been focusing on front-end creative design from the technological aspects.</p>
 						<p>On the other side of the business, I have been challanging to solve some social issues utelizing my skills and experiences as an orgnizer and a supporter. </p>
 					</div>
 					<h2 className="about__header">What I do</h2>
