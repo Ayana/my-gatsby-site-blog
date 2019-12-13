@@ -56,106 +56,59 @@ const ProjectsWrapper = styled.div`
       margin-top: 3em;
     }
     .project__link {
-      margin-top: 2.5em;
+      margin-top: 2em;
+    }
+    .linkHover {
+      background-color: #6bb1a5;
+      border-radius: 3px;
+      color: #fff;
+      padding: 0.3em 1.2em;
+      display: inline-block;
     }
   }
   @media (min-width: 751px) {
-  .project {
-    .project__cateroy {
-      margin-left: 1.5em;
-      .project__line {
-        width: 25%;
-        margin-top: 0.6rem;
-      }
-      .project__label {
-        font-size: 0.8rem;
-      }
-    }
-    .project__header {
-      font-size: 2.8rem;
-    }
-    .project__copy {
-    }
-    .project__description {
-    }
-    .project__link {
-    }
-  }
-
-  }
-  @media (max-width: 750px) {
-    .linkHover {
-      border: 1px solid #444;
-      padding: 0.3em 0.8em 0.3em 1.5em;
-      position: relative;
-      display: inline-block;
-      &:before {
-        content: "";
-        position: absolute;
-        left: 7px;
-        top: 1px;
-        bottom: 0;
-        display: block;
-        margin-top: auto;
-        margin-right: 0;
-        margin-bottom: auto;
-        margin-left: 0;
-        width: 7px;
-        height: 7px;
-        border-top: 1px solid #222;
-        border-right: 1px solid #222;
-        transform: rotate(45deg);
-      }
-    }
-  }
-  @media (min-width: 751px) {
-    .linkHover {
-      border: 1px solid #333;
-      padding: 0.1em 0.8em 0.1em 1.5em;
-      position: relative;
-      display: inline-block;
-      text-decoration: none;
-      &:hover {
-        color: #eee;
-        &:before {
-        border-top: 1px solid #eee;
-        border-right: 1px solid #eee;
+    .project {
+      .project__cateroy {
+        margin-left: 1.5em;
+        .project__line {
+          width: 25%;
+          margin-top: 0.6rem;
+        }
+        .project__label {
+          font-size: 0.8rem;
         }
       }
-      &:before {
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: 1px;
-        bottom: 0;
-        display: block;
-        margin-top: auto;
-        margin-right: 0;
-        margin-bottom: auto;
-        margin-left: 0;
-        width: 7px;
-        height: 7px;
-        border-top: 1px solid #333;
-        border-right: 1px solid #333;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
+      .project__header {
+        font-size: 2.8rem;
       }
-      &:after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 100%;
-        background: #333;
-        transform: scale(0, 1);
-        transform-origin: left top;
-        transition: transform .7s cubic-bezier(.10,.7,0,1);
-        z-index: -1;
+      .project__copy {
       }
-      &:hover:after {
-        transform: scale(1, 1);
+      .project__description {
+      }
+      .project__link {
+      }
+      .linkHover {
+        position: relative;
+        &:hover {
+          color: #fff;
+        }
+        &:after {
+          border-radius: 3px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: #8cd7ca;
+          transform: scale(0, 1);
+          transform-origin: left top;
+          transition: transform .7s cubic-bezier(.10,.7,0,1);
+          z-index: -1;
+        }
+        &:hover:after {
+          transform: scale(1, 1);
+        }
       }
     }
   }
@@ -200,7 +153,8 @@ class Projects extends React.Component {
               className="project__link linkHover"
               target="_blank" 
               rel="noopener noreferrer" 
-              href="http://misawayanohanashi.com/">Misawaya
+              href="http://misawayanohanashi.com/english/">
+                VISIT SITE
             </a>
             </Fade>
           </div>
