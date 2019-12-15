@@ -62,7 +62,7 @@ const ProjectsWrapper = styled.div`
       background-color: #6bb1a5;
       border-radius: 3px;
       color: #fff;
-      padding: 0.3em 1.2em;
+      padding: 5px 20px;
       display: inline-block;
     }
   }
@@ -134,10 +134,10 @@ class Projects extends React.Component {
 					</ul> */}
 
           <div id="organize" className="project">
-            <Fade bottom delay={500} duration={800} distance={'50px'}>
+            <Fade bottom delay={200} duration={800} distance={'30px'}>
               <Image fluid={data.misawaya.childImageSharp.fluid} />
             </Fade>
-            <Fade bottom delay={1000} duration={500} distance={'20px'}>
+            <Fade bottom delay={500} duration={500} distance={'20px'}>
             <h2 className="project__header">Misawaya</h2>
             <div className="project__cateroy">
               <div className="project__line"></div>
@@ -154,13 +154,13 @@ class Projects extends React.Component {
               target="_blank" 
               rel="noopener noreferrer" 
               href="http://misawayanohanashi.com/english/">
-                VISIT SITE
+                Visit Site
             </a>
             </Fade>
           </div>
 
           <div id="develop" className="project">
-            <Fade bottom delay={800} duration={800} distance={'50px'}>
+            <Fade bottom delay={800} duration={800} distance={'30px'}>
               <Image fluid={data.tempuratokyo.childImageSharp.fluid} />
             </Fade>
             <Fade bottom delay={200} duration={500} distance={'20px'}>
@@ -180,13 +180,13 @@ class Projects extends React.Component {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href="https://tempura-tokyo.jp/">
-                  VISIT SITE
+                  Visit Site
               </a>
             </Fade>
           </div>
 
           <div id="support" className="project">
-            <Fade bottom delay={200} duration={800} distance={'50px'}>
+            <Fade bottom delay={200} duration={800} distance={'30px'}>
               <Image fluid={data.morus.childImageSharp.fluid} />
             </Fade>
             <Fade bottom delay={200} duration={500} distance={'20px'}>
@@ -206,13 +206,13 @@ class Projects extends React.Component {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href="http://www.morusnyc.org/">
-                  VISIT SITE
+                  Visit Site
               </a>
             </Fade>
           </div>
 
           <div id="create" className="project">
-            <Fade bottom delay={200} duration={800} distance={'50px'}>
+            <Fade bottom delay={200} duration={800} distance={'30px'}>
               <Image fluid={data.fruit.childImageSharp.fluid} />
             </Fade>
               <h2 className="project__header">GreenRoadFarm</h2>
@@ -232,7 +232,7 @@ class Projects extends React.Component {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href="https://greenroadfarm.org/">
-                  VISIT SITE
+                  Visit Site
               </a>
             </Fade>
           </div>
