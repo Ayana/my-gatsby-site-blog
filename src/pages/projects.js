@@ -173,7 +173,7 @@ class Projects extends React.Component {
               </div>
               <h3 className="project__copy">Introduce new unique Japanese snack brand to the world.</h3>
               <div className="project__description">
-                <p>Tempura Tokyo is a new Japanese snack brand which is Japanese traditional snacks with unique flavors. Although main target is Japanese people, I tried to make it design universal that tourists also can undestand them briefly.</p>
+                <p>Tempura Tokyo is a new Japanese snack brand which is created as Japanese traditional snacks with unique flavors. Although main target is Japanese people, I tried to make it design universal that tourists also can undestand them briefly.</p>
               </div>
               <a 
                 className="project__link linkHover"
@@ -199,7 +199,7 @@ class Projects extends React.Component {
               </div>
               <h3 className="project__copy">Help to preserve a community and historical archives in Lower East Side.</h3>
               <div className="project__description">
-                <p>How much do you know about New York history? the Museum of Reclaimed Urban Space is a small museum in Lower East Side. The Museum has archives about squats and communitry garden which is very interesting. I support this museum as an act of living in a grassroots community.</p>
+                <p>How much do you know about New York City history? the Museum of Reclaimed Urban Space is a small museum in Lower East Side. The Museum has archives about squats and communitry garden which is very interesting. I support this museum as an act of living in a grassroots community.</p>
               </div>
               <a 
                 className="project__link linkHover"
