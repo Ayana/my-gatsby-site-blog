@@ -20,7 +20,7 @@ const ProjectsWrapper = styled.div`
     }
   }
   .project {
-    margin-bottom: 8em;
+    margin-bottom: 5em;
     padding-top: 1em;
     .project__cateroy {
       display: flex;
@@ -68,6 +68,7 @@ const ProjectsWrapper = styled.div`
   }
   @media (min-width: 751px) {
     .project {
+      margin-bottom: 7em;
       .project__cateroy {
         margin-left: 1.5em;
         .project__line {
