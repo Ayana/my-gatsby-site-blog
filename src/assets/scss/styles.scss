@@ -6,8 +6,15 @@
 @import '~foundation-sites/scss/foundation'; 
 
 // @include foundation-everything; // When using every functions
+
+// Global styles
 @include foundation-global-styles;
 @include foundation-typography;
+
+// Generic components
+@include foundation-button;
+@include foundation-button-group;
+@include foundation-close-button;
 
 // custom global styles
 @import "./_custom_styles.scss";

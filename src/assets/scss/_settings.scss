@@ -8,6 +8,9 @@
 //   3. The Grid
 //   4. Base Typography
 //   5. Typography Helpers
+//  11. Button
+//  12. Button Group
+//  15. Close Button
 
 // @import 'util/util';
 @import '~foundation-sites/scss/util/util'; // Replaced my environment
@@ -20,14 +23,12 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #444,
-  secondary: #767676,
-  success: #3adb76,
+  secondary: #56a397,
+  success: #33c4a1,
   warning: #ffae00,
   alert: #cc4b37,
 );
-$accent-color: #e01e58;
-$accent-color-hover: #f61e5f;
-$anchor-color: #6bb1a5;
+$anchor-color: #56a397;
 $light-gray: #F0F0F0;
 $medium-gray: #EDEDED;
 $dark-gray: #333;
@@ -45,7 +46,7 @@ $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 3px;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -122,8 +123,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-// $anchor-color: $anchor-color;
-// $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: $anchor-color;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -162,3 +163,59 @@ $subheader-font-weight: $global-weight-normal;
 $subheader-margin-top: 0.2rem;
 $subheader-margin-bottom: 0.5rem;
 $stat-font-size: 2.5rem;
+
+
+// 11. Button
+// ----------
+
+$button-font-family: inherit;
+$button-padding: 0.85em 1em;
+$button-margin: 0 0 $global-margin 0;
+$button-fill: solid;
+$button-background: $primary-color;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-color: $white;
+$button-color-alt: $white;
+$button-radius: $global-radius;
+$button-hollow-border-width: 1px;
+$button-sizes: (
+  tiny: 0.6rem,
+  small: 0.75rem,
+  default: 0.9rem,
+  large: 1.25rem,
+);
+$button-palette: $foundation-palette;
+$button-opacity-disabled: 0.25;
+$button-background-hover-lightness: 15%;
+$button-hollow-hover-lightness: -50%;
+$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+$button-responsive-expanded: false;
+
+// 12. Button Group
+// ----------------
+
+$buttongroup-margin: 1rem;
+$buttongroup-spacing: 1px;
+$buttongroup-child-selector: '.button';
+$buttongroup-expand-max: 6;
+$buttongroup-radius-on-each: true;
+
+// 15. Close Button
+// ----------------
+
+$closebutton-position: right top;
+$closebutton-offset-horizontal: (
+  small: 0.66rem,
+  medium: 1rem,
+);
+$closebutton-offset-vertical: (
+  small: 0.33em,
+  medium: 0.5rem,
+);
+$closebutton-size: (
+  small: 1.5em,
+  medium: 2em,
+);
+$closebutton-lineheight: 1;
+$closebutton-color: $dark-gray;
+$closebutton-color-hover: $black;

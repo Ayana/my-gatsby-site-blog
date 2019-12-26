@@ -56,14 +56,10 @@ const ProjectsWrapper = styled.div`
       margin-top: 3em;
     }
     .project__link {
-      margin-top: 2em;
-    }
-    .linkHover {
-      background-color: #6bb1a5;
-      border-radius: 3px;
-      color: #fff;
-      padding: 5px 20px;
       display: inline-block;
+      margin-top: 2em;
+      padding: 8px 20px;
+      border: none;
     }
   }
   @media (min-width: 751px) {
@@ -88,12 +84,16 @@ const ProjectsWrapper = styled.div`
       }
       .project__link {
       }
-      .linkHover {
-        position: relative;
+      .slideHover {
+        /* position: relative; */
+        /* box-shadow: inset 0 0 0 0 #64b4a7;
+        transition: ease-out 0.4s;
         &:hover {
           color: #fff;
-        }
-        &:after {
+          box-shadow: inset 400px 0 0 0 #64b4a7;
+        } */
+        /* &:after {
+          border: none;
           border-radius: 3px;
           position: absolute;
           bottom: 0;
@@ -109,7 +109,8 @@ const ProjectsWrapper = styled.div`
         }
         &:hover:after {
           transform: scale(1, 1);
-        }
+          border: none;
+        } */
       }
     }
   }
@@ -133,7 +134,6 @@ class Projects extends React.Component {
 						<li><a href="#organize">Organize</a></li>
 						<li><a href="#support">Contribute</a></li>
 					</ul> */}
-
           <div id="organize" className="project">
             <Fade bottom delay={200} duration={800} distance={'30px'}>
               <Image fluid={data.misawaya.childImageSharp.fluid} />
@@ -151,7 +151,7 @@ class Projects extends React.Component {
               <p>How do we preserve this 150 years old house? - This is a big challenge we had faced in 2016. "Misawaya" is a Japanese traditional house built in 1861 which my family owns in Nagano, Japan. I have been challanging to solve social issues using this house.</p>
             </div>
             <a 
-              className="project__link linkHover"
+              className="project__link button secondary"
               target="_blank" 
               rel="noopener noreferrer" 
               href="http://misawayanohanashi.com/english/">
@@ -177,7 +177,7 @@ class Projects extends React.Component {
                 <p>Tempura Tokyo is a new Japanese snack brand which is created as Japanese traditional snacks with unique flavors. Although main target is Japanese people, I tried to make it design universal that tourists also can undestand them briefly.</p>
               </div>
               <a 
-                className="project__link linkHover"
+                className="project__link button secondary"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href="https://tempura-tokyo.jp/">
@@ -203,7 +203,7 @@ class Projects extends React.Component {
                 <p>How much do you know about New York City history? the Museum of Reclaimed Urban Space is a small museum in Lower East Side. The Museum has archives about squats and communitry garden which is very interesting. I support this museum as an act of living in a grassroots community.</p>
               </div>
               <a 
-                className="project__link linkHover"
+                className="project__link button secondary"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href="http://www.morusnyc.org/">
@@ -229,7 +229,7 @@ class Projects extends React.Component {
                 <p>As you know, farming is very difficult to control its production because of the weather. Kakigori(shaved ice) cafe is a creative way of utilizing fruits which suppose to dump at my father’s farm.</p>
               </div>
               <a 
-                className="project__link linkHover"
+                className="project__link button secondary"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 href="https://greenroadfarm.org/">
