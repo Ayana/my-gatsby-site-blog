@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import ButtonSlide from "../../components/demo/ButtonSlide"
+import InputName from "../../components/demo/InputName"
 import Increment from "../../components/demo/Increment"
 import styled from "styled-components"
 import { CSSTransition } from 'react-transition-group';
@@ -99,6 +100,10 @@ const DemoCSSTransition = props => {
 							</button>
 						</div>
 
+
+						<div style={{marginTop: '5em'}}>
+							<InputName />
+						</div>
 
 						<div style={{marginTop: '5em'}}>
 							<Increment />
