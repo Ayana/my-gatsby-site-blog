@@ -27,7 +27,7 @@ const StyledButton = styled.div`
 				background: #56a397;
 				border-radius: 3px;
 				transform: scaleX(0);
-				transform-origin: 0 50%;
+				transform-origin: center;
 				transition-property: transform;
 				transition-duration: 0.3s;
 				transition-timing-function: ease-out;
@@ -42,15 +42,15 @@ const StyledButton = styled.div`
 	}
 `
 
-const ButtonSlide = () => {
+const ButtonShutterOut = () => {
 
 	return(
 		<StyledButton>
 			<button className="slideHover">
-				Hover Slide
+				Hover Shutter Out
 			</button>
 		</StyledButton>
 	)
 }
 
-export default ButtonSlide
+export default ButtonShutterOut
