@@ -24,7 +24,7 @@ const DemoCSSTransition = props => {
           <h1>{pageTitle}</h1>
 
 						<h2>CSSTransition / Transition Group</h2>
-						<div style={{marginTop: '5em'}}>
+						<div style={{margin: '2em 0 5em'}}>
 							<Dialog />
 						</div>
 

@@ -8,6 +8,13 @@ import Increment from "../../components/demo/Increment"
 import styled from "styled-components"
 
 const StyledTransition = styled.div`
+	.color-wheel {
+		background: conic-gradient(
+			red, yellow, lime, aqua, blue, magenta, red
+		);
+		width: 100px;
+		height: 100px;
+	}
 	@media (min-width: 751px) {
 	}
 `
@@ -28,19 +35,27 @@ const Functions = props => {
           <h2></h2>
 
 						<div style={{marginTop: '5em'}}>
+							<h2>Intaractive display</h2>
 							<InputName />
 						</div>
 
 						<div style={{marginTop: '5em'}}>
+							<h2>Counter</h2>
 							<Increment />
 						</div>
 
 						<div style={{marginTop: '5em'}}>
+							<h2>Hover Animation</h2>
 							<ButtonSlide />
 						</div>
 
 						<div style={{marginTop: '2em'}}>
 							<ButtonShutterOut />
+						</div>
+
+						<div style={{marginTop: '5em'}}>
+							<h2>Color Gradient</h2>
+							<div className="color-wheel"></div>
 						</div>
 
         </div>

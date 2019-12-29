@@ -6,7 +6,7 @@ const StyledInputName = styled.div`
   .name-box {
     margin-bottom: 3em;
 		.greeting {
-			margin-bottom: 3em;
+			margin-bottom: 1.5em;
 		}
 		.name-input {
 			margin-bottom: 1em;

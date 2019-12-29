@@ -11,7 +11,6 @@ const StyledIncrement = styled.div`
     text-align: center;
     .number {
       font-size: 1.5rem;
-      margin-top: 1em;
     }
     .inc {
       font-size: 1.2rem;
@@ -29,7 +28,6 @@ const Increment = () => {
   return (
     <StyledIncrement>
       <div className="counter-box">
-        <div>Counter</div>
         <div className="number">{count}</div>
         <button
           className="button inc"
