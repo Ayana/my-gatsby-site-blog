@@ -3,7 +3,6 @@ import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import ButtonSlide from "../../components/demo/ButtonSlide"
 import ButtonShutterOut from "../../components/demo/ButtonShutterOut"
-import Dialog from "../../components/demo/Dialog"
 import InputName from "../../components/demo/InputName"
 import Increment from "../../components/demo/Increment"
 import styled from "styled-components"
@@ -13,11 +12,11 @@ const StyledTransition = styled.div`
 	}
 `
 
-const DemoCSSTransition = props => {
+const Functions = props => {
 
   const location = props.location
-  const pageTitle = "Demo CSSTransition"
-  const pageSlug = "demo-csstransition"
+  const pageTitle = "Demo Functions"
+  const pageSlug = "demo-functions"
 
 
 	return(
@@ -27,10 +26,6 @@ const DemoCSSTransition = props => {
         <div className="container">
           <h1>{pageTitle}</h1>
           <h2></h2>
-
-						<div style={{marginTop: '5em'}}>
-							<Dialog />
-						</div>
 
 						<div style={{marginTop: '5em'}}>
 							<InputName />
@@ -54,4 +49,4 @@ const DemoCSSTransition = props => {
 	)
 }
 
-export default DemoCSSTransition
+export default Functions
