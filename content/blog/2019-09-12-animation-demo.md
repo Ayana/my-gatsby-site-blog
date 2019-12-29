@@ -6,7 +6,9 @@ description: Try out animation samples and useful functions
 categories:
   - Technology
 ---
-\=> <a href="/demo/demo-slick/">Reack Slick</a>\
+\=> <a href="/demo/demo-functions/">Small Functions</a>\
+=> <a href="/demo/demo-transition/">CSS Transition</a>\
+=> <a href="/demo/demo-slick/">Reack Slick</a>\
 => <a href="/demo/demo-swiper/">Swiper</a>\
 => <a href="/demo/demo-parallax-css/">Parallax with Pure CSS</a>\
 => <a href="/demo/demo-instagram/">Instagram Feed</a>\
