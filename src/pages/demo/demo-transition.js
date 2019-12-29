@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import Dialog from "../../components/demo/Dialog"
+import TodoList from "../../components/demo/TodoList"
 import styled from "styled-components"
 
 const StyledTransition = styled.div`
@@ -23,9 +24,14 @@ const DemoCSSTransition = props => {
         <div className="container">
           <h1>{pageTitle}</h1>
 
-						<h2>CSSTransition / Transition Group</h2>
+						<h2>CSSTransition</h2>
 						<div style={{margin: '2em 0 5em'}}>
 							<Dialog />
+						</div>
+
+						<h2>Transition Group</h2>
+						<div style={{margin: '2em 0 5em'}}>
+							<TodoList />
 						</div>
 
         </div>

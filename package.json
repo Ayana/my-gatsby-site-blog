@@ -57,7 +57,8 @@
     "typography-theme-noriega": "^0.16.19",
     "typography-theme-parnassus": "^0.16.19",
     "typography-theme-st-annes": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
