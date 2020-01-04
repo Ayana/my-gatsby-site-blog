@@ -6,6 +6,8 @@ description: Try out animation samples and useful functions
 categories:
   - Technology
 ---
+Here's demo of some functions and apps I've tried out. This is a list of the links for easy access to them.
+
 \=> <a href="/demo/demo-functions/">Small Functions</a>\
 => <a href="/demo/demo-transition/">CSS Transition</a>\
 => <a href="/demo/demo-slick/">Reack Slick</a>\
