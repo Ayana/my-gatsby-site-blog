@@ -8,9 +8,7 @@ categories:
 ---
 Here's a note about a very curious job title "UX Engineer"
 
-A couple months ago, I found an articles about "UX Engineer" which is a new term for me. At the moment I read the articles, I felt this term express what I do and it resonated with me as a web designer who likes coding. So this is a note for me.
-
-
+A couple months ago, I found articles about "UX Engineer" which is a new term for me. At the moment I read the articles, I felt this term express what I do and it resonated with me as a web designer who likes coding. So this is a note for me.
 
 Articles about UX Engineer\
 <a href="https://dev.to/emmawedekind/ux-engineering-3hem" target="_blank" rel="noopener noreferrer">https://dev.to/emmawedekind/ux-engineering-3hem</a>
