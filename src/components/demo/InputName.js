@@ -25,11 +25,18 @@ const StyledInputName = styled.div`
 const InputName = () => {
   const [ name, setName ] = useState('')
   const [ surname, setSurname ] = useState('')
-
+    
   useEffect(() => {
     // document.title = `Hello ${name} ${surname}`
-  })
+    console.log(`Hello ${name} ${surname}`)
+    // const tnode = document.createTextNode("<Any-Text>");
+    // document.getElementById("greeting").appendChild(tnode);
+    // document.getElementById("greeting").insertAdjacentHTML = "Paragraph changed!";
+  },[name, surname]
+  )
 
+
+    
   function handleNameChange(e) {
     setName(e.target.value)
   }
@@ -42,7 +49,7 @@ const InputName = () => {
     <StyledInputName>
       <div className="name-box">
         <div className="greeting">
-          Hello{ name ? ' ' + name + ' ' + surname + ',' : '!' }
+          Hello{ name ? ' ' + name + ' ' + surname : ' Guest' }!
         </div>
 
         <div className="name-input">
