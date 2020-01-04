@@ -16,6 +16,9 @@
 @include foundation-button-group;
 @include foundation-close-button;
 
+// Helpers
+@include foundation-visibility-classes;
+
 // custom global styles
 @import "./_custom_styles.scss";
 

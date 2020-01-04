@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import ButtonSlide from "../../components/demo/ButtonSlide"
+import ButtonSlideLine from "../../components/demo/ButtonSlideLine"
 import ButtonShutterOut from "../../components/demo/ButtonShutterOut"
 import InputName from "../../components/demo/InputName"
 import Increment from "../../components/demo/Increment"
@@ -14,6 +15,9 @@ const StyledTransition = styled.div`
 		);
 		width: 100px;
 		height: 100px;
+	}
+	@media (max-width: 750px) {
+		
 	}
 	@media (min-width: 751px) {
 	}
@@ -32,31 +36,39 @@ const Functions = props => {
       <StyledTransition>
         <div className="container">
           <h1>{pageTitle}</h1>
-          <h2></h2>
 
-						<div style={{marginTop: '5em'}}>
-							<h2>Intaractive display</h2>
-							<InputName />
-						</div>
+					<div style={{marginTop: '5em'}}>
+						<h2>Intaractive display</h2>
+						<InputName />
+					</div>
 
-						<div style={{marginTop: '5em'}}>
-							<h2>Counter</h2>
-							<Increment />
-						</div>
+					<div style={{marginTop: '5em'}}>
+						<h2>Counter</h2>
+						<Increment />
+					</div>
 
-						<div style={{marginTop: '5em'}}>
-							<h2>Hover Animation</h2>
-							<ButtonSlide />
-						</div>
+					<div style={{marginTop: '5em'}}>
+						<h2>Hover Animation</h2>
+						<p className="show-for-small-only">*This functions work only for desktop</p>
+						<div className="hide-for-small-only">
+							<div>
+								<ButtonSlide />
+							</div>
 
-						<div style={{marginTop: '2em'}}>
-							<ButtonShutterOut />
-						</div>
+							<div style={{marginTop: '2em'}}>
+								<ButtonSlideLine />
+							</div>
 
-						<div style={{marginTop: '5em'}}>
-							<h2>Color Gradient</h2>
-							<div className="color-wheel"></div>
+							<div style={{marginTop: '2em'}}>
+								<ButtonShutterOut />
+							</div>
 						</div>
+					</div>
+
+					<div style={{marginTop: '5em'}}>
+						<h2>Color Gradient</h2>
+						<div className="color-wheel"></div>
+					</div>
 
         </div>
       </StyledTransition>
