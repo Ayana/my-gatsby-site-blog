@@ -172,9 +172,9 @@ class Projects extends React.Component {
                   Website
                 </div>
               </div>
-              <h3 className="project__copy">Introduce new unique Japanese snack brand to the world.</h3>
+              <h3 className="project__copy">Introduce a new Japanese snack brand to the world.</h3>
               <div className="project__description">
-                <p>Tempura Tokyo is a new Japanese snack brand which is created as a Japanese-style snack with unique flavors. Although main target is Japanese people, I tried to make it design universal that tourists also can undestand them briefly.</p>
+                <p>Tempura Tokyo is a new Japanese snack brand which is created as a uniquely-flavored Japanese-style snack. The main target is Japanese customers, however I made it simple that tourists also can undestand them briefly.</p>
               </div>
               <a 
                 className="project__link button secondary"
