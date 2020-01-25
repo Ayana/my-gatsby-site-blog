@@ -16,5 +16,5 @@ Here's demo of some functions and apps I've tried out. This is a list of the lin
 => <a href="/demo/demo-instagram/">Instagram Feed</a>\
 => <a href="/demo/demo-video-player/">Video Player using youtube API</a><br />
 => <a href="/demo/demo-reveal/">React Reveal animation</a><br />
-=> <a href="/demo/demo-fade/">Text animation</a><br />
+=> <a href="/demo/demo-text-animations/">Text animation</a><br />
 => <a href="/demo/demo-image/">Gatsby Image</a>
