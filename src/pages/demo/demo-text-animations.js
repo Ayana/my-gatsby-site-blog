@@ -40,12 +40,14 @@ const DemoWrapper = styled.div`
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
   }
-  &:hover {
-    opacity: 1;
-    box-shadow: 2px 10px 16px rgba(0,0,0,0.15);
-  }
-  &:hover:before {
-    transform: scale(2);
+  @media (max-width: 750px) {
+    &:hover {
+      opacity: 1;
+      box-shadow: 2px 10px 16px rgba(0,0,0,0.15);
+    }
+    &:hover:before {
+      transform: scale(2);
+    }
   }
 }
 /* demo-fade */

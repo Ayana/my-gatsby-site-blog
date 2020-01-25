@@ -51,6 +51,7 @@
     "smooth-scroll": "^16.1.0",
     "styled-components": "^4.3.2",
     "swiper": "^5.2.1",
+    "three": "^0.112.1",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.19",
