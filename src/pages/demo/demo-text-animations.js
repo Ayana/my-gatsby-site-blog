@@ -99,10 +99,13 @@ const DemoWrapper = styled.div`
   }
 }
 
-/* writing-effect */
+/* typewriter-effect */
 .typewriter-effect {
   font-family: 'Contrail One', cursive;
-  font-size: 2rem;
+  font-size: 1.05rem;
+  @media (min-width: 750px) {
+    font-size: 2rem;
+  }
   overflow: hidden;
   white-space: nowrap;
   line-height: 1;
@@ -110,7 +113,12 @@ const DemoWrapper = styled.div`
   &.active {
     animation: typingEffect 3s steps(40), 
     blinkTextCursor .8s steps(40) infinite normal;
-    width: 21em;
+    @media (max-width: 750px) {
+      width: 100%;
+    }    
+    @media (min-width: 750px) {
+      width: 21em;
+    }    
   }
 }
 @keyframes typingEffect {
@@ -118,7 +126,12 @@ const DemoWrapper = styled.div`
     width: 0;
   }
   to {
-    width: 21em;
+    @media (max-width: 750px) {
+      width: 100%;
+    }    
+    @media (min-width: 750px) {
+      width: 21em;
+    }    
   }
 }
 @keyframes blinkTextCursor {
