@@ -3,9 +3,11 @@ import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import styled from "styled-components"
 
+import Welcome from "../../components/demo/Welcome"
+
 const DemoWrapper = styled.div`
 .demo-section {
-  margin-bottom: 4em;
+  margin-bottom: 6em;
 }
 .effect-wrap {
   margin: 2em 0;
@@ -127,8 +129,82 @@ const DemoWrapper = styled.div`
     border-right: transparent;
   }
 }
+.handwriting-effect {
+  .welcome-text {
+    svg {
+      fill:none;
+      stroke:#231f20;
+      stroke-miterlimit:10;
+      stroke-width:2px;
+    }
+    path:nth-child(1) {
+      stroke-dasharray: 604.5255737304688;
+      stroke-dashoffset: 604.5255737304688;
+    }
+    path:nth-child(2) {
+      stroke-dasharray: 168.1890411376953;
+      stroke-dashoffset: 168.1890411376953;
+    }
+    path:nth-child(3) {
+      stroke-dasharray: 234.04576110839844;
+      stroke-dashoffset: 234.04576110839844;
+    }
+    path:nth-child(4) {
+      stroke-dasharray: 156.92361450195312;
+      stroke-dashoffset: 156.92361450195312;
+    }
+    path:nth-child(5) {
+      stroke-dasharray: 202.04403686523438;
+      stroke-dashoffset: 202.04403686523438;
+    }
+    path:nth-child(6) {
+      stroke-dasharray: 282.1566467285156;
+      stroke-dashoffset: 282.1566467285156;
+    }
+    path:nth-child(7) {
+      stroke-dasharray: 168.1973114013672;
+      stroke-dashoffset: 168.1973114013672;
+    }
+  }
+  .active {
+    path:nth-child(1) {
+      animation: lineAnimation 2s ease forwards;
+    }
+    path:nth-child(2) {
+      animation: lineAnimation 2s ease forwards .3s;
+    }
+    path:nth-child(3) {
+      animation: lineAnimation 2s ease forwards .6s;
+    }
+    path:nth-child(4) {
+      animation: lineAnimation 2s ease forwards .9s;
+    }
+    path:nth-child(5) {
+      animation: lineAnimation 2s ease forwards 1.2s;
+    }
+    path:nth-child(6) {
+      animation: lineAnimation 2s ease forwards 1.5s;
+    }
+    path:nth-child(7) {
+      animation: lineAnimation 2s ease forwards 1.8s;
+    }
+  }
 
+  
+  @keyframes lineAnimation {
+    from {
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
 `
+// const welcome = document.querySelectorAll('.handwriting-effect path')
+
+// for(let i = 0; i < welcome.length; i++) {
+//   console.log(`Letter ${i} is ${welcome[i].getTotalLength()}`)
+// }
 
 const DemoFade = props => {
 
@@ -136,18 +212,27 @@ const DemoFade = props => {
   const pageTitle = "Demo Fade Animation"
   const pageSlug = "demo-fade"
 
-  const [state, setState] = useState('')
-  const [text, setText] = useState('start')
+  const [stateHandwriting, setStateHandwriting] = useState('')
+  const [textHandwriting, setTextHandwriting] = useState('start')
 
-  function handleClick() {
-    setState(() => state ? '' : 'active')
+  function handleClickHandwriting() {
+    setStateHandwriting(() => stateHandwriting ? '' : 'active')
 
-    setText(() => !state ? 'hide' : 'start' )
-    // if (text === 'show') {
-    //   setText('hide')
-    // } else {
-    //   setText('show')
-    // }
+    setTextHandwriting(() => (textHandwriting === 'start') ? 'hide' : 'start' )
+  }
+
+  const [stateTypewriter, setStateTypewriter] = useState('')
+  const [textTypewriter, setTextTypewriter] = useState('start')
+
+  function handleClickTypewriter() {
+    setStateTypewriter(() => stateTypewriter ? '' : 'active')
+
+    // setTextTypewriter(() => !textTypewriter ? 'hide' : 'start' )
+    if (textTypewriter === 'start') {
+      setTextTypewriter('hide')
+    } else {
+      setTextTypewriter('start')
+    }
   }
 
 	return(
@@ -158,21 +243,42 @@ const DemoFade = props => {
           <h1>{pageTitle}</h1>
 
           <section className="demo-section">
+            <h2>Handwriting effect</h2>
+            <div className="effect-wrap">
+              <div className="handwriting-effect">
+                <div className={`welcome-text ${stateHandwriting}`}>
+                  <Welcome />
+                </div>
+              </div>
+            </div>
+            <button
+              className="hover button"
+              type="button"
+              onClick={handleClickHandwriting}	
+            >
+              Click to {textHandwriting}
+            </button>
+
+            <div>Refferece:<br />
+            <a href="https://www.youtube.com/watch?v=vJNVramny9k">SVG Animation With Text Tutorial</a></div>
+
+          </section>
+
+          <section className="demo-section">
             <h2>Typewriter effect</h2>
             <div className="effect-wrap">
-              <div className={`typewriter-effect ${state}`}>
+              <div className={`typewriter-effect ${stateTypewriter}`}>
                 Thank you for coming! Here is a typewriter effect.
               </div>
             </div>
             <button
               className="hover button"
               type="button"
-              onClick={handleClick}	
+              onClick={handleClickTypewriter}	
             >
-              Click to {text}
+              Click to {textTypewriter}
             </button>
           </section>
-
 
           <section className="demo-section">
             <h2>Fade in Text</h2>
