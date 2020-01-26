@@ -1,17 +1,20 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import * as THREE from "three"
-import Layout from "../../components/Layout"
-import SEO from "../../components/SEO"
-import styled from "styled-components"
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+// import { OBJLoader } from './jsm/loaders/OBJLoader.js';
 
-const StyledTransition = styled.div`
+// import Layout from "../../components/Layout"
+// import SEO from "../../components/SEO"
+// import styled from "styled-components"
 
-	@media (max-width: 750px) {
+// const StyledTransition = styled.div`
+
+// 	@media (max-width: 750px) {
 		
-	}
-	@media (min-width: 751px) {
-	}
-`
+// 	}
+// 	@media (min-width: 751px) {
+// 	}
+// `
 
 // class Three extends Component {
 //   componentDidMount() {
@@ -42,11 +45,11 @@ const StyledTransition = styled.div`
 //   }
 // }
 
-const Three = props => {
+const ThreeCube = () => {
 
-  const location = props.location
-  const pageTitle = "Demo 3D"
-  const pageSlug = "demo-3d"
+  // const location = props.location
+  // const pageTitle = "Demo 3D"
+  // const pageSlug = "demo-3d"
 
   useEffect(() => {
     let scene, camera, renderer, cube;
@@ -69,8 +72,8 @@ const Three = props => {
       scene.add( cube );
       camera.position.z = 5;
 
-
     }
+
 
     // const animate = function () {
     function animate() {
@@ -80,6 +83,7 @@ const Three = props => {
       renderer.render( scene, camera );
     };
 
+    // WindowResizeOptimization
     function onWindowResize() {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
@@ -109,4 +113,4 @@ const Three = props => {
 	// )
 }
 
-export default Three
+export default ThreeCube
