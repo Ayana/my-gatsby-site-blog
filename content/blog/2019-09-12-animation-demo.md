@@ -8,8 +8,7 @@ categories:
 ---
 Here's demo of some functions and apps I've tried out. This is a list of the links for easy access to them.
 
-\=> <a href="https://three-js-model.netlify.com/" target="_blank">3D model</a>\
-=> <a href="/demo/demo-functions/">Small Functions</a>\
+\=> <a href="/demo/demo-functions/">Small Functions</a>\
 => <a href="/demo/demo-transition/">CSS Transition</a>\
 => <a href="/demo/demo-slick/">Reack Slick</a>\
 => <a href="/demo/demo-swiper/">Swiper</a>\
