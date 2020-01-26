@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import styled from "styled-components"
@@ -12,7 +12,7 @@ const StyledTransition = styled.div`
 	}
 `
 
-const Functions = props => {
+const MicroAnimation = props => {
 
   const location = props.location
   const pageTitle = "Demo Micro Animations"
@@ -26,7 +26,7 @@ const Functions = props => {
         <div className="container">
           <h1>{pageTitle}</h1>
 
-					<div className="container">
+					{/* <div className="container">
 						<section>
 							<h2></h2>
 							<div>
@@ -35,7 +35,7 @@ const Functions = props => {
 						</section>
 
 
-					</div>
+					</div> */}
 
         </div>
       </StyledTransition>
@@ -43,4 +43,4 @@ const Functions = props => {
 	)
 }
 
-export default Functions
+export default MicroAnimation

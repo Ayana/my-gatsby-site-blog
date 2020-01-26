@@ -5,6 +5,10 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import image1 from '../../assets/images/demo/img_slick_sample.png'
+import image2 from '../../assets/images/demo/img_slick_sample.png'
+import image3 from '../../assets/images/demo/img_slick_sample.png'
+import image4 from '../../assets/images/demo/img_slick_sample.png'
+import image5 from '../../assets/images/demo/img_slick_sample.png'
 
 import styled from "styled-components"
 
@@ -44,12 +48,12 @@ const StyledSlick = styled.div`
 		}
 		li {
 			width: 16%;
-			a {
+			div {
 				width: 100%;
 			}
 		}
 		.slick-active {
-			a {
+			div {
 				color: #ccc;
 			}
 		}
@@ -71,9 +75,9 @@ const DemoSlick = (props) => {
 	const settings = {
 		customPaging: function(index) {
 			return (
-				<a>
+				<div>
 					{labels[index]}
-				</a>
+				</div>
 			);
 		},
 		dots: true,
@@ -111,19 +115,19 @@ const DemoSlick = (props) => {
 					<StyledSlick>
 						<Slider {...settings}>
 							<div>
-								<h3><img src={image1} /></h3>
+								<h3><img src={image1} alt="Image1" /></h3>
 							</div>
 							<div>
-								<h3><img src={image1} /></h3>
+								<h3><img src={image2} alt="Image2" /></h3>
 							</div>
 							<div>
-								<h3><img src={image1} /></h3>
+								<h3><img src={image3} alt="Image3" /></h3>
 							</div>
 							<div>
-								<h3><img src={image1} /></h3>
+								<h3><img src={image4} alt="Image4" /></h3>
 							</div>
 							<div>
-								<h3><img src={image1} /></h3>
+								<h3><img src={image5} alt="Image5" /></h3>
 							</div>
 						</Slider>
 					</StyledSlick>

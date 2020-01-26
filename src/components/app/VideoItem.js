@@ -36,7 +36,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
 
 	return (
 		<ItemStyle>
-			<div onClick={() => onVideoSelect(video)} className="item">
+			<div role="link" onClick={() => onVideoSelect(video)} className="item" onKeyDown={() => onVideoSelect(video)} tabIndex={() => onVideoSelect(video)}>
 				<img 
 					alt={video.snippet.title}
 					className="ui image"
