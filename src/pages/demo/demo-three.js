@@ -1,20 +1,5 @@
 import React, { useEffect } from "react"
 import * as THREE from "three"
-// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-// import { OBJLoader } from './jsm/loaders/OBJLoader.js';
-
-// import Layout from "../../components/Layout"
-// import SEO from "../../components/SEO"
-// import styled from "styled-components"
-
-// const StyledTransition = styled.div`
-
-// 	@media (max-width: 750px) {
-		
-// 	}
-// 	@media (min-width: 751px) {
-// 	}
-// `
 
 // class Three extends Component {
 //   componentDidMount() {
@@ -100,17 +85,7 @@ const ThreeCube = () => {
   return (
       <div />
   )
-	// return (
-	// 	<Layout location={location}>
-  //     <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
-  //     <StyledTransition>
-  //         <h1>{pageTitle}</h1>
 
-	// 					<div />
-
-  //     </StyledTransition>
-  //   </Layout>
-	// )
 }
 
 export default ThreeCube
