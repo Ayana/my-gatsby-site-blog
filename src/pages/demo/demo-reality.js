@@ -1,47 +1,38 @@
-import React from "react"
-import Layout from "../../components/Layout"
-import SEO from "../../components/SEO"
-import styled from "styled-components"
+import React from 'react'
+import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
+import styled from 'styled-components'
 
-import MODEL from '../../assets/images/demo/model.usdz';
-import PREVIEW from '../../assets/images/demo/model.png';
+// import MODEL from '../../assets/images/demo/model.usdz';
+// import PREVIEW from '../../assets/images/demo/model.png';
 
 const StyledReality = styled.div`
-
 	@media (max-width: 750px) {
-		
 	}
 	@media (min-width: 751px) {
 	}
 `
 
-const Reality = props => {
+const Reality = (props) => {
+	const location = props.location
+	const pageTitle = 'Demo Reality'
+	const pageSlug = 'demo-reality'
 
-  const location = props.location
-  const pageTitle = "Demo Reality"
-  const pageSlug = "demo-reality"
-
-
-	return(
+	return (
 		<Layout location={location}>
-      <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
-      <StyledReality>
-        <div className="container">
-          <h1>{pageTitle}</h1>
+			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
+			<StyledReality>
+				<div className='container'>
+					<h1>{pageTitle}</h1>
 
-					<div className="container">
-						<section>
-							<a rel="ar" href={MODEL}>
+					<div className='container'>
+						<section>{/* <a rel='ar' href={MODEL}>
 								<img src={PREVIEW} />
-							</a>
-						</section>
-
-
+							</a> */}</section>
 					</div>
-
-        </div>
-      </StyledReality>
-    </Layout>
+				</div>
+			</StyledReality>
+		</Layout>
 	)
 }
 

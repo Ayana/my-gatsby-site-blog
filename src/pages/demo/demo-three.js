@@ -1,69 +1,67 @@
-import React from 'react';
-import Layout from '../../components/Layout';
-import SEO from '../../components/SEO';
-import * as THREE from 'three';
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+import React from 'react'
+import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
+import * as THREE from 'three'
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
 
-import MODEL from '../../assets/images/demo/model.obj';
+// import MODEL from '../../assets/images/demo/model.obj';
 
 const ThreeModel = (props) => {
-  const location = props.location;
-  const pageTitle = 'Demo Three.js';
-  const pageSlug = 'demo-three';
+	const location = props.location
+	const pageTitle = 'Demo Three.js'
+	const pageSlug = 'demo-three'
 
-  let container, scene, camera, renderer;
+	let container, scene, camera, renderer
 
-  function init() {
-    container = document.querySelector('.scene');
+	function init() {
+		container = document.querySelector('.scene')
 
-    scene = new THREE.Scene();
+		scene = new THREE.Scene()
 
-    // Camera setting
-    const fov = 35;
-    const aspect = container.clientWidth / container.clientHeight;
-    const near = 0.1;
-    const far = 500;
+		// Camera setting
+		const fov = 35
+		const aspect = container.clientWidth / container.clientHeight
+		const near = 0.1
+		const far = 500
 
-    camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+		camera = new THREE.PerspectiveCamera(fov, aspect, near, far)
 
-    camera.position.set(-50, 40, 350);
+		camera.position.set(-50, 40, 350)
 
-    // Add light
-    const ambientLight = new THREE.AmbientLight(0xcccccc, 0.4);
-    scene.add(ambientLight);
+		// Add light
+		const ambientLight = new THREE.AmbientLight(0xcccccc, 0.4)
+		scene.add(ambientLight)
 
-    // Renderer
-    renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(container.clientWidth, container.clientHeight);
-    renderer.setPixelRatio(window.devicePixelRatio);
+		// Renderer
+		renderer = new THREE.WebGLRenderer({ antialias: true })
+		renderer.setSize(container.clientWidth, container.clientHeight)
+		renderer.setPixelRatio(window.devicePixelRatio)
 
-    container.appendChild(renderer.domElement);
+		container.appendChild(renderer.domElement)
 
-    // Load model
-    const loader = new OBJLoader();
-    loader.load(MODEL, function(object) {
-      scene.add(object);
+		// Load model
+		// const loader = new OBJLoader()
+		// loader.load(MODEL, function(object) {
+		// 	scene.add(object)
 
-      renderer.render(scene, camera);
-    });
-  }
+		// 	renderer.render(scene, camera)
+		// })
+	}
 
-  // init();
+	// init();
 
-  return (
-    <Layout location={location}>
-      <SEO pageTitle={pageTitle} pageSlug={pageSlug} />
-      <div className='container'>
-        <h1>{pageTitle}</h1>
-        <div className='' style={{ height: '300px', background: 'red' }}>
-          a
-        </div>
-      </div>
-    </Layout>
-  );
-};
+	return (
+		<Layout location={location}>
+			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
+			<div className='container'>
+				<h1>{pageTitle}</h1>
+				<div className='' style={{ height: '300px', background: 'red' }}></div>
+			</div>
+		</Layout>
+	)
+}
 
-export default ThreeModel;
+export default ThreeModel
 
 // class Three extends Component {
 //   componentDidMount() {
