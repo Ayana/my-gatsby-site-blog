@@ -19,4 +19,4 @@ Here's a list for easy access to my demos I've tried out. \
 => <a href="/demo/demo-swiper/">Swiper</a>\
 => <a href="/demo/demo-parallax-css/">Parallax with Pure CSS</a>\
 => <a href="/demo/demo-instagram/">Instagram Feed</a>\
-=> <a href="/demo/demo-video-player/">Video Player using youtube API(Fixing now)</a><br /> => <a href="/demo/demo-reveal/">React Reveal animation</a><br /> => <a href="/demo/demo-text-animations/">Text animation</a><br /> => <a href="/demo/demo-image/">Gatsby Image</a>
+=> <a href="/demo/demo-video-player/">Video Player using youtube API</a><br /> => <a href="/demo/demo-reveal/">React Reveal animation</a><br /> => <a href="/demo/demo-text-animations/">Text animation</a><br /> => <a href="/demo/demo-image/">Gatsby Image</a>
