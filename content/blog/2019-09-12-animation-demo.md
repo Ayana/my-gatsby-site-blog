@@ -7,10 +7,11 @@ categories:
   - Technology
 ---
 
-Here's a list for easy access to my demos I've tried out. (Last updated: Mar 26, 2020)
+Here's a list for easy access to my demos I've tried out. \
+(Last update: Mar 26, 2020)
 
 \=> <a href="https://ar-mushroom.netlify.com/" target="_blank">AR Quick Look & Reality Composer</a>\
-=> <a href="/demo/demo-animation/">Fun Animations</a>\
+=> <a href="/demo/demo-animation/">SVG Animations</a>\
 => <a href="https://three-js-model.netlify.com/" target="_blank">3D model</a>\
 => <a href="/demo/demo-functions/">Small Functions</a>\
 => <a href="/demo/demo-transition/">CSS Transition</a>\
