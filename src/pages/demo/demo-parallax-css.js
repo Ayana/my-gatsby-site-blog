@@ -56,16 +56,16 @@ const DemoParallaxCSS = () => {
 				</header>
 
 				<div className='header'>
-					<div className='container'>
+					<div className='container-wide'>
 						<h1>{pageTitle}</h1>
 					</div>
 				</div>
 
-				<div className='container' style={{ zIndex: 2 }}>
+				<div className='container-wide' style={{ zIndex: 2 }}>
 					In all chaotic beauty lies a wounded work of art. Beautiful but torn, wreaking havoc on my heart. Camouflaged by insecurities, blinded by it all. I love the way you sit there and barely notice me at all.
 				</div>
 
-				<div className='container' style={{ zIndex: 2, position: 'relative', minHeight: '50vh' }}>
+				<div className='container-wide' style={{ zIndex: 2, position: 'relative', minHeight: '50vh' }}>
 					<span
 						style={{
 							display: 'inline-block',
@@ -82,7 +82,7 @@ const DemoParallaxCSS = () => {
 
 				<div className='parallax'></div>
 
-				<div className='container' style={{ zIndex: 2, position: 'relative', minHeight: '90vh' }}>
+				<div className='container-wide' style={{ zIndex: 2, position: 'relative', minHeight: '90vh' }}>
 					<span
 						style={{
 							display: 'inline-block',
@@ -97,11 +97,11 @@ const DemoParallaxCSS = () => {
 						}}></span>
 				</div>
 
-				<div className='container' style={{ zIndex: 2 }}>
+				<div className='container-wide' style={{ zIndex: 2 }}>
 					In all chaotic beauty lies a wounded work of art. Beautiful but torn, wreaking havoc on my heart. Camouflaged by insecurities, blinded by it all. I love the way you sit there and barely notice me at all.
 				</div>
 
-				<div className='container' style={{ zIndex: 2 }}>
+				<div className='container-wide' style={{ zIndex: 2 }}>
 					<div style={{ marginTop: '15em' }}>
 						Refference
 						<br />
@@ -116,7 +116,7 @@ const DemoParallaxCSS = () => {
 				</div>
 
 				<footer
-					className='container'
+					className='container-wide'
 					style={{
 						textAlign: 'center',
 						fontSize: '0.9rem',
