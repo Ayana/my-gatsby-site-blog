@@ -28,7 +28,7 @@ $foundation-palette: (
 	warning: #ffae00,
 	alert: #cc4b37,
 );
-$anchor-color: #2d8b7e;
+$anchor-color: #50a094;
 $light-gray: #f0f0f0;
 $medium-gray: #ededed;
 $dark-gray: #333;
@@ -138,7 +138,7 @@ $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $anchor-color: $anchor-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color-hover: scale-color($anchor-color, $lightness: 5%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
