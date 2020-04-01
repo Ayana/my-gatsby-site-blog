@@ -15,7 +15,7 @@ Here's a list for easy access to my demos I've tried out. \
 => <a href="https://three-js-model.netlify.com/" target="_blank">3D model</a>\
 => <a href="/demo/demo-functions/">Small Functions</a>\
 => <a href="/demo/demo-transition/">CSS Transition</a>\
-=> <a href="/demo/demo-slick/">Reack Slick</a>\
+=> <a href="/demo/demo-slick/">React Slick</a>\
 => <a href="/demo/demo-swiper/">Swiper</a>\
 => <a href="/demo/demo-parallax-css/">Parallax with Pure CSS</a>\
 => <a href="/demo/demo-instagram/">Instagram Feed</a>\

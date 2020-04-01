@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import * as THREE from 'three'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
+// import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
 
 // import MODEL from '../../assets/images/demo/model.obj';
 
@@ -48,7 +48,7 @@ const ThreeModel = (props) => {
 		// })
 	}
 
-	// init();
+	init()
 
 	return (
 		<Layout location={location}>

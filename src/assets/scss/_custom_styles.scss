@@ -79,16 +79,23 @@ body {
 //	3. Container
 // --------------
 @include breakpoint(small) {
+	.container-narrow {
+		padding: 0 1.5rem;
+	}
 	.container {
-		padding: 0 1.5em;
+		padding: 0 1.5rem;
 	}
 }
 @include breakpoint(medium) {
-	.container {
+	.container-narrow {
 		max-width: 840px;
-		width: 100%;
 		margin: auto;
-		padding: 0 3em;
+		padding: 0 1.5rem;
+	}
+	.container {
+		max-width: 1028px;
+		margin: auto;
+		padding: 0 3rem;
 	}
 	.container.full {
 		max-width: 1280px;
