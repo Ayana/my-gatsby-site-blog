@@ -8,8 +8,8 @@ categories:
 ---
 
 Here's a list for easy access to my demos I've tried out. \
-(Last update: Mar 26, 2020)
-
+<span style="font-size:80%">- Last update: Apr 1, 2020</span>
+<br /><br />
 #### 3D
 => <a href="https://ar-mushroom.netlify.com/" target="_blank">AR Quick Look & Reality Composer</a><br />
 => <a href="https://three-js-model.netlify.com/" target="_blank">3D model</a>

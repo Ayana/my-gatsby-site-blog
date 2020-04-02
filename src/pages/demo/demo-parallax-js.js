@@ -5,16 +5,11 @@ import styled from 'styled-components'
 
 const StyledParallax = styled.div`
 	.effect-wrap {
-		/* scroll-snap-type: y mandatory;
-		overflow-y: scroll; */
-		/* height: 60vh; */
-		/* max-height: 100vh; */
 		section {
 			font-size: 8rem;
 			font-family: 'Merriweather Sans', sans-serif;
 
 			height: 80vh;
-			/* scroll-snap-align: start; */
 		}
 		.first {
 			background: #f25f5c;
