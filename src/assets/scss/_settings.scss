@@ -94,11 +94,11 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: $header-font-color;
 $header-lineheight: 1.3;
-$header-margin-bottom: 1.5rem;
+$header-margin-bottom: 0.5rem;
 $header-styles: (
 	small: (
 		'h1': (
-			'font-size': 40,
+			'font-size': 40,'margin-bottom': 20,
 		),
 		'h2': (
 			'font-size': 24,
@@ -112,7 +112,7 @@ $header-styles: (
 	),
 	medium: (
 		'h1': (
-			'font-size': 50,
+			'font-size': 50,'margin-bottom': 20,
 		),
 		'h2': (
 			'font-size': 30,

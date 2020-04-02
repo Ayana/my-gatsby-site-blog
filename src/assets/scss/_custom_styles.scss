@@ -79,10 +79,10 @@ body {
 //	3. Container
 // --------------
 @include breakpoint(small) {
-	.container-narrow {
+	.container {
 		padding: 0 1.5rem;
 	}
-	.container {
+	.container-wide {
 		padding: 0 1.5rem;
 	}
 }
