@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400|Crimson+Text:600|Esteban|Noto+Serif+JP|Dancing+Script|Contrail+One|Bebas+Neue&display=swap');
 
 // foundation setting
-@import './_settings.scss'; 
-@import '~foundation-sites/scss/foundation'; 
+@import './_settings.scss';
+@import '~foundation-sites/scss/foundation';
 
 // @include foundation-everything; // When using every functions
 
@@ -20,5 +20,4 @@
 @include foundation-visibility-classes;
 
 // custom global styles
-@import "./_custom_styles.scss";
-
+@import './_custom_styles.scss';

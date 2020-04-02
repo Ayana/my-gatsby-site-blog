@@ -2,50 +2,44 @@ import React, { useEffect } from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import styled from 'styled-components'
+import BG1 from '../../assets/images/demo/bg-forest.png'
 
 const StyledParallax = styled.div`
 	.effect-wrap {
 		section {
-			font-size: 8rem;
 			font-family: 'Merriweather Sans', sans-serif;
-
-			height: 80vh;
+			position: relative;
 		}
 		.first {
-			background: #f25f5c;
-		}
-		.second {
-			background: #ffe066;
-		}
-		.third {
-			background: #247ba0;
-		}
-		.fourth {
-			background: #70c1b3;
-		}
-		.parallax-section {
-			.copy-box {
-				display: flex;
-				justify-content: center;
-				align-items: middle;
-				place-items: center;
-				height: 60vh;
+			background-image: url('${BG1}');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+			min-height: 150vh;
+			@media (max-width: 750px) {
+				min-height: 100vh;
+			}
+			.copy {
+				font-size: 8rem;
+				margin-top: 0.5em;
+				text-align: center;
+				@media (max-width: 750px) {
+					font-size: 5rem;
+				}
 			}
 		}
-		.circle {
-			width: 100px;
-			height: 100px;
+		.hello {
+			color: #fff;
+			font-size: 5rem;
 			position: absolute;
-			top: 0;
-			left: 0;
-			background: black;
-			border-radius: 50%;
+			bottom: 10em;
+			@media (max-width: 750px) {
+				bottom: 5em;
+				font-size: 4rem;
+			}
 		}
 	}
-	@media (max-width: 750px) {
-	}
-	@media (min-width: 751px) {
-	}
+
 `
 
 const DemoParallxJs = (props) => {
@@ -55,7 +49,8 @@ const DemoParallxJs = (props) => {
 
 	useEffect(() => {
 		window.addEventListener('scroll', function() {
-			const target = document.querySelectorAll('.scroll')
+			const target = document.querySelectorAll('.parallax')
+			const YOffset = window.pageYOffset
 
 			// var scrolled = window.pageYOffset
 			// var rate = scrolled * 0.5
@@ -65,15 +60,19 @@ const DemoParallxJs = (props) => {
 				length = target.length
 
 			for (index; 0, index < length; index++) {
-				var pos = window.pageYOffset * target[index].dataset.rate
+				var pos = YOffset * target[index].dataset.rate
 
 				if (target[index].dataset.direction === 'vertical') {
 					target[index].style.transform = 'translate3d(0, ' + pos + 'px, 0)'
 				} else {
-					var posX = window.pageYOffset * target[index].dataset.ratex
-					var posY = window.pageYOffset * target[index].dataset.ratey
+					var posX = YOffset * target[index].dataset.ratex
+					var posY = YOffset * target[index].dataset.ratey
 					target[index].style.transform = 'translate3d(' + posX + 'px, ' + posY + 'px, 0)'
 				}
+			}
+
+			// もしセクションが複数ある場合は、下記のように条件分岐して書く
+			if (YOffset > 300) {
 			}
 		})
 	})
@@ -87,24 +86,16 @@ const DemoParallxJs = (props) => {
 				</div>
 				<div className='effect-wrap'>
 					<section className='first'>
-						<div className='parallax-section'>
-							<div className='copy-box'>
-								<span className='scroll' data-rate='-1' data-direction='vertical'>
-									De
-								</span>
-								<span className='scroll' data-rate='1' data-direction='vertical'>
-									sign
-								</span>
-							</div>
+						<div className='copy parallax' data-rate='0.2' data-direction='vertical'>
+							Parallax
 						</div>
-						{/* <span className='scroll circle' data-ratey='1' data-ratex='2' data-direction='horizontal'></span> */}
+						<div className='hello parallax' data-ratey='1' data-ratex='1' data-direction='horizontal'>
+							Hello
+						</div>
 					</section>
-
-					<section className='second'></section>
-
-					<section className='third'></section>
-
-					<section className='fourth'></section>
+					{/* <div className='work code parallax' data-ratey='1' data-ratex='1' data-direction='horizontal'>
+							Code
+						</div> */}
 				</div>
 			</StyledParallax>
 		</Layout>
