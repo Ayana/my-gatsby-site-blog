@@ -59,7 +59,7 @@ const DemoParallxJs = (props) => {
 			var index = 0,
 				length = target.length
 
-			for (index; 0, index < length; index++) {
+			for (index = 0; index < length; index++) {
 				var pos = YOffset * target[index].dataset.rate
 
 				if (target[index].dataset.direction === 'vertical') {
