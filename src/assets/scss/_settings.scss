@@ -15,6 +15,9 @@
 // @import 'util/util';
 @import '~foundation-sites/scss/util/util'; // Replaced my environment
 
+// font
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400|Crimson+Text:600|Esteban|Noto+Serif+JP|Dancing+Script|Contrail+One|Bebas+Neue&display=swap');
+
 // 1. Global
 // ---------
 
@@ -98,7 +101,8 @@ $header-margin-bottom: 0.5rem;
 $header-styles: (
 	small: (
 		'h1': (
-			'font-size': 40,'margin-bottom': 20,
+			'font-size': 40,
+			'margin-bottom': 20,
 		),
 		'h2': (
 			'font-size': 24,
@@ -112,7 +116,8 @@ $header-styles: (
 	),
 	medium: (
 		'h1': (
-			'font-size': 50,'margin-bottom': 20,
+			'font-size': 50,
+			'margin-bottom': 20,
 		),
 		'h2': (
 			'font-size': 30,
