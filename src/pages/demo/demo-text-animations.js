@@ -159,7 +159,6 @@ const DemoWrapper = styled.div`
 
 	/* typewriter-effect */
 	.typewriter-effect {
-		font-family: 'Contrail One', cursive;
 		font-size: 1.05rem;
 		@media (min-width: 750px) {
 			font-size: 2rem;
@@ -314,75 +313,75 @@ const DemoFade = (props) => {
 		<Layout location={location}>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<DemoWrapper>
-				<div className='container basic-link'>
+				<div className="container basic-link">
 					<h1>{pageTitle}</h1>
 
-					<section className='demo-section'>
+					<section className="demo-section">
 						<h2>Handwriting effect</h2>
-						<div className='effect-wrap'>
-							<div className='handwriting-effect'>
+						<div className="effect-wrap">
+							<div className="handwriting-effect">
 								<div className={`welcome-text ${stateHandwriting}`}>
 									<Welcome />
 								</div>
 							</div>
 						</div>
-						<button className='hover button' type='button' onClick={handleClickHandwriting}>
+						<button className="hover button" type="button" onClick={handleClickHandwriting}>
 							Click to {textHandwriting}
 						</button>
 
 						<div>
 							Refferece:
 							<br />
-							<a href='https://www.youtube.com/watch?v=vJNVramny9k'>SVG Animation With Text Tutorial</a>
+							<a href="https://www.youtube.com/watch?v=vJNVramny9k">SVG Animation With Text Tutorial</a>
 						</div>
 					</section>
 
-					<section className='demo-section'>
+					<section className="demo-section">
 						<h2>Typewriter effect</h2>
-						<div className='effect-wrap'>
-							<div className={`typewriter-effect ${stateTypewriter}`}>Thank you for coming! Here is a typewriter effect.</div>
+						<div className="effect-wrap">
+							<div className={`typewriter-effect font-typewriter ${stateTypewriter}`}>Thank you for coming! Here is a typewriter effect.</div>
 						</div>
-						<button className='hover button' type='button' onClick={handleClickTypewriter}>
+						<button className="hover button" type="button" onClick={handleClickTypewriter}>
 							Click to {textTypewriter}
 						</button>
 					</section>
 
-					<section className='demo-section'>
+					<section className="demo-section">
 						<h2>Fade in Text</h2>
-						<div className='effect-wrap'>
+						<div className="effect-wrap">
 							<div className={`font-script fade-effect ${stateFade}`}>
 								<p>
-									<span className='fade-in one'>T</span>
-									<span className='fade-in two'>h</span>
-									<span className='fade-in three'>a</span>
-									<span className='fade-in four'>n</span>
-									<span className='fade-in five'>k</span>
-									<span className='fade-in six'> y</span>
-									<span className='fade-in seven'>o</span>
-									<span className='fade-in eight'>u</span>
-									<span className='fade-in nine'> f</span>
-									<span className='fade-in ten'>o</span>
-									<span className='fade-in eleven'>r</span>
-									<span className='fade-in twelve'> v</span>
-									<span className='fade-in thirteen'>i</span>
-									<span className='fade-in fourteen'>s</span>
-									<span className='fade-in fifteen'>i</span>
-									<span className='fade-in sixteen'>t</span>
-									<span className='fade-in seventeen'>i</span>
-									<span className='fade-in eighteen'>n</span>
-									<span className='fade-in nineteen'>g</span>
-									<span className='fade-in twenty'> m</span>
-									<span className='fade-in twentyone'>y</span>
-									<span className='fade-in twentytwo'> d</span>
-									<span className='fade-in twentythree'>e</span>
-									<span className='fade-in twentyfour'>m</span>
-									<span className='fade-in twentyfive'>o</span>
-									<span className='fade-in twentysix'>!</span>
+									<span className="fade-in one">T</span>
+									<span className="fade-in two">h</span>
+									<span className="fade-in three">a</span>
+									<span className="fade-in four">n</span>
+									<span className="fade-in five">k</span>
+									<span className="fade-in six"> y</span>
+									<span className="fade-in seven">o</span>
+									<span className="fade-in eight">u</span>
+									<span className="fade-in nine"> f</span>
+									<span className="fade-in ten">o</span>
+									<span className="fade-in eleven">r</span>
+									<span className="fade-in twelve"> v</span>
+									<span className="fade-in thirteen">i</span>
+									<span className="fade-in fourteen">s</span>
+									<span className="fade-in fifteen">i</span>
+									<span className="fade-in sixteen">t</span>
+									<span className="fade-in seventeen">i</span>
+									<span className="fade-in eighteen">n</span>
+									<span className="fade-in nineteen">g</span>
+									<span className="fade-in twenty"> m</span>
+									<span className="fade-in twentyone">y</span>
+									<span className="fade-in twentytwo"> d</span>
+									<span className="fade-in twentythree">e</span>
+									<span className="fade-in twentyfour">m</span>
+									<span className="fade-in twentyfive">o</span>
+									<span className="fade-in twentysix">!</span>
 								</p>
-								<p className='fade-in caption'> - Welcome!</p>
+								<p className="fade-in caption"> - Welcome!</p>
 							</div>
 						</div>
-						<button className='hover button' type='button' onClick={handleClickFade}>
+						<button className="hover button" type="button" onClick={handleClickFade}>
 							Click to {textFade}
 						</button>
 					</section>

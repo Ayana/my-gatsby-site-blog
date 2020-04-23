@@ -2,31 +2,33 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledButtonLine = styled.div`
-	.slideHover {
-		/* border: 1px solid #56a397; */
+	.slideHoverBorder {
+		margin-top: -3px;
 		cursor: pointer;
-		background: #d7d7d7;
 		font-size: 0.9rem;
-		position: relative;
-		padding: 10px 15px;
-		display: inline-block;
+		padding: 12px 5px;
 		vertical-align: middle;
-		transform: perspective(1px) translateZ(0);
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 		position: relative;
-		transition-property: color;
-		transition-duration: 0.3s;
-		&:before {
+		&:after {
 			content: '';
 			position: absolute;
 			z-index: -1;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: #ccc;
+			height: 2px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: 1;
 			/* top: 0; */
 			left: 0;
 			right: 100%;
 			bottom: 0;
 			background: #56a397;
 			height: 4px;
-			border-radius: 3px;
 			/* transform: scaleX(0); */
 			transform-origin: 0 50%;
 			transition-property: right;
@@ -44,7 +46,7 @@ const StyledButtonLine = styled.div`
 const ButtonSlideLine = () => {
 	return (
 		<StyledButtonLine>
-			<button className="slideHover">Hover Slide Line</button>
+			<button className="slideHoverBorder">Hover Slide Line</button>
 		</StyledButtonLine>
 	)
 }

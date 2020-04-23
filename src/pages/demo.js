@@ -35,7 +35,7 @@ const Demo = (props) => {
 						<h1>{pageTitle}</h1>
 						<div className="lead-text">
 							<p>Here's a list for easy access to my demos I've tried out.</p>
-							<p className="small">- Last update: Apr 1, 2020</p>
+							<p className="small">- Last update: Apr 23, 2020</p>
 						</div>
 					</div>
 
@@ -57,6 +57,9 @@ const Demo = (props) => {
 						</div>
 						<h2>CSS</h2>
 						<div className="demo-list">
+							<div className="demo-list__item">
+								=> <Link to="/demo/demo-micro-interections/">Micro Interections</Link>
+							</div>
 							<div className="demo-list__item">
 								=> <Link to="/demo/demo-scroll-snap/">Scroll Snap</Link>
 							</div>
