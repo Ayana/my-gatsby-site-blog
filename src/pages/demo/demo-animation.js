@@ -57,14 +57,14 @@ const Animation = (props) => {
 		<Layout location={location}>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<StyledAnimation>
-				<div className='container'>
+				<div className="container">
 					<h1>{pageTitle}</h1>
 
-					<section className='demo-section'>
-						<h2 className='font-script' style={{ fontSize: '2.5rem' }}>
+					<section className="demo-section" style={{ maxWidth: '440px', margin: '7rem auto 10rem' }}>
+						<h2 className="font-script" style={{ fontSize: '2.5rem' }}>
 							Let's go cycling!
 						</h2>
-						<div className='effect-wrap'>
+						<div className="effect-wrap">
 							<Bike />
 						</div>
 					</section>
