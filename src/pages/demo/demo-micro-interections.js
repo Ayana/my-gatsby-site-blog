@@ -20,18 +20,6 @@ const StyledWrap = styled.div`
 	} */
 `
 
-const ButtonHover = styled.div`
-	@media (min-width: 751px) {
-		display: flex;
-		justify-content: space-between;
-	}
-	div {
-		margin-bottom: 1.5rem;
-		button {
-			min-width: 160px;
-		}
-	}
-`
 const MoveOut = styled.div`
 	.circle-move-out {
 		cursor: pointer;
@@ -76,14 +64,74 @@ const MoveOut = styled.div`
 	}
 `
 
+const Circle = styled.div`
+	svg {
+		width: 100px;
+		cursor: pointer;
+		circle {
+			fill: none;
+			stroke-width: 5;
+			transform: rotate(-90deg);
+			transform-origin: 50%;
+			transform-box: fill-box;
+			stroke-dasharray: 250;
+			stroke-dashoffset: 250;
+			transition: 0.5s;
+			&:nth-child(1) {
+				stroke: #ccc;
+				stroke-dashoffset: 0;
+			}
+			&:nth-child(2) {
+				stroke: #eb5151;
+				stroke-dashoffset: 250;
+			}
+			&.LineAnime {
+				animation: lineAnimation 2s linear forwards infinite;
+				animation-delay: 0.1s;
+			}
+		}
+	}
+	@keyframes lineAnimation {
+		0% {
+			stroke-dashoffset: 250;
+		}
+		40% {
+			stroke-dashoffset: 120;
+			transform: rotate(-90deg);
+		}
+		100% {
+			transform: rotate(270deg);
+		}
+	}
+`
+
+const ButtonHover = styled.div`
+	@media (min-width: 751px) {
+		display: flex;
+		justify-content: space-between;
+	}
+	div {
+		margin-bottom: 1.5rem;
+		button {
+			min-width: 160px;
+		}
+	}
+`
+
 const MicroInterections = (props) => {
 	const location = props.location
 	const pageTitle = 'Demo Micro Interections'
 	const pageSlug = 'demo-micro-interections'
 
-	const [onHover, setOnHover] = useState(false)
+	const [onHover1, setOnHover1] = useState(false)
+	const [onHover2, setOnHover2] = useState(false)
 	// console.log(hover)
 
+	// const welcome = document.querySelectorAll('svg circle')
+
+	// for (let i = 0; i < welcome.length; i++) {
+	// 	console.log(`Letter ${i} is ${welcome[i].getTotalLength()}`)
+	// }
 	return (
 		<Layout location={location}>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
@@ -95,12 +143,18 @@ const MicroInterections = (props) => {
 
 					<MoveOut className="demo-section">
 						<p className="font-script">Hover me!</p>
-						<button className="circle-move-out" onMouseEnter={() => setOnHover(true)} onMouseLeave={() => setOnHover(false)}>
-							<div className={`circle-outer ${onHover && 'zoomIn'}`}></div>
-							{/* <div className="circle-outer zoomIn"></div> */}
+						<button className="circle-move-out" onMouseEnter={() => setOnHover1(true)} onMouseLeave={() => setOnHover1(false)}>
+							<div className={`circle-outer ${onHover1 && 'zoomIn'}`}></div>
 							<div className="circle-inner"></div>
 						</button>
 					</MoveOut>
+
+					<Circle className="demo-section">
+						<svg onMouseEnter={() => setOnHover2(true)} onMouseLeave={() => setOnHover2(false)}>
+							<circle cx="50" cy="50" r="25"></circle>
+							<circle cx="50" cy="50" r="25" className={onHover2 && 'LineAnime'}></circle>
+						</svg>
+					</Circle>
 
 					<ButtonHover className="demo-section">
 						<ButtonSlide />
