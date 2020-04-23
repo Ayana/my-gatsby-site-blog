@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
+import VisibilitySensor from 'react-visibility-sensor'
+
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import styled from 'styled-components'
@@ -47,6 +49,12 @@ const DemoParallxJs = (props) => {
 	const pageTitle = 'Demo Vanilla JavaScript Parallax'
 	const pageSlug = 'demo-parallax-js'
 
+	const [isVisible, setIsVisible] = useState('')
+
+	function onChange(isVisible) {
+		setIsVisible(!isVisible)
+	}
+
 	useEffect(() => {
 		window.addEventListener('scroll', function() {
 			const target = document.querySelectorAll('.parallax')
@@ -81,21 +89,26 @@ const DemoParallxJs = (props) => {
 		<Layout location={location}>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<StyledParallax>
-				<div className='container-wide'>
+				<div className="container-wide">
 					<h1>{pageTitle}</h1>
 				</div>
-				<div className='effect-wrap'>
-					<section className='first'>
-						<div className='copy parallax' data-rate='0.2' data-direction='vertical'>
+				<div className="effect-wrap">
+					<section className="first">
+						<div className="copy parallax" data-rate="0.2" data-direction="vertical">
 							Parallax
 						</div>
-						<div className='hello parallax' data-ratey='1' data-ratex='1' data-direction='horizontal'>
+						<div className="hello parallax" data-ratey="1" data-ratex="1" data-direction="horizontal">
 							Hello
 						</div>
 					</section>
 					{/* <div className='work code parallax' data-ratey='1' data-ratex='1' data-direction='horizontal'>
 							Code
 						</div> */}
+					<VisibilitySensor onChange={onChange}>
+						<div className={`item ${isVisible ? '' : 'is-view'}`} style={{ textAlign: 'center', padding: '3rem' }}>
+							Detect Area Test
+						</div>
+					</VisibilitySensor>
 				</div>
 			</StyledParallax>
 		</Layout>
