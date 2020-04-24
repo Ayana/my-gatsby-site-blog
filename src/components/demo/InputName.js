@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const StyledInputName = styled.div`
-  .name-box {
-    margin-bottom: 3em;
+	.name-box {
+		margin-bottom: 3em;
 		.greeting {
 			margin-bottom: 1.5em;
 		}
@@ -17,61 +17,46 @@ const StyledInputName = styled.div`
 				padding: 5px 10px;
 			}
 		}
-  }
-  @media (min-width: 800px) {
-  }
+	}
+	@media (min-width: 800px) {
+	}
 `
 
 const InputName = () => {
-  const [ name, setName ] = useState('')
-  const [ surname, setSurname ] = useState('')
-    
-  useEffect(() => {
-    // document.title = `Hello ${name} ${surname}`
-    console.log(`Hello ${name} ${surname}`)
-    // const tnode = document.createTextNode("<Any-Text>");
-    // document.getElementById("greeting").appendChild(tnode);
-    // document.getElementById("greeting").insertAdjacentHTML = "Paragraph changed!";
-  },[name, surname]
-  )
+	const [name, setName] = useState('')
+	const [surname, setSurname] = useState('')
 
+	useEffect(() => {
+		// document.title = `Hello ${name} ${surname}`
+		// console.log(`Hello ${name} ${surname}`)
+		// const tnode = document.createTextNode("<Any-Text>");
+		// document.getElementById("greeting").appendChild(tnode);
+		// document.getElementById("greeting").insertAdjacentHTML = "Paragraph changed!";
+	}, [name, surname])
 
-    
-  function handleNameChange(e) {
-    setName(e.target.value)
-  }
+	function handleNameChange(e) {
+		setName(e.target.value)
+	}
 
-  function handleSurnameChange(e) {
-    setSurname(e.target.value)
-  }
+	function handleSurnameChange(e) {
+		setSurname(e.target.value)
+	}
 
-  return (
-    <StyledInputName>
-      <div className="name-box">
-        <div className="greeting">
-          Hello{ name ? ' ' + name + ' ' + surname : ' Guest' }!
-        </div>
+	return (
+		<StyledInputName>
+			<div className="name-box">
+				<div className="greeting">Hello{name ? ' ' + name + ' ' + surname : ' Guest'}!</div>
 
-        <div className="name-input">
-					<input 
-						type="text"
-						placeholder="First Name"
-						value={name} 
-						onChange={handleNameChange}
-					/>
+				<div className="name-input">
+					<input type="text" placeholder="First Name" value={name} onChange={handleNameChange} />
 				</div>
 
-        <div className="name-input">
-					<input 
-						type="text"
-						placeholder="Last Name"
-						value={surname} 
-						onChange={handleSurnameChange}
-					/>
+				<div className="name-input">
+					<input type="text" placeholder="Last Name" value={surname} onChange={handleSurnameChange} />
 				</div>
-      </div>
-    </StyledInputName>
-  )
+			</div>
+		</StyledInputName>
+	)
 }
 
 export default InputName
