@@ -43,7 +43,7 @@ const Functions = (props) => {
 
 	const listItems = numbers.map((number) => (
 		<div className="list-items__image" key={number.toString()}>
-			<img src={require(`./../../assets/images/demo/img_demo_${number}.jpg`)} />
+			<img src={require(`./../../assets/images/demo/img_demo_${number}.jpg`)} alt="" />
 		</div>
 	))
 
