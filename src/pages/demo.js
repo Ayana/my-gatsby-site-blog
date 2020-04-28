@@ -35,7 +35,7 @@ const Demo = (props) => {
 						<h1>{pageTitle}</h1>
 						<div className="lead-text">
 							<p>Here's a list for easy access to my demos I've tried out.</p>
-							<p className="small">- Last update: Apr 23, 2020</p>
+							<p className="small">- Last update: Apr 28, 2020</p>
 						</div>
 					</div>
 
