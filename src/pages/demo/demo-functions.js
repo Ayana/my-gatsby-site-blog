@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
+import ConsentWindow from '../../components/ConsentWindow'
 import InputName from '../../components/demo/InputName'
 import Increment from '../../components/demo/Increment'
 import styled from 'styled-components'
@@ -79,8 +80,21 @@ const Functions = (props) => {
 						<h2>Color Gradient</h2>
 						<div className="color-wheel"></div>
 					</div>
+
+					<div style={{ marginTop: '5em' }}>
+						<h2>React Cookie Consent</h2>
+						<p>Down below(Initial access only)</p>
+						<p>
+							Refference:
+							<br />
+							<a href="https://www.npmjs.com/package/react-cookie-consent" target="_blank" rel="noopener noreferrer">
+								https://www.npmjs.com/package/react-cookie-consent
+							</a>
+						</p>
+					</div>
 				</div>
 			</StyledTransition>
+			<ConsentWindow />
 		</Layout>
 	)
 }
