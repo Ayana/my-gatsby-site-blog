@@ -48,6 +48,7 @@
 		"react-i18next": "^11.3.4",
 		"react-id-swiper": "^2.4.0",
 		"react-media": "^1.10.0",
+		"react-parallax": "^3.0.3",
 		"react-reveal": "^1.2.2",
 		"react-slick": "^0.25.2",
 		"react-spring": "^8.0.27",

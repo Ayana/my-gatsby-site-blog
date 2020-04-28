@@ -76,6 +76,9 @@ const Demo = (props) => {
 						<h2>JavaScript library </h2>
 						<div className="demo-list">
 							<div className="demo-list__item">
+								=> <Link to="/demo/demo-react-parallax/">React Parallax(Banner)</Link>
+							</div>
+							<div className="demo-list__item">
 								=> <Link to="/demo/demo-d3/">D3.js</Link>
 							</div>
 							<div className="demo-list__item">
