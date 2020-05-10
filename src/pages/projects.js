@@ -145,7 +145,7 @@ class Projects extends React.Component {
 								</div>
 								<h3 className="project__copy">Leave and utilize the attractive Japanese house to the next generation.</h3>
 								<div className="project__description">
-									<p>How do we preserve this 150 years old house? - This is a big challenge we had faced in 2016. "Misawaya" is a Japanese traditional house built in 1861 which my family owns in Nagano, Japan. I have been challanging to solve social issues using this house.</p>
+									<p>How do we preserve this 150 years old house? - This is a big challenge we had faced in 2016. "Misawaya" is a Japanese traditional house built in 1861 which my family owns in Nagano, Japan. I have been challanging to solve social issues using this house. </p>
 								</div>
 								<a className="project__link button secondary" target="_blank" rel="noopener noreferrer" href="https://misawaya.org/en/">
 									Visit Site
