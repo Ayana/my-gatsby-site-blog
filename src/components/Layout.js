@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './Nav'
-import './i18next'
+// import './i18next'
 import '../assets/scss/styles.scss'
 
 if (typeof window !== 'undefined') {

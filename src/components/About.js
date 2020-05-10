@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 import Fade from 'react-reveal/Fade'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 
 import Social from './Social'
 import { rhythm } from '../utils/typography'
@@ -64,20 +64,20 @@ const About = () => {
 		}
 	`)
 
-	const { t, i18n } = useTranslation()
+	// const { t, i18n } = useTranslation()
 
 	const { author } = data.site.siteMetadata
 	return (
 		<StyledAbout>
-			<Suspense fallback="loading">
+			{/* <Suspense fallback="loading"> */}
 				<div className="about">
 					<div>
 						<Fade bottom delay={500} duration={800} distance={'20px'}>
 							<Image fluid={data.avatar.childImageSharp.fluid} alt={author} />
 						</Fade>
 						<Fade bottom delay={900} duration={800} distance={'20px'}>
-							<h2 className="about__text--greeting">{t('Welcome to React')}</h2>
-							{/* <h2 className="about__text--greeting">Hello, I'm {author}</h2> */}
+							{/* <h2 className="about__text--greeting">{t('Welcome to React')}</h2> */}
+							<h2 className="about__text--greeting">Hello, I'm {author}</h2>
 							<p className="about__text--title">Web Developer / Organizer</p>
 						</Fade>
 						<Fade bottom delay={1200} duration={800} distance={'20px'}>
@@ -87,7 +87,7 @@ const About = () => {
 						</Fade>
 					</div>
 				</div>
-			</Suspense>
+			{/* </Suspense> */}
 		</StyledAbout>
 	)
 }
