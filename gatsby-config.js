@@ -99,5 +99,12 @@ module.exports = {
 				username: `misawayanohanashi`,
 			},
 		},
+		{
+			resolve: `gatsby-plugin-nprogress`,
+			options: {
+				// color: `tomato`,
+				// showSpinner: false,
+			},
+		},
 	],
 }
