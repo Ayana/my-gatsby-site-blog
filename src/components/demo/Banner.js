@@ -13,7 +13,7 @@ const titleStyle = {
 
 export default ({ title = 'banner', bgImage, height }) => (
 	<div className="parallax-banner">
-		<Parallax blur={{ min: -15, max: 15 }} bgImage={bgImage} strength={300}>
+		<Parallax blur={{ min: -1, max: 1 }} bgImage={bgImage} strength={800}>
 			<div style={{ height: height }}>
 				<div style={titleStyle}>{title && <p>{title}</p>}</div>
 			</div>

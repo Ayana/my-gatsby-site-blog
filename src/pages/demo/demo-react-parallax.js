@@ -30,8 +30,8 @@ const ReactParallax = (props) => {
 				<div className="box" style={{ height: '400px' }}>
 					content
 				</div>
-				<Banner bgImage={image} height={600} />
-				<div className="box" style={{ height: '400px' }}>
+				<Banner bgImage={image} height={'100vh'} />
+				<div className="box" style={{ height: '100vh' }}>
 					content
 				</div>
 				<Banner bgImage={image} height={400} />
