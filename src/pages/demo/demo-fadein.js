@@ -10,6 +10,7 @@ const StyledFadein = styled.div`
 		.gallery-item {
 			width: 33.333%;
 			img {
+				width: 100%;
 				margin-bottom: 0;
 			}
 		}
