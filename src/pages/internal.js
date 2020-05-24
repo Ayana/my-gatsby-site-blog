@@ -27,6 +27,21 @@ const Internal = (props) => {
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<div className="container">
 				<h1>{pageTitle}</h1>
+				<form name="request" method="post" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
+					<input type="hidden" name="form-name" value="request" />
+					<div class="fields">
+						<div class="field">
+							<textarea name="message" rows="4" placeholder="Request message"></textarea>
+						</div>
+						<div class="field">
+							<input type="email" name="email" placeholder="Email" />
+						</div>
+					</div>
+					<div data-netlify-recaptcha="true"></div>
+					<div class="actions">
+						<button type="submit">Send</button>
+					</div>
+				</form>
 			</div>
 		</Layout>
 	)
