@@ -27,18 +27,34 @@ const Internal = (props) => {
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<div className="container">
 				<h1>{pageTitle}</h1>
-				<form name="contact" method="post" netlify>
-					<div class="fields">
-						<div class="field">
-							<textarea name="message" rows="4" placeholder="Request message"></textarea>
-						</div>
-						<div class="field">
-							<input type="email" name="email" placeholder="Email" />
-						</div>
-					</div>
-					<div class="actions">
+				<form name="contact" method="POST" data-netlify="true">
+					<p>
+						<label>
+							Your Name: <input type="text" name="name" />
+						</label>
+					</p>
+					<p>
+						<label>
+							Your Email: <input type="email" name="email" />
+						</label>
+					</p>
+					<p>
+						<label>
+							Your Role:{' '}
+							<select name="role[]" multiple>
+								<option value="leader">Leader</option>
+								<option value="follower">Follower</option>
+							</select>
+						</label>
+					</p>
+					<p>
+						<label>
+							Message: <textarea name="message"></textarea>
+						</label>
+					</p>
+					<p>
 						<button type="submit">Send</button>
-					</div>
+					</p>
 				</form>
 			</div>
 		</Layout>
