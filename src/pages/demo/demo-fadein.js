@@ -18,7 +18,7 @@ const StyledFadein = styled.div`
 `
 
 const Fadein = (props) => {
-	const location = props.location
+	// const location = props.location
 	// const pageTitle = 'Demo Fadein'
 	// const pageSlug = 'demo-fadein'
 
