@@ -31,24 +31,24 @@ const About = (props) => {
 		<Layout location={props.location}>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<StyledAbout>
-				<div className='container basic-link'>
-					<h1 className='page__header'>{pageTitle}</h1>
+				<div className="container basic-link">
+					<h1 className="page__header">{pageTitle}</h1>
 
 					<div>
 						<p>
-							I'm a web developer with over 13 years of experience in web design & development from Japan. Over the past years, I have worked for various companies and clients with skills of web development, design and project management. And last couple of years, I have been focusing on front-end
-							creative design with the technological aspects.
+							I'm a web developer with 14+ years of experience in design & development from Japan. Over the past years, I have worked for various companies and clients with web development, project management, and web marketing. And last couple of years, I have been focusing on front-end creative
+							design with the technological aspects.
 						</p>
-						<p>On the other side of the business, I have been challanging to solve some social issues utelizing my skills and experiences as an orgnizer and a supporter. </p>
+						<p>On the other side of the business, I have been challenging to solve some social issues utilizing my skills and experiences as an organizer and a supporter. </p>
 					</div>
-					<h2 className='about__header'>What I do</h2>
+					<h2 className="about__header">What I do</h2>
 					<section>
-						<ul className='no-bullet about__list'>
+						<ul className="no-bullet about__list">
 							<li>
 								<strong>Creative Dev.</strong> - Mostly front-end development with HTML5, CSS3, Sass, JavaScript, React, GatsbyJS, WordPress, Git.
 							</li>
 							<li>
-								<strong>Interactive Design</strong> - Minimalist user friendly web design with well experienced in E-commerce and Food industory.
+								<strong>Interaction Design</strong> - User friendly interactive web design with well experienced in E-commerce and Food industry.
 							</li>
 							<li>
 								<strong>Organizing</strong> - Event management, creating sustainable community with skills of project management & business strategy.
@@ -56,8 +56,8 @@ const About = (props) => {
 						</ul>
 					</section>
 
-					<h3 className='about__header about__header--sub'>A little more about me</h3>
-					<section className='about-sec'>
+					<h3 className="about__header about__header--sub">A little more about me</h3>
+					<section className="about-sec">
 						- Owner of a summer cafe
 						<br />
 						- Shaved ice maker
