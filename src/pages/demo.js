@@ -34,13 +34,13 @@ const Demo = (props) => {
 					<div className="container">
 						<h1>{pageTitle}</h1>
 						<div className="lead-text">
-							<p>Here's a list for easy access to my demos I've tried out.</p>
-							<p className="small">- Last update: Apr 28, 2020</p>
+							<p>A list for easy access to my demos I've tried out.</p>
+							{/* <p className="small">- Last update: June 4, 2020</p> */}
 						</div>
 					</div>
 
 					<div className="container">
-						<h2>3D</h2>
+						<h2>AR & WebGL</h2>
 						<div className="demo-list">
 							<div className="demo-list__item">
 								=>
@@ -51,7 +51,7 @@ const Demo = (props) => {
 							<div className="demo-list__item">
 								=>
 								<a href="https://three-js-model.netlify.com/" target="_blank" rel="noopener noreferrer">
-									3D model
+									Three.js
 								</a>
 							</div>
 						</div>
@@ -76,6 +76,9 @@ const Demo = (props) => {
 						<h2>JavaScript library </h2>
 						<div className="demo-list">
 							<div className="demo-list__item">
+								=> <Link to="/demo/demo-cookie-consent/">React Cookie Consent</Link>
+							</div>
+							<div className="demo-list__item">
 								=> <Link to="/demo/demo-react-parallax/">React Parallax(Banner)</Link>
 							</div>
 							<div className="demo-list__item">
@@ -97,14 +100,18 @@ const Demo = (props) => {
 						<h2>CSS & JavaScript </h2>
 						<div className="demo-list">
 							<div className="demo-list__item">
+								=> <Link to="/demo/demo-intersection/">Intersection Observer</Link> <br />
+							</div>
+							<div className="demo-list__item">
 								=> <Link to="/demo/demo-parallax-js/">Vanilla JavaScript Parallax</Link> <br />
 							</div>
-						</div>
-						<h2>JavaScript </h2>
-						<div className="demo-list">
 							<div className="demo-list__item">
 								=> <Link to="/demo/demo-functions/">Small Functions</Link>
 							</div>
+						</div>
+
+						<h2>API </h2>
+						<div className="demo-list">
 							<div className="demo-list__item">
 								=> <Link to="/demo/demo-video-player/">Video Player using youtube API</Link>
 							</div>

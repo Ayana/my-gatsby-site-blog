@@ -14,21 +14,12 @@ const StyledIntersection = styled.div`
 		height: 100vh;
 		transition: all 0.3s;
 		&.active {
-			opacity: 0.8;
+			background: #247ba0;
+			color: #fff;
 		}
 	}
-	.first {
-		background: #f25f5c;
-	}
-	.second {
-		background: #ffe066;
-	}
-	.third {
-		background: #247ba0;
-	}
-	.fourth {
-		background: #70c1b3;
-		margin-bottom: 5rem;
+	.ref {
+		margin: 5rem 0 4rem;
 	}
 `
 
@@ -41,7 +32,7 @@ const DemoParallxJs = (props) => {
 	const options = {
 		root: null,
 		rootMargin: '-10%',
-		threshold: 0.5,
+		threshold: 0.4,
 	}
 	const observer = new IntersectionObserver(beTouching, options)
 	section.forEach((section) => {
@@ -57,7 +48,6 @@ const DemoParallxJs = (props) => {
 				entry.target.classList.remove('active')
 			}
 		})
-		// section.classList.add('active')
 	}
 
 	return (
@@ -84,13 +74,15 @@ const DemoParallxJs = (props) => {
 					<section className="fourth">
 						<span>Fourth</span>
 					</section>
-					<p className="container">
-						Refference:
-						<br />
-						<a href="https://www.youtube.com/watch?v=gQ8WggeHoJU" target="_blank" rel="noopener noreferrer">
-							https://www.youtube.com/watch?v=gQ8WggeHoJU
-						</a>
-					</p>
+					<div className="container">
+						<p className="ref">
+							Refference:
+							<br />
+							<a href="https://www.youtube.com/watch?v=gQ8WggeHoJU" target="_blank" rel="noopener noreferrer">
+								https://www.youtube.com/watch?v=gQ8WggeHoJU
+							</a>
+						</p>
+					</div>
 				</div>
 			</StyledIntersection>
 		</Layout>
