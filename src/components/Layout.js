@@ -34,7 +34,7 @@ class Layout extends React.Component {
 					<div className="container full">{header}</div>
 				</header>
 				<main>{children}</main>
-				<i18n />
+				{/* <i18n /> */}
 				<footer
 					className="container"
 					style={{
