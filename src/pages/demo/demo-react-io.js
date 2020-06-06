@@ -51,6 +51,22 @@ const Intersection = ({ location }) => {
 						<h1>{pageTitle}</h1>
 					</div>
 
+					<section ref={ref1} className={`section ${inView1 ? 'active' : ''}`}>
+						<span>First</span>
+					</section>
+
+					<section ref={ref2} className={`section ${inView2 ? 'active' : ''}`}>
+						<span>Second</span>
+					</section>
+
+					<section ref={ref3} className={`section ${inView3 ? 'active' : ''}`}>
+						<span>Third</span>
+					</section>
+
+					<section ref={ref4} className={`section ${inView4 ? 'active' : ''}`}>
+						<span>Fourth</span>
+					</section>
+
 					<div className="container">
 						<p className="ref">
 							Refference:
