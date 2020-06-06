@@ -97,7 +97,7 @@ const Demo = (props) => {
 								=> <Link to="/demo/demo-swiper/">Swiper</Link>
 							</div>
 							<div className="demo-list__item">
-								=> <Link to="/demo/demo-reveal/">React Reveal animation</Link> <br />
+								=> <Link to="/demo/demo-reveal/">React Reveal</Link> <br />
 							</div>
 						</div>
 						<h2>CSS & JavaScript </h2>
