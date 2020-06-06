@@ -1,4 +1,5 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import styled from 'styled-components'
@@ -23,10 +24,23 @@ const StyledIntersection = styled.div`
 	}
 `
 
-const Intersection = (props) => {
-	const location = props.location
+const Intersection = ({ location }) => {
 	const pageTitle = 'Demo React Intersection Observer'
 	const pageSlug = 'demo-react-io'
+
+	const THRESHOLD = [0.4]
+	const [ref1, inView1] = useInView({
+		threshold: THRESHOLD,
+	})
+	const [ref2, inView2] = useInView({
+		threshold: THRESHOLD,
+	})
+	const [ref3, inView3] = useInView({
+		threshold: THRESHOLD,
+	})
+	const [ref4, inView4] = useInView({
+		threshold: THRESHOLD,
+	})
 
 	return (
 		<Layout location={location}>
