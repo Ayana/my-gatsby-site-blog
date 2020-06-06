@@ -23,39 +23,38 @@ const StyledIntersection = styled.div`
 	}
 `
 
-// function useOnScreen(options) {
-// 	const ref = useRef()
-// 	const [isActive, setIsActive] = useState('')
+function useOnScreen(options) {
+	const ref = useRef()
+	const [isActive, setIsActive] = useState('')
 
-// 	useEffect(() => {
-// 		const observer = new IntersectionObserver(([entry]) => {
-// 			setIsActive(entry.isIntersecting)
-// 		}, options)
+	useEffect(() => {
+		const observer = new IntersectionObserver(([entry]) => {
+			setIsActive(entry.isIntersecting)
+		}, options)
 
-// 		if (ref.current) {
-// 			observer.observe(ref.current)
-// 		}
+		if (ref.current) {
+			observer.observe(ref.current)
+		}
 
-// 		return () => {
-// 			if (ref.current) {
-// 				observer.unobserve(ref.current)
-// 			}
-// 		}
-// 	}, [ref, options])
+		return () => {
+			if (ref.current) {
+				observer.unobserve(ref.current)
+			}
+		}
+	}, [ref, options])
 
-// 	return [ref, isActive]
-// }
+	return [ref, isActive]
+}
 
-const Intersection = (props) => {
-	const location = props.location
+const Intersection = ({ location }) => {
 	const pageTitle = 'Demo Custoom Hooks Intersection Observer'
 	const pageSlug = 'demo-custom-io'
 
-	// const rootMargin = '-400px'
-	// const [ref1, isActive1] = useOnScreen({ rootMargin: rootMargin })
-	// const [ref2, isActive2] = useOnScreen({ rootMargin: rootMargin })
-	// const [ref3, isActive3] = useOnScreen({ rootMargin: rootMargin })
-	// const [ref4, isActive4] = useOnScreen({ rootMargin: rootMargin })
+	const rootMargin = '-400px'
+	const [ref1, isActive1] = useOnScreen({ rootMargin: rootMargin })
+	const [ref2, isActive2] = useOnScreen({ rootMargin: rootMargin })
+	const [ref3, isActive3] = useOnScreen({ rootMargin: rootMargin })
+	const [ref4, isActive4] = useOnScreen({ rootMargin: rootMargin })
 
 	return (
 		<Layout location={location}>
@@ -66,7 +65,7 @@ const Intersection = (props) => {
 						<h1>{pageTitle}</h1>
 					</div>
 
-					{/* <section ref={ref1} className={`section ${isActive1 ? 'active' : ''}`}>
+					<section ref={ref1} className={`section ${isActive1 ? 'active' : ''}`}>
 						<span>First</span>
 					</section>
 
@@ -80,7 +79,8 @@ const Intersection = (props) => {
 
 					<section ref={ref4} className={`section ${isActive4 ? 'active' : ''}`}>
 						<span>Fourth</span>
-					</section> */}
+					</section>
+
 					<div className="container">
 						<p className="ref">
 							Refference:

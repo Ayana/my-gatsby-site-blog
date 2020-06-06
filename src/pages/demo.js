@@ -123,15 +123,12 @@ const Demo = (props) => {
 							</div>
 						</div>
 
-						<h2>Gatsby </h2>
-						<div className="demo-list">
-							<div className="demo-list__item">
+						<div className="demo-list">{/* <div className="demo-list__item">
 								=> <Link to="/demo/demo-image/">Gatsby Image</Link>
 							</div>
-							{/* <div className="demo-list__item">
+							<div className="demo-list__item">
 								=> <Link to="/demo/demo-instagram/">Instagram Feed</Link>
-							</div> */}
-						</div>
+							</div> */}</div>
 					</div>
 				</div>
 			</StyledDemo>
