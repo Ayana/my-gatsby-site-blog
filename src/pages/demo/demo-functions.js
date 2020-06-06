@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import InputName from '../../components/demo/InputName'
 import Increment from '../../components/demo/Increment'
+import SearchFunc from '../../components/demo/SearchFunc'
 import styled from 'styled-components'
 
 const StyledTransition = styled.div`
@@ -33,6 +34,12 @@ const MapIteration = styled.div`
 	}
 `
 
+const SearchBar = styled.div`
+	margin-top: 5rem;
+
+	}
+`
+
 const Functions = (props) => {
 	const location = props.location
 	const pageTitle = 'Demo Functions'
@@ -45,6 +52,14 @@ const Functions = (props) => {
 			<img src={require(`./../../assets/images/demo/img_demo_${number}.jpg`)} alt="" />
 		</div>
 	))
+
+	const [persons] = useState([
+		{ name: 'Emiko', number: '00-0000-0000' },
+		{ name: 'Perry', number: '00-0000-0000' },
+		{ name: 'Mike', number: '00-0000-0000' },
+		{ name: 'Tom', number: '00-0000-0000' },
+		{ name: 'Lisa', number: '00-0000-0000' },
+	])
 
 	return (
 		<Layout location={location}>
@@ -62,6 +77,18 @@ const Functions = (props) => {
 						<h2>Counter</h2>
 						<Increment />
 					</div>
+
+					<SearchBar>
+						<h2>Search Bar</h2>
+						<SearchFunc persons={persons} />
+						<p style={{ marginTop: '6rem' }}>
+							Refference:
+							<br />
+							<a href="https://hackernoon.com/how-to-build-a-search-bar-in-react-with-react-hooks-o77l3yl7" target="_blank" rel="noopener noreferrer">
+								How to Build a Search Bar in React with React Hooks
+							</a>
+						</p>
+					</SearchBar>
 
 					<MapIteration>
 						<h2>Map Iteration</h2>

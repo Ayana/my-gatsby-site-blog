@@ -135,7 +135,7 @@ const MicroInterections = (props) => {
 	return (
 		<Layout location={location}>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
-			<StyledWrap className="container">
+			<StyledWrap className="container basic-link">
 				<div>
 					<h1>{pageTitle}</h1>
 
@@ -162,6 +162,14 @@ const MicroInterections = (props) => {
 						<ButtonSlideLineBorder />
 						<ButtonShutterOut />
 					</ButtonHover>
+
+					<p className="ref">
+						Refference:
+						<br />
+						<a href="https://emilkowalski.github.io/css-effects-snippets/" target="_blank" rel="noopener noreferrer">
+							CSSeffectsSnippets
+						</a>
+					</p>
 				</div>
 			</StyledWrap>
 		</Layout>
