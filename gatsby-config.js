@@ -43,20 +43,12 @@ module.exports = {
 							wrapperStyle: `margin-bottom: 1.0725rem`,
 						},
 					},
-					`gatsby-remark-prismjs`,
-					`gatsby-remark-copy-linked-files`,
 					`gatsby-remark-smartypants`,
 				],
 			},
 		},
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
-		// {
-		//   resolve: `gatsby-plugin-google-analytics`,
-		//   options: {
-		//     trackingId: `UA-143510928-1`,
-		//   },
-		// },
 		{
 			resolve: 'gatsby-plugin-google-tagmanager',
 			options: {
@@ -73,12 +65,11 @@ module.exports = {
 				short_name: `Ayaos`,
 				start_url: `/`,
 				background_color: `#ffffff`,
-				theme_color: `#663399`,
+				theme_color: `#333`,
 				display: `minimal-ui`,
 				icon: `src/assets/images/ayaos-icon.png`,
 			},
 		},
-		`gatsby-plugin-offline`,
 		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-plugin-typography`,
@@ -97,13 +88,6 @@ module.exports = {
 			resolve: `gatsby-source-instagram`,
 			options: {
 				username: `misawayanohanashi`,
-			},
-		},
-		{
-			resolve: `gatsby-plugin-nprogress`,
-			options: {
-				// color: `tomato`,
-				// showSpinner: false,
 			},
 		},
 	],
