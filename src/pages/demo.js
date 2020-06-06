@@ -75,9 +75,9 @@ const Demo = (props) => {
 						</div>
 						<h2>JavaScript library </h2>
 						<div className="demo-list">
-							<div className="demo-list__item">
+							{/* <div className="demo-list__item">
 								=> <Link to="/demo/demo-react-io/">React React Intersection Observer</Link>
-							</div>
+							</div> */}
 							<div className="demo-list__item">
 								=> <Link to="/demo/demo-cookie-consent/">React Cookie Consent</Link>
 							</div>
@@ -102,9 +102,9 @@ const Demo = (props) => {
 						</div>
 						<h2>CSS & JavaScript </h2>
 						<div className="demo-list">
-							<div className="demo-list__item">
+							{/* <div className="demo-list__item">
 								=> <Link to="/demo/demo-custom-io/">React React Custom Hooks Intersection Observer</Link>
-							</div>
+							</div> */}
 							<div className="demo-list__item">
 								=> <Link to="/demo/demo-intersection/">Intersection Observer</Link> <br />
 							</div>
