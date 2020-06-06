@@ -144,9 +144,9 @@ class Projects extends React.Component {
 									<div className="project__label">Planning / Event / Website / Social Media</div>
 								</div>
 								<h3 className="project__copy">Leave and utilize the attractive Japanese house to the next generation.</h3>
-								<div className="project__description">
+								{/* <div className="project__description">
 									<p>How do we preserve this 150 years old house? - This is a big challenge we had faced in 2016. "Misawaya" is a Japanese traditional house built in 1861 which my family owns in Nagano, Japan. I have been challanging to solve social issues using this house. </p>
-								</div>
+								</div> */}
 								<a className="project__link button secondary" target="_blank" rel="noopener noreferrer" href="https://misawaya.org/en/">
 									Visit Site
 								</a>
@@ -164,9 +164,9 @@ class Projects extends React.Component {
 									<div className="project__label">Website</div>
 								</div>
 								<h3 className="project__copy">Introduce a new Japanese snack brand to the world.</h3>
-								<div className="project__description">
+								{/* <div className="project__description">
 									<p>Tempura Tokyo is a new Japanese snack brand which is created as a uniquely-flavored Japanese-style snack. The main target is Japanese customers, however I made it simple that tourists also can undestand them briefly.</p>
-								</div>
+								</div> */}
 								<a className="project__link button secondary" target="_blank" rel="noopener noreferrer" href="https://tempura-tokyo.jp/">
 									Visit Site
 								</a>
@@ -184,11 +184,11 @@ class Projects extends React.Component {
 									<div className="project__label">Maintenance / CRM / Volunteer</div>
 								</div>
 								<h3 className="project__copy">Help to preserve a community and historical archives in Lower East Side.</h3>
-								<div className="project__description">
+								{/* <div className="project__description">
 									<p>
 										How much do you know about New York City history? the Museum of Reclaimed Urban Space is a small museum in Lower East Side. The Museum has archives about squats and communitry garden which is very interesting. I support this museum as an act of living in a grassroots community.
 									</p>
-								</div>
+								</div> */}
 								<a className="project__link button secondary" target="_blank" rel="noopener noreferrer" href="http://www.morusnyc.org/">
 									Visit Site
 								</a>
@@ -206,9 +206,9 @@ class Projects extends React.Component {
 									<div className="project__label">Website / Recipe / Product / Cafe</div>
 								</div>
 								<h3 className="project__copy">Use seasonal fruits to reduce food loss and make sustainable life cycles.</h3>
-								<div className="project__description">
+								{/* <div className="project__description">
 									<p>As you know, farming is very difficult to control its production because of the weather. Kakigori(shaved ice) cafe is a creative way of utilizing fruits which suppose to dump at my father’s farm.</p>
-								</div>
+								</div> */}
 								<a className="project__link button secondary" target="_blank" rel="noopener noreferrer" href="https://greenroadfarm.org/">
 									Visit Site
 								</a>
