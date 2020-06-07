@@ -70,23 +70,23 @@ const About = () => {
 	return (
 		<StyledAbout>
 			{/* <Suspense fallback="loading"> */}
-				<div className="about">
-					<div>
-						<Fade bottom delay={500} duration={800} distance={'20px'}>
-							<Image fluid={data.avatar.childImageSharp.fluid} alt={author} />
-						</Fade>
-						<Fade bottom delay={900} duration={800} distance={'20px'}>
-							{/* <h2 className="about__text--greeting">{t('Welcome to React')}</h2> */}
-							<h2 className="about__text--greeting">Hello, I'm {author}</h2>
-							<p className="about__text--title">Web Developer / Organizer</p>
-						</Fade>
-						<Fade bottom delay={1200} duration={800} distance={'20px'}>
-							<div style={{ marginTop: '1.8em' }}>
-								<Social />
-							</div>
-						</Fade>
-					</div>
+			<div className="about">
+				<div>
+					<Fade bottom delay={500} duration={800} distance={'20px'}>
+						<Image fluid={data.avatar.childImageSharp.fluid} alt={author} />
+					</Fade>
+					<Fade bottom delay={900} duration={800} distance={'20px'}>
+						{/* <h2 className="about__text--greeting">{t('Welcome to React')}</h2> */}
+						<h2 className="about__text--greeting">Hello, I'm {author}</h2>
+						<p className="about__text--title">Web Developer / Organizer</p>
+					</Fade>
+					<Fade bottom delay={1200} duration={800} distance={'20px'}>
+						<div style={{ marginTop: '1.8em' }}>
+							<Social />
+						</div>
+					</Fade>
 				</div>
+			</div>
 			{/* </Suspense> */}
 		</StyledAbout>
 	)

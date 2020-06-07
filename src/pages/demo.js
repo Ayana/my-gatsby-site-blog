@@ -76,6 +76,9 @@ const Demo = (props) => {
 						<h2>JavaScript library </h2>
 						<div className="demo-list">
 							<div className="demo-list__item">
+								=> <Link to="/demo/demo-i18next/">React i18next</Link>
+							</div>
+							<div className="demo-list__item">
 								=> <Link to="/demo/demo-react-io/">React Intersection Observer</Link>
 							</div>
 							<div className="demo-list__item">
