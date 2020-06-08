@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import styled from 'styled-components'
-// import objectsList from '../../utils/objectsList'
+import objectsList from '../../utils/objectsList'
 
 import '../../components/i18next'
 import { useTranslation } from 'react-i18next'
@@ -34,7 +34,7 @@ function Translation({ location }) {
 	}
 
 	// 配列の取得
-	// console.log(objectsList[0].description[1])
+	console.log(objectsList[0].description[1])
 
 	return (
 		<Layout location={location}>
@@ -54,7 +54,17 @@ function Translation({ location }) {
 						<div>{t('description.2')}</div>
 					</div>
 
-					<p>i18next didn't work well.... it was ok in development but got error during build</p>
+					<div style={{ marginBottom: '5rem' }}>
+						<p>Gatsby doesn't support Suspense yet so I had to remove Suspense code and add "useSuspense: false".</p>
+						<p>
+							Have to check this for warning
+							<br />
+							<a href="https://www.i18next.com/overview/configuration-options" target="_blank" rel="noopener noreferrer">
+								Configuration Options
+							</a>
+						</p>
+						{/* <p>i18next didn't work well.... it was ok in development but got error during build</p> */}
+					</div>
 
 					<p className="ref">
 						Refference:
