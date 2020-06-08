@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import styled from 'styled-components'
@@ -16,9 +16,13 @@ const StyledWrap = styled.div`
 			border-radius: 3px;
 			padding: 8px 30px;
 			margin: 5px;
+			outline: none;
 			cursor: pointer;
 			&:hover {
 				opacity: 0.7;
+			}
+			&.current {
+				background: #afafaf;
 			}
 		}
 	}
@@ -28,13 +32,17 @@ function Translation({ location }) {
 	const pageTitle = 'Demo i18next'
 	const pageSlug = 'demo-i18next'
 
+	const [currentLang, setCurrentLang] = useState()
+	const isLangEn = currentLang === 'en'
+
 	const [t, i18n] = useTranslation('translation', { useSuspense: false })
-	const changeLanguage = (lang) => {
+	function changeLanguage(lang) {
 		i18n.changeLanguage(lang)
+		setCurrentLang(lang)
 	}
 
 	// 配列の取得
-	console.log(objectsList[0].description[1])
+	// console.log(objectsList[0].description[1])
 
 	return (
 		<Layout location={location}>
@@ -44,8 +52,12 @@ function Translation({ location }) {
 					<h1>{pageTitle}</h1>
 
 					<nav className="nav font-typewriter">
-						<button onClick={() => changeLanguage('en')}>En</button>
-						<button onClick={() => changeLanguage('ja')}>Ja</button>
+						<button onClick={() => changeLanguage('en')} className={isLangEn ? 'current' : ''}>
+							En
+						</button>
+						<button onClick={() => changeLanguage('ja')} className={!isLangEn ? 'current' : ''}>
+							Ja
+						</button>
 					</nav>
 
 					<div style={{ marginBottom: '5rem' }}>
