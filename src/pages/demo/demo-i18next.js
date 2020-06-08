@@ -2,9 +2,10 @@ import React, { Suspense } from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import styled from 'styled-components'
+import TranslationList from '../../locales/en/translation'
 
-import { useTranslation } from 'react-i18next'
-import '../../components/i18next'
+// import { useTranslation } from 'react-i18next'
+// import '../../components/i18next'
 
 // import Misawaya from '../../assets/images/demo/misawaya.jpg'
 
@@ -29,10 +30,12 @@ function Translation({ location }) {
 	const pageTitle = 'Demo i18next'
 	const pageSlug = 'demo-i18next'
 
-	const [t, i18n] = useTranslation()
-	const changeLanguage = (lang) => {
-		i18n.changeLanguage(lang)
-	}
+	// const [t, i18n] = useTranslation('translation', { useSuspense: false })
+	// const changeLanguage = (lang) => {
+	// 	i18n.changeLanguage(lang)
+	// }
+
+	console.log(TranslationList[0].description[1])
 
 	return (
 		<Suspense fallback={<div>Loading...</div>}>
@@ -42,16 +45,16 @@ function Translation({ location }) {
 					<div>
 						<h1>{pageTitle}</h1>
 
-						<nav className="nav font-typewriter">
+						{/* <nav className="nav font-typewriter">
 							<button onClick={() => changeLanguage('en')}>En</button>
 							<button onClick={() => changeLanguage('ja')}>Ja</button>
-						</nav>
+						</nav> */}
 
-						<div style={{ marginBottom: '5rem' }}>
-							<h2>{t('heading')}</h2>
+						<div style={{ marginBottom: '5rem' }}>{/* <h2>{t('heading')}</h2>
 							<div>{t('description.1')}</div>
-							<div>{t('description.2')}</div>
-						</div>
+							<div>{t('description.2')}</div> */}</div>
+
+						<p>i18next didn't work well.... it was ok in development but got error during build</p>
 
 						<p className="ref">
 							Refference:
