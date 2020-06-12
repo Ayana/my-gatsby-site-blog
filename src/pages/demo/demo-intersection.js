@@ -82,12 +82,12 @@ const Intersection = ({ location }) => {
 						<p className="ref">
 							Refference:
 							<br />
-							<a href="https://www.npmjs.com/package/react-intersection-observer" target="_blank" rel="noopener noreferrer">
-								react-intersection-observer(Plugin)
+							<a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank" rel="noopener noreferrer">
+								Intersection Observer API
 							</a>
 							<br />
-							<a href="https://www.youtube.com/watch?v=gQ8WggeHoJU" target="_blank" rel="noopener noreferrer">
-								IntersectionObserver API(For pure JavaScript)
+							<a href="https://stackoverflow.com/questions/59424347/gatsby-intersectionobserver-is-not-defined" target="_blank" rel="noopener noreferrer">
+								Trouble shooting
 							</a>
 						</p>
 					</div>

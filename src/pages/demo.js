@@ -106,6 +106,9 @@ const Demo = (props) => {
 						<h2>CSS & JavaScript </h2>
 						<div className="demo-list">
 							<div className="demo-list__item">
+								=> <Link to="/demo/demo-intersection/">Intersection Observer API</Link>
+							</div>
+							<div className="demo-list__item">
 								=> <Link to="/demo/demo-custom-io/">Custom Hooks Intersection Observer</Link>
 							</div>
 							<div className="demo-list__item">
