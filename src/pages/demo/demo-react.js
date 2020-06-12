@@ -13,6 +13,24 @@ const StyledWrap = styled.div`
 	} */
 `
 
+// Function for redirect
+// const getRedirectLanguage = () => {
+//   if (typeof navigator === `undefined`) {
+//     return null
+//   }
+
+//   const browserLang =
+//     navigator && navigator.language && navigator.language.split("-")[0]
+//   if (!browserLang) return "ja"
+
+//   switch (browserLang) {
+//     case "ja":
+//       return "jp"
+//     default:
+//       return ""
+//   }
+// }
+
 function FocusInput({ location }) {
 	const pageTitle = 'Demo Next'
 	const pageSlug = 'demo-next'
@@ -22,6 +40,13 @@ function FocusInput({ location }) {
 	useEffect(() => {
 		inputRef.current.focus()
 	}, [])
+
+	// Code for switch language
+	// useEffect(() => {
+	//   const urlLang = getRedirectLanguage()
+
+	//   navigate(`/${urlLang}`)
+	// }, [])
 
 	return (
 		<Layout location={location}>
