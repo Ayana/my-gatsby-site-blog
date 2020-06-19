@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
+import React, { useEffect } from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import styled from 'styled-components'
@@ -45,6 +44,7 @@ const Intersection = ({ location }) => {
 		function inView(entries) {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
+					console.log(entry)
 					entry.target.classList.add('active')
 				} else {
 					entry.target.classList.remove('active')
