@@ -85,7 +85,7 @@ const Fadein = (props) => {
 	const pageTitle = 'Demo Modal'
 	const pageSlug = 'demo-modal'
 
-	const [open, setOpen] = useState(false)
+	// const [open, setOpen] = useState(false)
 
 	const [captionShown, setCaptionShown] = useState(false)
 	const [modalShown, setModalShown] = useState(false)
