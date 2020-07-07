@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import {Link} from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
@@ -58,7 +58,7 @@ const Demo = (props) => {
 						<h2>CSS</h2>
 						<div className="demo-list">
 							<div className="demo-list__item">
-								=> <Link to="/demo/demo-micro-interections/">Micro Interections</Link>
+								=> <Link to="/demo/demo-micro-interaction/">Micro Interaction</Link>
 							</div>
 							<div className="demo-list__item">
 								=> <Link to="/demo/demo-scroll-snap/">Scroll Snap</Link>

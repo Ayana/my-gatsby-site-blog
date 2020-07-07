@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import ButtonSlide from '../../components/demo/ButtonSlide'
@@ -118,6 +118,60 @@ const ButtonHover = styled.div`
 	}
 `
 
+const ButtonClose = styled.div`
+	position: relative;
+	@media (min-width: 751px) {
+		.close__fixed {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			-webkit-backface-visibility: hidden;
+			width: 4rem;
+			height: 4rem;
+			top: 2rem;
+			.line {
+				background: black;
+				position: absolute;
+				width: 4.5rem;
+				height: 2px;
+				transition: transform 0.3s;
+				&.line--top {
+					top: 5px;
+					right: 0;
+					transform-origin: top right;
+					transform: rotate(-45deg);
+				}
+				&.line--bottom {
+					bottom: 5px;
+					right: 0;
+					transform-origin: bottom right;
+					transform: rotate(45deg);
+				}
+			}
+			.text {
+				opacity: 0;
+				transition: opacity 0.3s;
+				font-size: 1.1rem;
+				font-weight: 300;
+				letter-spacing: 0.05em;
+				padding-top: 2px;
+			}
+			&:hover {
+				.line {
+					transform: rotate(0);
+					height: 1px;
+					width: 100%;
+				}
+				.text {
+					opacity: 1;
+				}
+			}
+		}
+	}
+`
+
 const MicroInterections = (props) => {
 	const location = props.location
 	const pageTitle = 'Demo Micro Interections'
@@ -162,6 +216,14 @@ const MicroInterections = (props) => {
 						<ButtonSlideLineBorder />
 						<ButtonShutterOut />
 					</ButtonHover>
+
+					<ButtonClose className="demo-section">
+						<button className="close__fixed">
+							<span className="line line--top"></span>
+							<span className="text">CLOSE</span>
+							<span className="line line--bottom"></span>
+						</button>
+					</ButtonClose>
 
 					<p className="ref">
 						Refference:
