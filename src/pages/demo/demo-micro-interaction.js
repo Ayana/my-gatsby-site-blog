@@ -131,6 +131,7 @@ const ButtonClose = styled.div`
 			width: 4rem;
 			height: 4rem;
 			top: 2rem;
+			right: 50%;
 			.line {
 				background: black;
 				position: absolute;
