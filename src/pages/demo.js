@@ -34,7 +34,7 @@ const Demo = (props) => {
 					<div className="container">
 						<h1>{pageTitle}</h1>
 						<div className="lead-text">
-							<p>A list for easy access to my demos I've tried out.</p>
+							<p>A list of my experimental demos to self</p>
 							{/* <p className="small">- Last update: June 4, 2020</p> */}
 						</div>
 					</div>
@@ -105,6 +105,9 @@ const Demo = (props) => {
 						</div>
 						<h2>CSS & JavaScript </h2>
 						<div className="demo-list">
+							<div className="demo-list__item">
+								=> <Link to="/demo/demo-date/">Date Samples</Link>
+							</div>
 							<div className="demo-list__item">
 								=> <Link to="/demo/demo-intersection/">Intersection Observer API</Link>
 							</div>
