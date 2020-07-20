@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import Layout from '../../components/Layout'
-import SEO from '../../components/SEO'
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 import styled from 'styled-components'
+import SEO from '../../components/SEO'
+import FormItem from '../../components/demo/FormItem'
 
 const StyledDemo = styled.div`
 	.panel {
@@ -18,7 +19,7 @@ const DemoTab = ({location}) => {
 	const [value, setValue] = useState('')
 
 	function onChange(e) {
-		localStorage.setItem('item1', e.target.value)
+		localStorage.setItem('inputItem', e.target.value)
 		setValue(e.target.value)
 	}
 	return (
@@ -41,19 +42,22 @@ const DemoTab = ({location}) => {
 							<TabPanel>
 								<h2>Panel 1</h2>
 								<div className='item'>
-									<input value={value} onChange={onChange} />
+									<FormItem value={value} onChange={onChange} />
+									{/* <input value={value} onChange={onChange} /> */}
 								</div>
 							</TabPanel>
 							<TabPanel>
 								<h2>Panel 2</h2>
 								<div className='item'>
-									<input value={value} onChange={onChange} />
+									<FormItem value={value} onChange={onChange} />
+									{/* <input value={value} onChange={onChange} /> */}
 								</div>
 							</TabPanel>
 							<TabPanel>
 								<h2>Panel 3</h2>
 								<div className='item'>
-									<input value={value} onChange={onChange} />
+									<FormItem value={value} onChange={onChange} />
+									{/* <input value={value} onChange={onChange} /> */}
 								</div>
 							</TabPanel>
 						</div>

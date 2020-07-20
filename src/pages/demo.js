@@ -30,106 +30,109 @@ const Demo = (props) => {
 		<Layout location={props.location}>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<StyledDemo>
-				<div className="basic-link">
-					<div className="container">
+				<div className='basic-link'>
+					<div className='container'>
 						<h1>{pageTitle}</h1>
-						<div className="lead-text">
+						<div className='lead-text'>
 							<p>A list of my experimental demos to self</p>
 							{/* <p className="small">- Last update: June 4, 2020</p> */}
 						</div>
 					</div>
 
-					<div className="container">
+					<div className='container'>
 						<h2>AR & WebGL</h2>
-						<div className="demo-list">
-							<div className="demo-list__item">
+						<div className='demo-list'>
+							<div className='demo-list__item'>
 								=>
-								<a href="https://ar-mushroom.netlify.com/" target="_blank" rel="noopener noreferrer">
+								<a href='https://ar-mushroom.netlify.com/' target='_blank' rel='noopener noreferrer'>
 									AR Quick Look & Reality Composer
 								</a>
 							</div>
-							<div className="demo-list__item">
+							<div className='demo-list__item'>
 								=>
-								<a href="https://three-js-model.netlify.com/" target="_blank" rel="noopener noreferrer">
+								<a href='https://three-js-model.netlify.com/' target='_blank' rel='noopener noreferrer'>
 									Three.js
 								</a>
 							</div>
 						</div>
 						<h2>CSS</h2>
-						<div className="demo-list">
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-micro-interaction/">Micro Interaction</Link>
+						<div className='demo-list'>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-micro-interaction/'>Micro Interaction</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-scroll-snap/">Scroll Snap</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-scroll-snap/'>Scroll Snap</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-animation/">SVG Animations</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-animation/'>SVG Animations</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-parallax-css/">Parallax with Pure CSS</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-parallax-css/'>Parallax with Pure CSS</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-text-animations/">Text animation</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-text-animations/'>Text animation</Link>
 							</div>
 						</div>
 						<h2>JavaScript library </h2>
-						<div className="demo-list">
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-i18next/">React i18next</Link>
+						<div className='demo-list'>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-gsap/'>GSAP</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-react-io/">React Intersection Observer</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-i18next/'>React i18next</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-cookie-consent/">React Cookie Consent</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-react-io/'>React Intersection Observer</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-react-parallax/">React Parallax(Banner)</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-cookie-consent/'>React Cookie Consent</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-d3/">D3.js</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-react-parallax/'>React Parallax(Banner)</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-transition/">CSS Transition</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-d3/'>D3.js</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-slick/">React Slick</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-transition/'>CSS Transition</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-swiper/">Swiper</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-slick/'>React Slick</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-reveal/">React Reveal</Link> <br />
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-swiper/'>Swiper</Link>
+							</div>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-reveal/'>React Reveal</Link> <br />
 							</div>
 						</div>
 						<h2>CSS & JavaScript </h2>
-						<div className="demo-list">
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-date/">Date Samples</Link>
+						<div className='demo-list'>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-date/'>Date Samples</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-intersection/">Intersection Observer API</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-intersection/'>Intersection Observer API</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-custom-io/">Custom Hooks Intersection Observer</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-custom-io/'>Custom Hooks Intersection Observer</Link>
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-parallax-js/">Vanilla JavaScript Parallax</Link> <br />
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-parallax-js/'>Vanilla JavaScript Parallax</Link> <br />
 							</div>
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-functions/">Small Functions</Link>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-functions/'>Small Functions</Link>
 							</div>
 						</div>
 
 						<h2>API </h2>
-						<div className="demo-list">
-							<div className="demo-list__item">
-								=> <Link to="/demo/demo-video-player/">Video Player using youtube API</Link>
+						<div className='demo-list'>
+							<div className='demo-list__item'>
+								=> <Link to='/demo/demo-video-player/'>Video Player using youtube API</Link>
 							</div>
 						</div>
 
-						<div className="demo-list">{/* <div className="demo-list__item">
+						<div className='demo-list'>{/* <div className="demo-list__item">
 								=> <Link to="/demo/demo-image/">Gatsby Image</Link>
 							</div>
 							<div className="demo-list__item">
