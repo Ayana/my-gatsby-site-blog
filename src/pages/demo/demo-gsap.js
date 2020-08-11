@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React, {useEffect} from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import styled from 'styled-components'
@@ -180,6 +180,29 @@ const GSAP = (props) => {
 				delay: -1,
 				// stagger: 0.4,
 			})
+	}, [])
+
+	// リサイズして500秒後に実行
+	useEffect(() => {
+		// timeline
+		const tl = gsap.timeline()
+
+		let timeoutId = null
+		const resizeListener = () => {
+			// setWidth(window.innerWidth)
+			const x = window.matchMedia('(max-width: 668px)')
+			clearTimeout(timeoutId)
+			timeoutId = setTimeout(() => {
+				if (x.matches) {
+					console.log(window.innerWidth)
+				}
+			}, 500)
+		}
+		window.addEventListener('resize', resizeListener)
+
+		return () => {
+			window.addEventListener('resize', resizeListener)
+		}
 	}, [])
 
 	return (
