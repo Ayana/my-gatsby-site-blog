@@ -1,20 +1,19 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import {graphql} from 'gatsby'
 // import AniLink from "gatsby-plugin-transition-link/AniLink"
-// import Media from 'react-media';
 
-import About from "../components/About"
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import About from '../components/About'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 class Index extends React.Component {
-  render() {
-    const pageSlug = "home"
+	render() {
+		const pageSlug = 'home'
 
-    return (
-     <Layout location={this.props.location}>
-        <SEO pageSlug={pageSlug} />
-        {/* <Media query="(max-width: 599px)">
+		return (
+			<Layout location={this.props.location}>
+				<SEO pageSlug={pageSlug} />
+				{/* <Media query="(max-width: 599px)">
           {matches =>
             matches ? (
               <div>
@@ -47,8 +46,8 @@ class Index extends React.Component {
             )
           }
         </Media> */}
-        <About />
-        {/* {posts.slice(0,2).map(({ node }) => {
+				<About />
+				{/* {posts.slice(0,2).map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug} style={{
@@ -74,19 +73,19 @@ class Index extends React.Component {
             </div>
           )
         })} */}
-      </Layout>
-    )
-  }
+			</Layout>
+		)
+	}
 }
 
 export default Index
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
+	query {
+		site {
+			siteMetadata {
+				title
+			}
+		}
+	}
 `

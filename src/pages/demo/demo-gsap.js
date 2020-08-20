@@ -184,9 +184,6 @@ const GSAP = (props) => {
 
 	// リサイズして500秒後に実行
 	useEffect(() => {
-		// timeline
-		const tl = gsap.timeline()
-
 		let timeoutId = null
 		const resizeListener = () => {
 			// setWidth(window.innerWidth)

@@ -53,6 +53,7 @@ const StyledNav = styled.div`
 
 class Nav extends React.Component {
 	render() {
+		const {changeLanguage, isLangEn} = this.props
 		return (
 			<StyledNav>
 				<div className='global-nav'>
@@ -77,6 +78,14 @@ class Nav extends React.Component {
 						<AniLink className='global-nav__link' fade to='/demo/' duration={0.3}>
 							Demo
 						</AniLink>
+					</nav>
+					<nav className='nav font-typewriter'>
+						<button onClick={() => changeLanguage('en')} className={isLangEn ? 'current' : ''}>
+							En
+						</button>
+						<button onClick={() => changeLanguage('ja')} className={!isLangEn ? 'current' : ''}>
+							Ja
+						</button>
 					</nav>
 				</div>
 			</StyledNav>

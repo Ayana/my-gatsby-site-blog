@@ -140,7 +140,9 @@ const DemoReduxForm = ({location}) => {
 						<p className='ref' style={{marginTop: '3rem'}}>
 							Refference:
 							<br />
-							<a href='https://its-office.jp/blog/js/2016/03/08/ymd-html.html' target='_blank' rel='noopener noreferrer'></a>
+							<a href='https://its-office.jp/blog/js/2016/03/08/ymd-html.html' target='_blank' rel='noopener noreferrer'>
+								参考
+							</a>
 						</p>
 					</div>
 				</div>
