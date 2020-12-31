@@ -4,6 +4,8 @@ import SEO from '../../components/SEO'
 import styled from 'styled-components'
 
 import Welcome from '../../components/demo/Welcome'
+import NewYear1 from '../../components/demo/NewYear1'
+import NewYear2 from '../../components/demo/NewYear2'
 
 const DemoWrapper = styled.div`
 	.demo-section {
@@ -47,6 +49,47 @@ const DemoWrapper = styled.div`
 			}
 			&:hover:before {
 				transform: scale(2);
+			}
+		}
+	}
+	.newyear-text {
+		svg.newyear1 {
+			width: 100%;
+			height: 180px;
+			@include medium {
+				height: 100px;
+			}
+			.anim1 {
+				fill: none;
+				stroke: #080506;
+				stroke-linecap: round;
+				stroke-miterlimit: 10;
+				stroke-width: 10px;
+				stroke-dasharray: 2824.187744140625;
+				stroke-dashoffset: 2824.187744140625;
+				animation: draw 3s linear 0.5s forwards;
+			}
+		}
+		svg.newyear2 {
+			width: 100%;
+			height: 180px;
+			@include medium {
+				height: 100px;
+			}
+			.anim2 {
+				fill: none;
+				stroke: #080506;
+				stroke-linecap: round;
+				stroke-miterlimit: 10;
+				stroke-width: 10px;
+				stroke-dasharray: 726.2219848632812;
+				stroke-dashoffset: 726.2219848632812;
+				animation: draw 1.5s linear 3.5s forwards;
+			}
+		}
+		@keyframes draw {
+			to {
+				stroke-dashoffset: 0;
 			}
 		}
 	}
@@ -268,10 +311,10 @@ const DemoWrapper = styled.div`
 		}
 	}
 `
-// const welcome = document.querySelectorAll('.handwriting-effect path')
+// const welcome = document.querySelectorAll('.anim1')
 
-// for(let i = 0; i < welcome.length; i++) {
-//   console.log(`Letter ${i} is ${welcome[i].getTotalLength()}`)
+// for (let i = 0; i < welcome.length; i++) {
+// 	console.log(`Letter ${i} is ${welcome[i].getTotalLength()}`)
 // }
 
 const DemoFade = (props) => {
@@ -313,75 +356,83 @@ const DemoFade = (props) => {
 		<Layout location={location}>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
 			<DemoWrapper>
-				<div className="container basic-link">
+				<div className='container basic-link'>
 					<h1>{pageTitle}</h1>
 
-					<section className="demo-section">
+					<section className='demo-section'>
 						<h2>Handwriting effect</h2>
-						<div className="effect-wrap">
-							<div className="handwriting-effect">
+						<div className='effect-wrap'>
+							<div className='handwriting-effect'>
+								<div className={`newyear-text`}>
+									<NewYear1 />
+									<NewYear2 />
+								</div>
+							</div>
+						</div>
+						<div className='effect-wrap'>
+							<div className='handwriting-effect'>
 								<div className={`welcome-text ${stateHandwriting}`}>
 									<Welcome />
 								</div>
 							</div>
 						</div>
-						<button className="hover button" type="button" onClick={handleClickHandwriting}>
+						<button className='hover button' type='button' onClick={handleClickHandwriting}>
 							Click to {textHandwriting}
 						</button>
 
 						<div>
 							Refferece:
 							<br />
-							<a href="https://www.youtube.com/watch?v=vJNVramny9k">SVG Animation With Text Tutorial</a>
+							<a href='https://www.youtube.com/watch?v=vJNVramny9k'>SVG Animation With Text Tutorial</a>
 						</div>
 					</section>
 
-					<section className="demo-section">
+					<section className='demo-section'>
 						<h2>Typewriter effect</h2>
-						<div className="effect-wrap">
+						<div className='effect-wrap'>
 							<div className={`typewriter-effect font-typewriter ${stateTypewriter}`}>Thank you for coming! Here is a typewriter effect.</div>
 						</div>
-						<button className="hover button" type="button" onClick={handleClickTypewriter}>
+						<button className='hover button' type='button' onClick={handleClickTypewriter}>
 							Click to {textTypewriter}
 						</button>
 					</section>
 
-					<section className="demo-section">
+					<section className='demo-section'>
 						<h2>Fade in Text</h2>
-						<div className="effect-wrap">
+						<div className='effect-wrap'>
 							<div className={`font-script fade-effect ${stateFade}`}>
 								<p>
-									<span className="fade-in one">T</span>
-									<span className="fade-in two">h</span>
-									<span className="fade-in three">a</span>
-									<span className="fade-in four">n</span>
-									<span className="fade-in five">k</span>
-									<span className="fade-in six"> y</span>
-									<span className="fade-in seven">o</span>
-									<span className="fade-in eight">u</span>
-									<span className="fade-in nine"> f</span>
-									<span className="fade-in ten">o</span>
-									<span className="fade-in eleven">r</span>
-									<span className="fade-in twelve"> v</span>
-									<span className="fade-in thirteen">i</span>
-									<span className="fade-in fourteen">s</span>
-									<span className="fade-in fifteen">i</span>
-									<span className="fade-in sixteen">t</span>
-									<span className="fade-in seventeen">i</span>
-									<span className="fade-in eighteen">n</span>
-									<span className="fade-in nineteen">g</span>
-									<span className="fade-in twenty"> m</span>
-									<span className="fade-in twentyone">y</span>
-									<span className="fade-in twentytwo"> d</span>
-									<span className="fade-in twentythree">e</span>
-									<span className="fade-in twentyfour">m</span>
-									<span className="fade-in twentyfive">o</span>
-									<span className="fade-in twentysix">!</span>
+									<span className='fade-in one'>T</span>
+									<span className='fade-in two'>h</span>
+									<span className='fade-in three'>a</span>
+									<span className='fade-in four'>n</span>
+									<span className='fade-in five'>k</span>
+									<span className='fade-in six'> y</span>
+									<span className='fade-in seven'>o</span>
+									<span className='fade-in eight'>u</span>
+									<span className='fade-in nine'> f</span>
+									<span className='fade-in ten'>o</span>
+									<span className='fade-in eleven'>r</span>
+									<span className='fade-in twelve'> v</span>
+									<span className='fade-in thirteen'>i</span>
+									<span className='fade-in fourteen'>s</span>
+									<span className='fade-in fifteen'>i</span>
+									<span className='fade-in sixteen'>t</span>
+									<span className='fade-in seventeen'>i</span>
+									<span className='fade-in eighteen'>n</span>
+									<span className='fade-in nineteen'>g</span>
+									<span className='fade-in twenty'> m</span>
+									<span className='fade-in twentyone'>y</span>
+									<span className='fade-in twentytwo'> d</span>
+									<span className='fade-in twentythree'>e</span>
+									<span className='fade-in twentyfour'>m</span>
+									<span className='fade-in twentyfive'>o</span>
+									<span className='fade-in twentysix'>!</span>
 								</p>
-								<p className="fade-in caption"> - Welcome!</p>
+								<p className='fade-in caption'> - Welcome!</p>
 							</div>
 						</div>
-						<button className="hover button" type="button" onClick={handleClickFade}>
+						<button className='hover button' type='button' onClick={handleClickFade}>
 							Click to {textFade}
 						</button>
 					</section>
