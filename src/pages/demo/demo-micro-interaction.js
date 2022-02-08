@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 import ButtonSlide from '../../components/demo/ButtonSlide'
@@ -78,15 +78,25 @@ const Circle = styled.div`
 			stroke-dashoffset: 250;
 			transition: 0.5s;
 			&:nth-child(1) {
-				stroke: #ccc;
+				stroke: #eb5151;
 				stroke-dashoffset: 0;
 			}
 			&:nth-child(2) {
-				stroke: #eb5151;
-				stroke-dashoffset: 250;
+				stroke: #ccc;
+				/* stroke-dashoffset: 250; */
+				stroke-dashoffset: 0;
 			}
-			&.LineAnime {
-				animation: lineAnimation 2s linear forwards infinite;
+			&:nth-child(3) {
+				stroke: #eb5151;
+				/* stroke-dashoffset: 250; */
+				stroke-dashoffset: 0;
+			}
+			&.LineAnime2 {
+				animation: lineAnimation2 2.5s linear forwards infinite;
+				animation-delay: 0.1s;
+			}
+			&.LineAnime3 {
+				animation: lineAnimation3 2.5s linear forwards infinite;
 				animation-delay: 0.1s;
 			}
 		}
@@ -103,6 +113,28 @@ const Circle = styled.div`
 			transform: rotate(270deg);
 		}
 	}
+	@keyframes lineAnimation2 {
+		0% {
+			stroke-dashoffset: 0;
+		}
+		50% {
+			stroke-dashoffset: 0;
+		}
+		100% {
+			stroke-dashoffset: -156.06741333007812;
+		}
+	}
+	@keyframes lineAnimation3 {
+		0% {
+			stroke-dashoffset: 0;
+		}
+		50% {
+			stroke-dashoffset: -156.06741333007812;
+		}
+		100% {
+			stroke-dashoffset: -156.06741333007812;
+		}
+	}
 `
 
 const ButtonHover = styled.div`
@@ -114,6 +146,23 @@ const ButtonHover = styled.div`
 		margin-bottom: 1.5rem;
 		button {
 			min-width: 160px;
+		}
+	}
+`
+
+const Donut = styled.div`
+	div {
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		border: 1.5px solid #bdbdbd;
+		border-top-color: #e6e6e6;
+		margin: 2rem auto;
+		animation: 1.5s spin infinite linear;
+	}
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
 		}
 	}
 `
@@ -190,46 +239,51 @@ const MicroInterections = (props) => {
 	return (
 		<Layout location={location}>
 			<SEO pageTitle={pageTitle} pageSlug={pageSlug} />
-			<StyledWrap className="container basic-link">
+			<StyledWrap className='container basic-link'>
 				<div>
 					<h1>{pageTitle}</h1>
 
-					<p className="show-for-small-only">*This functions work only for desktop</p>
+					<p className='show-for-small-only'>*This functions work only for desktop</p>
 
-					<MoveOut className="demo-section">
-						<p className="font-script">Hover me!</p>
-						<button className="circle-move-out" onMouseEnter={() => setOnHover1(true)} onMouseLeave={() => setOnHover1(false)}>
+					<MoveOut className='demo-section'>
+						<p className='font-script'>Hover me!</p>
+						<button className='circle-move-out' onMouseEnter={() => setOnHover1(true)} onMouseLeave={() => setOnHover1(false)}>
 							<div className={`circle-outer ${onHover1 && 'zoomIn'}`}></div>
-							<div className="circle-inner"></div>
+							<div className='circle-inner'></div>
 						</button>
 					</MoveOut>
 
-					<Circle className="demo-section">
+					<Circle className='demo-section'>
 						<svg onMouseEnter={() => setOnHover2(true)} onMouseLeave={() => setOnHover2(false)}>
-							<circle cx="50" cy="50" r="25"></circle>
-							<circle cx="50" cy="50" r="25" className={onHover2 && 'LineAnime'}></circle>
+							<circle cx='50' cy='50' r='25'></circle>
+							<circle cx='50' cy='50' r='25' className={onHover2 && 'LineAnime2'}></circle>
+							<circle cx='50' cy='50' r='25' className={onHover2 && 'LineAnime3'}></circle>
 						</svg>
 					</Circle>
 
-					<ButtonHover className="demo-section">
+					<Donut className='demo-section'>
+						<div className='donut'></div>
+					</Donut>
+
+					<ButtonHover className='demo-section'>
 						<ButtonSlide />
 						<ButtonSlideLine />
 						<ButtonSlideLineBorder />
 						<ButtonShutterOut />
 					</ButtonHover>
 
-					<ButtonClose className="demo-section">
-						<button className="close__fixed">
-							<span className="line line--top"></span>
-							<span className="text">CLOSE</span>
-							<span className="line line--bottom"></span>
+					<ButtonClose className='demo-section'>
+						<button className='close__fixed'>
+							<span className='line line--top'></span>
+							<span className='text'>CLOSE</span>
+							<span className='line line--bottom'></span>
 						</button>
 					</ButtonClose>
 
-					<p className="ref">
+					<p className='ref'>
 						Refference:
 						<br />
-						<a href="https://emilkowalski.github.io/css-effects-snippets/" target="_blank" rel="noopener noreferrer">
+						<a href='https://emilkowalski.github.io/css-effects-snippets/' target='_blank' rel='noopener noreferrer'>
 							CSSeffectsSnippets
 						</a>
 					</p>
